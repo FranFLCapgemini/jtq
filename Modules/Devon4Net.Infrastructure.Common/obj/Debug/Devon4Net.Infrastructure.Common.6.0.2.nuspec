@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Devon4Net.Infrastructure.Common</id>
+    <version>6.0.2</version>
+    <authors>Capgemini, ADCenter Valencia, Traiectum Team</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>devonfw.png</icon>
+    <projectUrl>https://github.com/devonfw/devon4net</projectUrl>
+    <description>Common classes to manage the web api template configuration</description>
+    <releaseNotes>NET 6.0+ compatibility version</releaseNotes>
+    <copyright>Copyright © Capgemini</copyright>
+    <tags>devonfw devon4net Capgemini</tags>
+    <repository type="git" url="https://github.com/devonfw/devon4net" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.AspNetCore.Antiforgery" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Server.Kestrel.Core" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options.ConfigurationExtensions" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Modules\Devon4Net.Infrastructure.Common\bin\Debug\net6.0\Devon4Net.Infrastructure.Common.dll" target="lib\net6.0\Devon4Net.Infrastructure.Common.dll" />
+    <file src="c:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\assets\devonfw.png" target="\devonfw.png" />
+    <file src="c:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\assets\LICENSE" target="\LICENSE" />
+  </files>
+</package>

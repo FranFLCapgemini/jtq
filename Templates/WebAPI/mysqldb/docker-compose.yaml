@@ -1,0 +1,16 @@
+version: '3'
+services:
+  Kverneland_mysql:
+    image: mysql:latest
+    volumes:
+        - mysql-volume:/var/lib/mysql
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: admin
+        MYSQL_DATABASE: jtq
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: admin
+    ports:
+        - 3307:3306
+volumes:
+  mysql-volume:

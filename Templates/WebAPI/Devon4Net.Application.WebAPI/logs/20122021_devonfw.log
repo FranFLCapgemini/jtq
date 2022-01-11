@@ -1,0 +1,261 @@
+2021-12-20 11:05:48.340 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:05:48.437 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:05:48.631 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:05:48.632 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:05:53.010 +01:00 [INF] User profile is available. Using 'C:\Users\aegearui\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:05:53.143 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:05:53.191 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:05:53.193 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:05:53.194 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:05:53.195 +01:00 [INF] Content root path: C:\Users\aegearui\Desktop\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:05:58.940 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html - -
+2021-12-20 11:05:59.154 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js - -
+2021-12-20 11:05:59.154 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - -
+2021-12-20 11:05:59.154 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js - -
+2021-12-20 11:05:59.154 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/_framework/aspnetcore-browser-refresh.js - -
+2021-12-20 11:05:59.161 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/index.html - - - 200 - text/html;charset=utf-8 222.7120ms
+2021-12-20 11:05:59.170 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/_framework/aspnetcore-browser-refresh.js - - - 200 11962 application/javascript;+charset=utf-8 15.3826ms
+2021-12-20 11:05:59.176 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-12-20 11:05:59.176 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-12-20 11:05:59.180 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 25.1383ms
+2021-12-20 11:05:59.192 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - - - 200 143632 text/css 37.4303ms
+2021-12-20 11:05:59.197 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-12-20 11:05:59.198 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 44.0876ms
+2021-12-20 11:05:59.318 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - -
+2021-12-20 11:05:59.420 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 102.3811ms
+2021-12-20 11:07:28.302 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:07:28.312 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:07:28.327 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:09:49.420 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:09:49.516 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:09:49.716 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:09:49.717 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:09:54.091 +01:00 [INF] User profile is available. Using 'C:\Users\aegearui\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:09:54.229 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:09:54.277 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:09:54.279 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:09:54.281 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:09:54.283 +01:00 [INF] Content root path: C:\Users\aegearui\Desktop\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:09:55.745 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:09:55.819 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:09:55.836 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:10:18.022 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:10:18.102 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:10:18.273 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:10:18.275 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:10:22.665 +01:00 [INF] User profile is available. Using 'C:\Users\aegearui\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:10:22.795 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:10:22.843 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:10:22.846 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:10:22.846 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:10:22.847 +01:00 [INF] Content root path: C:\Users\aegearui\Desktop\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:10:24.712 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:10:24.783 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:10:24.798 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:10:42.704 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:10:42.798 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:10:42.958 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:10:42.959 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:10:47.330 +01:00 [INF] User profile is available. Using 'C:\Users\aegearui\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:10:47.478 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:10:47.526 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:10:47.527 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:10:47.528 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:10:47.529 +01:00 [INF] Content root path: C:\Users\aegearui\Desktop\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:10:52.615 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:10:52.693 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:10:52.710 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:11:36.059 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:11:36.143 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:11:36.304 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:11:36.305 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:11:40.681 +01:00 [INF] User profile is available. Using 'C:\Users\aegearui\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:11:40.835 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:11:40.882 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:11:40.884 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:11:40.885 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:11:40.886 +01:00 [INF] Content root path: C:\Users\aegearui\Desktop\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:11:43.872 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:11:43.946 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:11:43.961 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:11:52.519 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'jtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2021-12-20 11:11:52.744 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Devon4Net.Application.WebAPI.Implementation.jtqContext'.
+System.InvalidOperationException: A relational store has been configured without specifying either the DbConnection or connection string to use.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.get_DbConnection()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: A relational store has been configured without specifying either the DbConnection or connection string to use.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.get_DbConnection()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2021-12-20 11:11:54.047 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation) in 10078.5288ms
+2021-12-20 11:11:54.064 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:11:55.198 +01:00 [ERR] Exception Type: InvalidOperationException | Message: A relational store has been configured without specifying either the DbConnection or connection string to use. | InnerException: No InnerException exception data found
+2021-12-20 11:11:55.208 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/Prueba - - - 500 0 - 11337.4813ms
+2021-12-20 11:12:33.220 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:12:33.320 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:12:33.522 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:12:33.523 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:12:37.884 +01:00 [INF] User profile is available. Using 'C:\Users\aegearui\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:12:38.023 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:12:38.071 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:12:38.077 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:12:38.077 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:12:38.078 +01:00 [INF] Content root path: C:\Users\aegearui\Desktop\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:12:39.018 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:12:39.090 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:12:39.106 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:12:43.265 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'jtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2021-12-20 11:12:43.558 +01:00 [ERR] Failed executing DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`ID`, `p`.`Nombre`
+FROM `prueba` AS `p`
+2021-12-20 11:12:43.608 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Devon4Net.Application.WebAPI.Implementation.jtqContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'testDb.prueba' doesn't exist
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 44
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 126
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 450
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 305
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'testDb.prueba' doesn't exist
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 44
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 126
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 450
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 305
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2021-12-20 11:12:43.970 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation) in 4857.1584ms
+2021-12-20 11:12:43.976 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:12:43.978 +01:00 [ERR] Exception Type: MySqlException | Message: Table 'testDb.prueba' doesn't exist | InnerException: No InnerException exception data found
+2021-12-20 11:12:43.990 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/Prueba - - - 500 0 - 4973.5090ms
+2021-12-20 11:18:49.467 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 11:18:49.637 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:18:49.866 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 11:18:49.866 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 11:18:54.470 +01:00 [INF] User profile is available. Using 'C:\Users\fferna14\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 11:18:54.667 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 11:18:54.754 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 11:18:54.754 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 11:18:54.755 +01:00 [INF] Hosting environment: Development
+2021-12-20 11:18:54.755 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 11:19:03.902 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html - -
+2021-12-20 11:19:04.025 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/index.html - - - 200 - text/html;charset=utf-8 124.4619ms
+2021-12-20 11:19:04.067 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js - -
+2021-12-20 11:19:04.067 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - -
+2021-12-20 11:19:04.067 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js - -
+2021-12-20 11:19:04.123 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-12-20 11:19:04.123 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-12-20 11:19:04.123 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-12-20 11:19:04.126 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - - - 200 143632 text/css 58.6563ms
+2021-12-20 11:19:04.126 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 58.7289ms
+2021-12-20 11:19:04.126 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 58.7267ms
+2021-12-20 11:19:04.335 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - -
+2021-12-20 11:19:04.384 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - -
+2021-12-20 11:19:04.385 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-12-20 11:19:04.386 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - - - 200 628 image/png 1.0077ms
+2021-12-20 11:19:04.474 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.3046ms
+2021-12-20 11:19:22.619 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 11:19:22.637 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:19:22.656 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 11:19:23.773 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'jtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2021-12-20 11:19:24.463 +01:00 [INF] Executed DbCommand (333ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`ID`, `p`.`Nombre`
+FROM `prueba` AS `p`
+2021-12-20 11:19:24.533 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.Application.WebAPI.Implementation.Prueba, Devon4Net.Application.WebAPI.Implementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Dto.PruebaDto, Devon4Net.Application.WebAPI.Implementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-12-20 11:19:24.546 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation) in 1881.6934ms
+2021-12-20 11:19:24.547 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 11:19:24.552 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/Prueba - - - 200 - application/json;+charset=utf-8 1933.9377ms
+2021-12-20 12:45:02.293 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 12:45:02.542 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 12:45:02.885 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 12:45:02.885 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 12:45:07.538 +01:00 [INF] User profile is available. Using 'C:\Users\fferna14\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 12:45:07.801 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 12:45:07.896 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 12:45:07.898 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 12:45:07.899 +01:00 [INF] Hosting environment: Development
+2021-12-20 12:45:07.900 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 12:45:22.349 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html - -
+2021-12-20 12:45:22.498 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/index.html - - - 200 - text/html;charset=utf-8 150.9677ms
+2021-12-20 12:45:22.522 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - -
+2021-12-20 12:45:22.561 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-12-20 12:45:22.561 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - - - 200 143632 text/css 39.2943ms
+2021-12-20 12:45:22.839 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - -
+2021-12-20 12:45:22.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - -
+2021-12-20 12:45:22.852 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-12-20 12:45:22.852 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - - - 200 628 image/png 1.6774ms
+2021-12-20 12:45:23.064 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 225.5324ms
+2021-12-20 12:45:57.940 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Prueba?name=zzzz - 0
+2021-12-20 12:45:57.947 +01:00 [INF] CORS policy execution successful.
+2021-12-20 12:45:57.956 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.CreatePrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 12:45:57.991 +01:00 [INF] Route matched with {action = "CreatePrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreatePrueba(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 12:45:59.138 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'jtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2021-12-20 12:45:59.939 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.CreatePrueba (Devon4Net.Application.WebAPI.Implementation) in 1941.2187ms
+2021-12-20 12:45:59.942 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.CreatePrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 12:45:59.943 +01:00 [ERR] Exception Type: InvalidOperationException | Message: Unable to track an entity of type 'Prueba' because its primary key property 'Id' is null. | InnerException: No InnerException exception data found
+2021-12-20 12:45:59.952 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/Prueba?name=zzzz - 0 - 500 0 - 2011.6028ms
+2021-12-20 12:50:57.579 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2021-12-20 12:50:57.747 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 12:50:57.991 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-12-20 12:50:57.992 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2021-12-20 12:51:02.472 +01:00 [INF] User profile is available. Using 'C:\Users\fferna14\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-20 12:51:02.635 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2021-12-20 12:51:02.715 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-12-20 12:51:02.715 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-20 12:51:02.715 +01:00 [INF] Hosting environment: Development
+2021-12-20 12:51:02.715 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2021-12-20 12:51:14.454 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Prueba?name=zzzz - 0
+2021-12-20 12:51:14.543 +01:00 [INF] CORS policy execution successful.
+2021-12-20 12:51:14.549 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.CreatePrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 12:51:14.574 +01:00 [INF] Route matched with {action = "CreatePrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreatePrueba(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 12:51:15.811 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'jtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2021-12-20 12:51:16.251 +01:00 [INF] Executed DbCommand (48ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `prueba` (`ID`, `Nombre`)
+VALUES (@p0, @p1);
+2021-12-20 12:51:16.308 +01:00 [INF] Executing ObjectResult, writing value of type 'Devon4Net.Application.WebAPI.Implementation.Prueba'.
+2021-12-20 12:51:16.339 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.CreatePrueba (Devon4Net.Application.WebAPI.Implementation) in 1756.0824ms
+2021-12-20 12:51:16.340 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.CreatePrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 12:51:16.353 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/Prueba?name=zzzz - 0 - 201 - application/json;+charset=utf-8 1901.1411ms
+2021-12-20 13:17:34.690 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Prueba - -
+2021-12-20 13:17:34.701 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 13:17:34.705 +01:00 [INF] Route matched with {action = "GetPrueba", controller = "Prueba"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPrueba() on controller Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController (Devon4Net.Application.WebAPI.Implementation).
+2021-12-20 13:17:34.788 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'jtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2021-12-20 13:17:35.019 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`ID`, `p`.`Nombre`
+FROM `prueba` AS `p`
+2021-12-20 13:17:35.044 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.Application.WebAPI.Implementation.Prueba, Devon4Net.Application.WebAPI.Implementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Dto.PruebaDto, Devon4Net.Application.WebAPI.Implementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-12-20 13:17:35.051 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation) in 345.1185ms
+2021-12-20 13:17:35.051 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.PruebaManagement.Controllers.PruebaController.GetPrueba (Devon4Net.Application.WebAPI.Implementation)'
+2021-12-20 13:17:35.052 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/Prueba - - - 200 - application/json;+charset=utf-8 361.9989ms

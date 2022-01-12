@@ -30,7 +30,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Search Access Code Service
         /// </summary>
         /// <param name="idaccesscode"></param>
-        [HttpGet("search access code")]
+        [HttpGet("searchAccessCode")]
         [ProducesResponseType(typeof(AccessCodeDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -63,7 +63,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// </summary>
         /// <param name="idaccesscode"></param>
 
-        [HttpPost("delete access code")]
+        [HttpPost("deleteAccessCode")]
         [ProducesResponseType(typeof(AccessCodeDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

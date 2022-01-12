@@ -10500,11 +10500,11 @@
   "project": {
     "version": "6.0.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
+      "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
       "projectName": "Devon4Net.Infrastructure.UnitOfWork",
-      "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
+      "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
       "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\obj\\",
+      "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -10519,8 +10519,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
-              "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj"
+            "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
+              "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj"
             }
           }
         }

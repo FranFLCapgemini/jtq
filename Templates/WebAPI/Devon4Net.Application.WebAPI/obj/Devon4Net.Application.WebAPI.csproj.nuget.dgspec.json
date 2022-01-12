@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj": {}
+    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
+    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
       "version": "6.0.2",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
+        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
         "projectName": "Devon4Net.Infrastructure.Common",
-        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
+        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
         "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\obj\\",
+        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
+    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
       "version": "6.0.2",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
+        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
         "projectName": "Devon4Net.Infrastructure.Logger",
-        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
+        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
         "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\obj\\",
+        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -112,8 +112,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
-                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj"
+              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
+                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj"
               }
             }
           }
@@ -188,14 +188,14 @@
         }
       }
     },
-    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj": {
+    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj": {
       "version": "6.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
+        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
         "projectName": "Devon4Net.Infrastructure.UnitOfWork",
-        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
+        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj",
         "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\obj\\",
+        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -210,8 +210,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
-                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj"
+              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
+                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj"
               }
             }
           }
@@ -300,14 +300,14 @@
         }
       }
     },
-    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj": {
+    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj",
+        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj",
         "projectName": "Devon4Net.Application.WebAPI.Implementation",
-        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj",
+        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj",
         "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\obj\\",
+        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -322,14 +322,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
-                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj"
+              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
+                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj"
               },
-              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
-                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj"
+              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj": {
+                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj"
               },
-              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj": {
-                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj"
+              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.UnitOfWork\\Devon4Net.Infrastructure.UnitOfWork.csproj"
               }
             }
           }
@@ -405,14 +405,14 @@
         }
       }
     },
-    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj": {
+    "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj",
         "projectName": "Devon4Net.Application.WebAPI",
-        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj",
+        "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\Devon4Net.Application.WebAPI.csproj",
         "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -427,8 +427,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj": {
-                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj"
+              "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj": {
+                "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Templates\\WebAPI\\Devon4Net.Application.WebAPI.Implementation\\Devon4Net.Application.WebAPI.Implementation.csproj"
               }
             }
           }

@@ -1038,3 +1038,23 @@ WHERE `q`.`Active` = TRUE
 2022-01-11 12:21:34.249 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.GetActiveQueues (Devon4Net.Application.WebAPI.Implementation) in 43348.807ms
 2022-01-11 12:21:34.251 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.GetActiveQueues (Devon4Net.Application.WebAPI.Implementation)'
 2022-01-11 12:21:34.279 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/Queue/ActiveQueues - - - 200 - application/json;+charset=utf-8 43725.1916ms
+2022-01-11 13:51:59.747 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2022-01-11 13:51:59.951 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2022-01-11 13:52:00.218 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2022-01-11 13:52:00.218 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2022-01-11 13:52:04.764 +01:00 [INF] User profile is available. Using 'C:\Users\fferna14\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-11 13:52:04.977 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2022-01-11 13:52:05.058 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2022-01-11 13:52:05.059 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-11 13:52:05.059 +01:00 [INF] Hosting environment: Development
+2022-01-11 13:52:05.059 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2022-01-11 13:52:14.259 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html - -
+2022-01-11 13:52:14.391 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/index.html - - - 200 - text/html;charset=utf-8 134.0167ms
+2022-01-11 13:52:14.426 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - -
+2022-01-11 13:52:14.441 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-01-11 13:52:14.442 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - - - 200 143632 text/css 16.2570ms
+2022-01-11 13:52:14.647 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - -
+2022-01-11 13:52:14.655 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - -
+2022-01-11 13:52:14.657 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-01-11 13:52:14.658 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - - - 200 628 image/png 3.2320ms
+2022-01-11 13:52:14.801 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.7105ms

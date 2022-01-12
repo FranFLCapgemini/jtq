@@ -22,3 +22,15 @@ C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Modules\Devon4Net.Infrastructu
 C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.dll
 C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\ref\Devon4Net.Infrastructure.Common.dll
 C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.pdb
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\bin\Debug\net6.0\Devon4Net.Infrastructure.Common.deps.json
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\bin\Debug\net6.0\Devon4Net.Infrastructure.Common.dll
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\bin\Debug\net6.0\ref\Devon4Net.Infrastructure.Common.dll
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\bin\Debug\net6.0\Devon4Net.Infrastructure.Common.pdb
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.csproj.AssemblyReference.cache
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.AssemblyInfoInputs.cache
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.AssemblyInfo.cs
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.csproj.CoreCompileInputs.cache
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.dll
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\ref\Devon4Net.Infrastructure.Common.dll
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Common\obj\Debug\net6.0\Devon4Net.Infrastructure.Common.pdb

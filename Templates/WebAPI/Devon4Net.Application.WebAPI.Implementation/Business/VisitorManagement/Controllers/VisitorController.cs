@@ -36,7 +36,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         /// </summary>
         /// <returns></returns>
 
-        [HttpPost]
+        [HttpPost("CreateVisitor")]
         [ProducesResponseType(typeof(VisitorDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

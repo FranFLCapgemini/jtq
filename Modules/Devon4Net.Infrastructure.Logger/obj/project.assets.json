@@ -8707,11 +8707,11 @@
   "project": {
     "version": "6.0.2",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
+      "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
       "projectName": "Devon4Net.Infrastructure.Logger",
-      "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
+      "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\Devon4Net.Infrastructure.Logger.csproj",
       "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Logger\\obj\\",
+      "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Logger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8726,8 +8726,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
-              "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj"
+            "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj": {
+              "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj"
             }
           }
         }

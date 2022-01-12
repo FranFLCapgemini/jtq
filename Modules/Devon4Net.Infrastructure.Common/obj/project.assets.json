@@ -1462,11 +1462,11 @@
   "project": {
     "version": "6.0.2",
     "restore": {
-      "projectUniqueName": "c:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
+      "projectUniqueName": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
       "projectName": "Devon4Net.Infrastructure.Common",
-      "projectPath": "c:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
+      "projectPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
       "packagesPath": "C:\\Users\\fferna14\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\obj\\",
+      "outputPath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fferna14\\AppData\\Roaming\\NuGet\\NuGet.Config"

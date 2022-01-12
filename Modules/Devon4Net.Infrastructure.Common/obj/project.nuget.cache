@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jju6fIX55iIiFMsdzGj2mO3MP5cPMUt4Cl12WWJ8KSwd6RORs/l8nQXG1eVuesRSL3nyJcdtwMW1YQD64TlpiQ==",
+  "dgSpecHash": "BQiRWVqLwgyXBHkNlZot/DJ5p21DoI5HBJ9g9nFWrglk/Qdx/GggNHQnYMKSF7/XsQfV9v6jxFJSnVK/npEypw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtqdotnet\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
+  "projectFilePath": "C:\\Users\\fferna14\\Documents\\PruebaDevon\\jtq\\Modules\\Devon4Net.Infrastructure.Common\\Devon4Net.Infrastructure.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fferna14\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\fferna14\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\2.2.0\\microsoft.aspnetcore.connections.abstractions.2.2.0.nupkg.sha512",

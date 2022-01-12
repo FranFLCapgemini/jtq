@@ -34,8 +34,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\Modules\Devon4Net.Infrastructure.UnitOfWork\bin\Debug\net6.0\Devon4Net.Infrastructure.UnitOfWork.dll" target="lib\net6.0\Devon4Net.Infrastructure.UnitOfWork.dll" />
-    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\assets\devonfw.png" target="\devonfw.png" />
-    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtqdotnet\assets\LICENSE" target="\LICENSE" />
+    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.UnitOfWork\bin\Debug\net6.0\Devon4Net.Infrastructure.UnitOfWork.dll" target="lib\net6.0\Devon4Net.Infrastructure.UnitOfWork.dll" />
+    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtq\assets\devonfw.png" target="\devonfw.png" />
+    <file src="C:\Users\fferna14\Documents\PruebaDevon\jtq\assets\LICENSE" target="\LICENSE" />
   </files>
 </package>

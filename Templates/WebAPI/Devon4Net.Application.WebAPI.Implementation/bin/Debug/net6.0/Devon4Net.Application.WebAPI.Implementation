@@ -821,18 +821,6 @@
             AccessCodes
             </summary>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Services.IQueueManagement">
-            <summary>
-            TodoService interface
-            </summary>
-        </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Services.IQueueManagement.listaString">
-            <summary>
-            GetTodo
-            </summary>
-            <param></param>
-            <returns></returns>
-        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Service.IQueueService">
             <summary>
             TodoService interface

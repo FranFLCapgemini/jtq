@@ -32,3 +32,174 @@
 2022-01-12 09:39:23.541 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 91.5795ms
 2022-01-12 09:39:23.744 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - -
 2022-01-12 09:39:24.004 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 259.3280ms
+2022-01-12 09:52:11.281 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2022-01-12 09:52:11.458 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2022-01-12 09:52:11.753 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2022-01-12 09:52:11.753 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2022-01-12 09:52:16.478 +01:00 [INF] User profile is available. Using 'C:\Users\fferna14\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-12 09:52:16.655 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2022-01-12 09:52:16.737 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2022-01-12 09:52:16.737 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-12 09:52:16.738 +01:00 [INF] Hosting environment: Development
+2022-01-12 09:52:16.738 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2022-01-12 09:52:35.097 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html - -
+2022-01-12 09:52:35.397 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/index.html - - - 200 - text/html;charset=utf-8 305.2908ms
+2022-01-12 09:52:35.433 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - -
+2022-01-12 09:52:35.461 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-01-12 09:52:35.462 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css - - - 200 143632 text/css 28.5774ms
+2022-01-12 09:52:35.701 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - -
+2022-01-12 09:52:35.707 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - -
+2022-01-12 09:52:35.710 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-01-12 09:52:35.710 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png - - - 200 628 image/png 3.1939ms
+2022-01-12 09:52:35.998 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.0019ms
+2022-01-12 09:54:06.860 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode - -
+2022-01-12 09:54:06.875 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:06.948 +01:00 [INF] Route matched with {action = "SearchAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SearchAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 09:54:09.567 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 09:54:10.394 +01:00 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE FALSE
+LIMIT 1
+2022-01-12 09:54:10.511 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-01-12 09:54:10.525 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation) in 3565.9557ms
+2022-01-12 09:54:10.527 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:10.543 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode - - - 204 0 - 3683.3483ms
+2022-01-12 09:54:17.756 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=1 - -
+2022-01-12 09:54:17.758 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:17.758 +01:00 [INF] Route matched with {action = "SearchAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SearchAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 09:54:17.815 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 09:54:17.949 +01:00 [INF] Executed DbCommand (74ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+LIMIT 1
+2022-01-12 09:54:17.951 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-01-12 09:54:17.952 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation) in 193.0981ms
+2022-01-12 09:54:17.952 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:17.953 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=1 - - - 204 0 - 196.7496ms
+2022-01-12 09:54:21.679 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=1 - -
+2022-01-12 09:54:21.680 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:21.680 +01:00 [INF] Route matched with {action = "SearchAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SearchAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 09:54:21.807 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 09:54:21.838 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+LIMIT 1
+2022-01-12 09:54:21.839 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-01-12 09:54:21.840 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation) in 159.1065ms
+2022-01-12 09:54:21.840 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:21.841 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=1 - - - 204 0 - 161.8932ms
+2022-01-12 09:54:27.547 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=1 - -
+2022-01-12 09:54:27.548 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:27.548 +01:00 [INF] Route matched with {action = "SearchAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SearchAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 09:54:27.552 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 09:54:27.560 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+LIMIT 1
+2022-01-12 09:54:27.561 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-01-12 09:54:27.562 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation) in 13.9854ms
+2022-01-12 09:54:27.564 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:54:27.565 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=1 - - - 204 0 - 17.5039ms
+2022-01-12 09:56:47.577 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=863f06aa-252f-4c10-af00-7a9ba8788f0b - -
+2022-01-12 09:56:47.619 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:56:47.621 +01:00 [INF] Route matched with {action = "SearchAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SearchAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 09:56:47.640 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 09:56:47.676 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+LIMIT 1
+2022-01-12 09:56:47.705 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode'.
+2022-01-12 09:56:47.724 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation) in 102.1185ms
+2022-01-12 09:56:47.725 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:56:47.726 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/AccessCode/searchAccessCode?idaccesscode=863f06aa-252f-4c10-af00-7a9ba8788f0b - - - 200 - application/json;+charset=utf-8 153.4522ms
+2022-01-12 09:58:03.719 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/AccessCode/createAccessCode?idvisitor=93f27ae7-b5b2-4335-86d9-7375826a8df3&idqueue=36526b44-9f8c-494f-b30d-a8188a765f48 - 0
+2022-01-12 09:58:03.723 +01:00 [INF] CORS policy execution successful.
+2022-01-12 09:58:03.733 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.CreateAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:58:03.740 +01:00 [INF] Route matched with {action = "CreateAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateAccessCode(System.String, System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 09:58:03.747 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 09:58:03.783 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idqueue_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `AccessCode` AS `a`
+WHERE `a`.`queueID` = @__idqueue_0
+2022-01-12 09:58:04.018 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `AccessCode` (`IDAccessCode`, `creationTime`, `endTime`, `queueID`, `startTime`, `ticketNumber`, `visitorID`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2022-01-12 09:58:04.064 +01:00 [INF] Executing ObjectResult, writing value of type 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Dto.AccessCodeDto'.
+2022-01-12 09:58:04.067 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.CreateAccessCode (Devon4Net.Application.WebAPI.Implementation) in 327.1774ms
+2022-01-12 09:58:04.068 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.CreateAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 09:58:04.068 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/AccessCode/createAccessCode?idvisitor=93f27ae7-b5b2-4335-86d9-7375826a8df3&idqueue=36526b44-9f8c-494f-b30d-a8188a765f48 - 0 - 201 - application/json;+charset=utf-8 349.4031ms
+2022-01-12 10:00:44.675 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/AccessCode/deleteAccessCode?idaccesscode=7a137d5c-fd70-4c27-b3d2-75b797c3b499 - 0
+2022-01-12 10:00:44.675 +01:00 [INF] CORS policy execution successful.
+2022-01-12 10:00:44.676 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:00:44.679 +01:00 [INF] Route matched with {action = "DeleteAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 10:00:44.707 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 10:00:44.737 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+2022-01-12 10:00:44.778 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `AccessCode`
+WHERE `IDAccessCode` = @p0;
+SELECT ROW_COUNT();
+2022-01-12 10:00:44.799 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-01-12 10:00:44.799 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation) in 119.7006ms
+2022-01-12 10:00:44.800 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:00:44.801 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/AccessCode/deleteAccessCode?idaccesscode=7a137d5c-fd70-4c27-b3d2-75b797c3b499 - 0 - 200 - text/plain;+charset=utf-8 126.2848ms
+2022-01-12 10:00:54.352 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/AccessCode/deleteAccessCode?idaccesscode=1 - 0
+2022-01-12 10:00:54.353 +01:00 [INF] CORS policy execution successful.
+2022-01-12 10:00:54.353 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:00:54.353 +01:00 [INF] Route matched with {action = "DeleteAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 10:00:54.357 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 10:00:54.366 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+2022-01-12 10:00:54.366 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-01-12 10:00:54.367 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation) in 13.7564ms
+2022-01-12 10:00:54.367 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:00:54.368 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/AccessCode/deleteAccessCode?idaccesscode=1 - 0 - 200 - text/plain;+charset=utf-8 15.4202ms
+2022-01-12 10:00:59.237 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/AccessCode/deleteAccessCode?idaccesscode=1 - 0
+2022-01-12 10:00:59.237 +01:00 [INF] CORS policy execution successful.
+2022-01-12 10:00:59.238 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:00:59.238 +01:00 [INF] Route matched with {action = "DeleteAccessCode", controller = "AccessCode"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteAccessCode(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 10:00:59.242 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 10:00:59.252 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idaccesscode_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`IDAccessCode`, `a`.`creationTime`, `a`.`endTime`, `a`.`queueID`, `a`.`startTime`, `a`.`ticketNumber`, `a`.`visitorID`
+FROM `AccessCode` AS `a`
+WHERE `a`.`IDAccessCode` = @__idaccesscode_0
+2022-01-12 10:00:59.253 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-01-12 10:00:59.253 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation) in 14.9457ms
+2022-01-12 10:00:59.253 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.DeleteAccessCode (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:00:59.254 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/AccessCode/deleteAccessCode?idaccesscode=1 - 0 - 200 - text/plain;+charset=utf-8 16.7930ms
+2022-01-12 10:03:17.962 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Queue/ActiveQueues - -
+2022-01-12 10:03:17.963 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.GetActiveQueues (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:03:17.967 +01:00 [INF] Route matched with {action = "GetActiveQueues", controller = "Queue"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetActiveQueues() on controller Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 10:03:17.979 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 10:03:18.013 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `q`.`IDQueue`, `q`.`Active`, `q`.`attentionTime`, `q`.`currentNumber`, `q`.`customers`, `q`.`logo`, `q`.`minAttentionTime`, `q`.`name`
+FROM `Queue` AS `q`
+WHERE `q`.`Active` = TRUE
+2022-01-12 10:03:18.020 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue, Devon4Net.Application.WebAPI.Implementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Dto.QueueDto, Devon4Net.Application.WebAPI.Implementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-01-12 10:03:18.034 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.GetActiveQueues (Devon4Net.Application.WebAPI.Implementation) in 67.304ms
+2022-01-12 10:03:18.035 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.GetActiveQueues (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:03:18.035 +01:00 [INF] Request finished HTTP/2 GET https://localhost:8085/Queue/ActiveQueues - - - 200 - application/json;+charset=utf-8 73.1378ms
+2022-01-12 10:04:04.717 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Queue/CreateQueue?name=inf - 0
+2022-01-12 10:04:04.719 +01:00 [INF] CORS policy execution successful.
+2022-01-12 10:04:04.719 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.CreateQueue (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:04:04.725 +01:00 [INF] Route matched with {action = "CreateQueue", controller = "Queue"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateQueue(System.String) on controller Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 10:04:04.740 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 10:04:04.810 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 100), @p1='?', @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Queue` (`IDQueue`, `Active`, `attentionTime`, `logo`, `minAttentionTime`, `name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT `currentNumber`, `customers`
+FROM `Queue`
+WHERE ROW_COUNT() = 1 AND `IDQueue` = @p0;
+2022-01-12 10:04:04.838 +01:00 [INF] Executing OkObjectResult, writing value of type 'Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue'.
+2022-01-12 10:04:04.843 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.CreateQueue (Devon4Net.Application.WebAPI.Implementation) in 117.4234ms
+2022-01-12 10:04:04.843 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Controllers.QueueController.CreateQueue (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 10:04:04.843 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/Queue/CreateQueue?name=inf - 0 - 200 - application/json;+charset=utf-8 126.1281ms

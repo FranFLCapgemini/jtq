@@ -29,10 +29,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Search Access Code Service
         /// </summary>
         /// <param name="idaccesscode"></param>
-        public Task<AccessCode> SearchAccessCode(string idaccesscode)
+        public Task<AccessCode> SearchAccessCodebyIdAccessCode(string idaccesscode)
         {
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeService");
-            return _AccessCodeRepository.SearchAccessCode(idaccesscode);
+            return _AccessCodeRepository.SearchAccessCodebyIdaccesscode(idaccesscode);
         }
         
         /// <summary>

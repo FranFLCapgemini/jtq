@@ -30,15 +30,15 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Search Access Code Service
         /// </summary>
         /// <param name="idaccesscode"></param>
-        [HttpGet("searchAccessCode")]
+        [HttpGet("searchAccessCodeByIdAccesscode")]
         [ProducesResponseType(typeof(AccessCodeDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> SearchAccessCode(String idaccesscode)
+        public async Task<ActionResult> SearchAccessCodebyIdAccesscode(String idaccesscode)
         {
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeController");
-            return Ok(await _AccessCodeService.SearchAccessCode(idaccesscode).ConfigureAwait(false));
+            return Ok(await _AccessCodeService.SearchAccessCodebyIdAccessCode(idaccesscode).ConfigureAwait(false));
         }
         
         /// <summary>

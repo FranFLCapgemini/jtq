@@ -12,7 +12,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <summary>
         /// Search access code
         /// </summary>    
-        Task<AccessCode> SearchAccessCode(string idaccesscode);
+        Task<AccessCode> SearchAccessCodebyIdAccessCode(string idaccesscode);
 
         /// <summary>
         /// Create access code

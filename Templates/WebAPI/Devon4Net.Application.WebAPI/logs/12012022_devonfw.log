@@ -365,3 +365,25 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
 2022-01-12 11:18:06.336 +01:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-01-12 11:18:06.336 +01:00 [INF] Hosting environment: Development
 2022-01-12 11:18:06.336 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI\
+2022-01-12 11:49:26.544 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Visitor/CreateVisitor?username=Joe88&name=Joe&pass=Joe&tlf=666666666&acceptedCommercial=true&acceptedTerms=true - 0
+2022-01-12 11:49:26.929 +01:00 [INF] CORS policy execution successful.
+2022-01-12 11:49:26.951 +01:00 [INF] Executing endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.CreateVisitor (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 11:49:27.089 +01:00 [INF] Route matched with {action = "CreateVisitor", controller = "Visitor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateVisitor(System.String, System.String, System.String, System.String, Boolean, Boolean) on controller Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController (Devon4Net.Application.WebAPI.Implementation).
+2022-01-12 11:49:31.047 +01:00 [INF] Entity Framework Core 6.0.1 initialized 'JtqContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.0' with options: ServerVersion 8.0.27-mysql 
+2022-01-12 11:49:33.079 +01:00 [INF] Executed DbCommand (121ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = Boolean), @p2='?' (DbType = Boolean), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (DbType = Boolean), @p7='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Visitor` (`IDVisitor`, `acceptedCommercial`, `acceptedTerms`, `name`, `password`, `phoneNumber`, `userType`, `username`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2022-01-12 11:49:33.249 +01:00 [INF] Executing ObjectResult, writing value of type 'Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor'.
+2022-01-12 11:49:33.391 +01:00 [INF] Executed action Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.CreateVisitor (Devon4Net.Application.WebAPI.Implementation) in 6250.6874ms
+2022-01-12 11:49:33.397 +01:00 [INF] Executed endpoint 'Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.CreateVisitor (Devon4Net.Application.WebAPI.Implementation)'
+2022-01-12 11:49:33.454 +01:00 [INF] Request finished HTTP/2 POST https://localhost:8085/Visitor/CreateVisitor?username=Joe88&name=Joe&pass=Joe&tlf=666666666&acceptedCommercial=true&acceptedTerms=true - 0 - 201 - application/json;+charset=utf-8 6922.1987ms
+2022-01-12 11:53:07.072 +01:00 [WRN] CORS Options set to allow any origin!. Please review it in production environments.
+2022-01-12 11:53:07.468 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2022-01-12 11:53:08.144 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2022-01-12 11:53:08.145 +01:00 [INF] RabbitMq messaging backup feature is going to be used via LiteDb
+2022-01-12 11:53:14.179 +01:00 [INF] User profile is available. Using 'C:\Users\fferna14\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-12 11:53:14.818 +01:00 [WRN] Overriding address(es) 'https://localhost:7229, http://localhost:5229'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2022-01-12 11:53:15.005 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2022-01-12 11:53:15.006 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-12 11:53:15.007 +01:00 [INF] Hosting environment: Development
+2022-01-12 11:53:15.007 +01:00 [INF] Content root path: C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI\

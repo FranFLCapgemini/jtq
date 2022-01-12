@@ -1,5 +1,4 @@
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
-using Devon4Net.Domain.UnitOfWork.Repository;
 
 namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces
 {
@@ -12,7 +11,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         ///<Summary>
         ///Search access code
         ///</Summary>
-        Task<AccessCode> SearchAccessCode(String TicketNumber);
+        Task<AccessCode> SearchAccessCodebyIdaccesscode(String TicketNumber);
 
         ///<Summary>
         ///Delete acces code

@@ -1,7 +1,6 @@
 using Devon4Net.Domain.UnitOfWork.Repository;
 using Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Database;
-using Devon4Net.Infrastructure.Log;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 
 namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
@@ -36,6 +35,11 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
             var queue=new Queue();
             queue.Idqueue=Guid.NewGuid().ToString();
             queue.Name=name;
+            queue.Active=true;
+            queue.CurrentNumber=0.ToString();
+            queue.MinAttentionTime=0.ToString();
+            queue.AttentionTime=0.ToString();
+            queue.Customers=0;
             return await Create(queue).ConfigureAwait(false);
         }
     }

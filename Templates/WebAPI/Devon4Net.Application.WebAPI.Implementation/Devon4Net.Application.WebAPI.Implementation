@@ -816,11 +816,6 @@
             Customers
             </summary>
         </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Dto.QueueDto.AccessCodes">
-            <summary>
-            AccessCodes
-            </summary>
-        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Service.IQueueService">
             <summary>
             TodoService interface
@@ -1119,7 +1114,7 @@
             <param name="visitorService"></param>
             <param name="JwtHandler"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.CreateVisitor(System.String,System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.CreateVisitor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             Creates Visitor
             </summary>
@@ -1196,13 +1191,16 @@
             TodoService interface
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.IVisitorService.CreateVisitor(System.String,System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.IVisitorService.CreateVisitor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             CreateVisitor
             </summary>
             <param name="username"></param>
             <param name="name"></param>
             <param name="pass"></param>
+            <param name="tlf"></param>
+            <param name="acceptedCommercial"></param>
+            <param name="acceptedTerms"></param>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.IVisitorService.Login(System.String,System.String)">
@@ -1222,13 +1220,16 @@
             <param name="uow"></param>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.VisitorService.CreateVisitor(System.String,System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.VisitorService.CreateVisitor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             CreateVisitor
             </summary>
             <param name="username"></param>
             <param name="name"></param>
             <param name="pass"></param>
+            <param name="tlf"></param>
+            <param name="acceptedCommercial"></param>
+            <param name="acceptedTerms"></param>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.VisitorService.Login(System.String,System.String)">
@@ -1434,13 +1435,16 @@
             </summary>
             <param name="context"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.VisitorRepository.CreateVisitor(System.String,System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.VisitorRepository.CreateVisitor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             CreateVisitor
             </summary>
             <param name="username"></param>
             <param name="name"></param>
             <param name="pass"></param>
+            <param name="tlf"></param>
+            <param name="acceptedCommercial"></param>
+            <param name="acceptedTerms"></param>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.VisitorRepository.Login(System.String,System.String)">
@@ -1669,7 +1673,7 @@
             Visitor repository interface
             </Summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IVisitorRepository.CreateVisitor(System.String,System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IVisitorRepository.CreateVisitor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
             <Summary>
             Create visitor
             </Summary>

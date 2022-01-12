@@ -11,7 +11,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         ///<Summary>
         ///Create visitor
         ///</Summary>
-        Task<Visitor> CreateVisitor(String username, String name, String pass);
+        Task<Visitor> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms);
 
         ///<Summary>
         ///Login visitor

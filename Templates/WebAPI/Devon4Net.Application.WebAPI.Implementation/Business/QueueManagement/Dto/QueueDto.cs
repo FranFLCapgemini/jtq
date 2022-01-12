@@ -48,10 +48,5 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.D
         /// Customers
         /// </summary>
         public int? Customers { get; set; }
-
-        /// <summary>
-        /// AccessCodes
-        /// </summary>
-        public virtual ICollection<AccessCode> AccessCodes { get; set; }
     }
 }

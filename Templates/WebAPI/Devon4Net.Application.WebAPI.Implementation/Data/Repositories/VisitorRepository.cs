@@ -23,14 +23,22 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// <param name="username"></param>
         /// <param name="name"></param>
         /// <param name="pass"></param>
+        /// <param name="tlf"></param>
+        /// <param name="acceptedCommercial"></param>
+        /// <param name="acceptedTerms"></param>
         /// <returns></returns>
-        public Task<Visitor> CreateVisitor(String username, String name, String pass)
+        public Task<Visitor> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms)
         {
             var visitor=new Visitor();
             visitor.Idvisitor=Guid.NewGuid().ToString();
             visitor.Username=username;
             visitor.Name=name;
             visitor.Password=pass;
+            visitor.PhoneNumber=tlf;
+            visitor.AcceptedCommercial=acceptedCommercial;
+            visitor.AcceptedTerms=acceptedTerms;
+            visitor.UserType=false;
+
             return Create(visitor);
         }
         /// <summary>

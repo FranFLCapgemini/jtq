@@ -41,11 +41,12 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> CreateVisitor(String username, String name, String pass)
+        public async Task<ActionResult> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms)
+
         {
             //pass sin encriptar en la base de datos
             Devon4NetLogger.Debug($"Executing CreateVisitor from controller VisitorController with name: {username} and pass: {pass}");
-            var result = await _visitorService.CreateVisitor(username, name, pass).ConfigureAwait(false);
+            var result = await _visitorService.CreateVisitor(username, name, pass, tlf, acceptedCommercial, acceptedTerms).ConfigureAwait(false);
             return StatusCode(StatusCodes.Status201Created, result);
         }
 

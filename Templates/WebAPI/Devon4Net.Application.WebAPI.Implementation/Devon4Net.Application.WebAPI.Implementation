@@ -15,7 +15,7 @@
             </summary>
             <param name="AccessCodeService"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCodebyIdAccesscode(System.String)">
             <summary>
             Search Access Code Service
             </summary>
@@ -87,7 +87,7 @@
             </summary>
             <param name="uoW"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchAccessCodebyIdAccessCode(System.String)">
             <summary>
             Search Access Code Service
             </summary>
@@ -111,7 +111,7 @@
             Access code interface
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchAccessCodebyIdAccessCode(System.String)">
             <summary>
             Search access code
             </summary>    
@@ -1289,7 +1289,7 @@
             <param name="idaccesscode"></param>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.SearchAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.SearchAccessCodebyIdaccesscode(System.String)">
             <summary>
             search access code
             </summary>
@@ -1549,7 +1549,7 @@
             Access code repository interface
             </Summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.SearchAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.SearchAccessCodebyIdaccesscode(System.String)">
             <Summary>
             Search access code
             </Summary>

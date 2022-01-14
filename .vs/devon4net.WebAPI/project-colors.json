@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "47dd9a55-8421-493a-86f5-6fb48b1848c8": {
+      "ProjectGuid": "47dd9a55-8421-493a-86f5-6fb48b1848c8",
+      "DisplayName": "Devon4Net.Application.WebAPI.Implementation",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

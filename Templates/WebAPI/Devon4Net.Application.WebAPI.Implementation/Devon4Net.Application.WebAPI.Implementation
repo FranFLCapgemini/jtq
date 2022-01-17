@@ -1120,11 +1120,26 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.Login(System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Controllers.VisitorController.Login(Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Dto.LoginDto)">
             <summary>
             Checks user name and pass
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Dto.LoginDto">
+            <summary>
+            Login entity
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Dto.LoginDto.Username">
+            <summary>
+            username
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Dto.LoginDto.Password">
+            <summary>
+            password
+            </summary>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Dto.LoginResponseToken">
             <summary>

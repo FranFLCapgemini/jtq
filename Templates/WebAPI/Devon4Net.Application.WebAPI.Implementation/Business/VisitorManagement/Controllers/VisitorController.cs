@@ -54,19 +54,19 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         /// Checks user name and pass
         /// </summary>
         /// <returns></returns>
-        [HttpGet("Login")]
+        [HttpPost("Login")]
         [ProducesResponseType(typeof(LoginResponseToken), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Login(string username, string pass)
+        public async Task<IActionResult> Login(LoginDto loginDto)
         {
             Devon4NetLogger.Debug("Executing Login from VisitorController");
-            var check=await _visitorService.Login(username, pass).ConfigureAwait(false);
+            var check=await _visitorService.Login(loginDto.Username, loginDto.Password).ConfigureAwait(false);
             if(check){
                 var token = _jwtHandler.CreateClientToken(new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name,username),
+                    new Claim(ClaimTypes.Name,loginDto.Username),
                     new Claim(ClaimTypes.NameIdentifier,Guid.NewGuid().ToString())
                 });
                 return Ok(new LoginResponseToken { Token = token});

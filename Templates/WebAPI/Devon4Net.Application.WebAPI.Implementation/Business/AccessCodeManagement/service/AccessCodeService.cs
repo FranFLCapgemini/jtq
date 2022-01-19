@@ -15,6 +15,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
     public class AccessCodeService : Service<JtqContext>, IAccessCodeService
     {
         private readonly IAccessCodeRepository _AccessCodeRepository;
+        private readonly IQueueRepository _QueueRepository;
         
         /// <summary>
         /// Access Code Service Implementation
@@ -23,6 +24,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         public AccessCodeService(IUnitOfWork<JtqContext> uoW) : base(uoW)
         {
             _AccessCodeRepository = uoW.Repository<IAccessCodeRepository>();
+            _QueueRepository = uoW.Repository<IQueueRepository>();
         }
         
         /// <summary>
@@ -44,6 +46,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         {
             Devon4NetLogger.Debug("CreateAccessCode method from AccesCodeService");
             var accesscode = await _AccessCodeRepository.CreateAccessCode(idvisitor, queue).ConfigureAwait(false);
+            _QueueRepository.IncrementCustomers(queue);
             return AccessCodeConverter.ModelToDto(accesscode);
         }
         

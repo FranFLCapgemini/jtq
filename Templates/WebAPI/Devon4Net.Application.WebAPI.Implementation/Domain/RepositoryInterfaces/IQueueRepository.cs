@@ -20,5 +20,11 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         /// </summary>
         /// <param name="name"></param>
         Task<Queue> CreateQueue(string name);
+
+        /// <summary>
+        /// Customers ++
+        /// </summary>
+        /// <param name="idqueue"></param>
+        Task<int?> IncrementCustomers(string idqueue);
     }
 }

@@ -59,8 +59,9 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// <returns></returns>
         public Task<AccessCode> SearchAccessCodebyIdaccesscode(String idaccesscode)
         {
-            Devon4NetLogger.Debug("SearchAccessCode method from repository AccessCodeRepository");
+            Devon4NetLogger.Debug("SearchAccessCodebyIdAccessCode method from repository AccessCodeRepository");
             return GetFirstOrDefault(t=>t.IdaccessCode==idaccesscode);
         }
+
     }
 }

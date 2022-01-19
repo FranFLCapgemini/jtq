@@ -42,5 +42,16 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
             queue.Customers=0;
             return await Create(queue).ConfigureAwait(false);
         }
+        /// <summary>
+        /// Customers ++
+        /// </summary>
+        /// <param name="idqueue"></param>
+        public async Task<int?> IncrementCustomers(string idqueue)
+        {
+            var q = await GetFirstOrDefault(t => t.Idqueue == idqueue).ConfigureAwait(false);
+            q.Customers ++;
+            await Update(q).ConfigureAwait(false);
+            return q.Customers;
+        }
     }
 }

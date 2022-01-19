@@ -20,7 +20,17 @@
       "ProjectGuid": "c87f4a23-02f5-4430-b5b6-43712f2488d0",
       "DisplayName": "Devon4Net.Infrastructure.Common",
       "ColorIndex": 2
+    },
+    "9d471171-ed92-4142-b701-db0699366ee9": {
+      "ProjectGuid": "9d471171-ed92-4142-b701-db0699366ee9",
+      "DisplayName": "Devon4Net.Infrastructure.Logger",
+      "ColorIndex": 3
+    },
+    "ff900ab8-3571-4c96-94b7-be85bf639c99": {
+      "ProjectGuid": "ff900ab8-3571-4c96-94b7-be85bf639c99",
+      "DisplayName": "Devon4Net.Infrastructure.UnitOfWork",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

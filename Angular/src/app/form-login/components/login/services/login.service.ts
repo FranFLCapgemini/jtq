@@ -51,9 +51,10 @@ export class LoginService {
     );
 
   }
-
+  
   getCsrf(): Observable<any> {
-    return this.http.get(`${this.baseUrl}` + '/csrf/v1/token', { withCredentials: true });
+    //return this.http.get(`${this.baseUrl}` + '/csrf/v1/token', { withCredentials: true });
+    return null;
   }
 
   login(username: string, password: string): void {

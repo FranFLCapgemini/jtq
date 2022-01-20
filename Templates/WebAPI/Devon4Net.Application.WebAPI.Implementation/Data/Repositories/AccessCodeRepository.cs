@@ -76,5 +76,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
             return check==null||check.Any();
         }
 
+        public async Task<IList<AccessCode>> SearchVisitorAccessCodes(string idvisitor)
+        {
+            return await Get(t => t.VisitorId==idvisitor);
+        }
+
     }
 }

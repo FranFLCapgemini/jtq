@@ -21,6 +21,12 @@
             </summary>
             <param name="idaccesscode"></param>
         </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchVisitorAccessCodes(System.String)">
+            <summary>
+            Search Visitor Access Codes method from AccessCodeController
+            </summary>
+            <param name="idvisitor"></param>
+        </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.CreateAccessCode(System.String,System.String)">
             <summary>
             Create Access Code
@@ -76,6 +82,46 @@
             EndTime
             </summary>
         </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException">
+            <summary>
+            Custom exception AlreadyHasCodeException
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException.StatusCode">
+            <summary>
+            The forced http status code to be fired on the exception manager
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException.ShowMessage">
+            <summary>
+            Show the message on the response?
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException"/> class.
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException"/> class.
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.AlreadyHasCodeException"/> class.
+            </summary>
+            <param name="serializationInfo"></param>
+            <param name="streamingContext"></param>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService">
             <summary>
             Access Code Service Implementation
@@ -95,16 +141,22 @@
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.CreateAccessCode(System.String,System.String)">
             <summary>
-            Access Code Service Implementation
+            Create Access Code Service Implementation
             </summary>
             <param name="idvisitor"></param>
             <param name="queue"></param>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.DeleteAccessCode(System.String)">
             <summary>
-            Access Code method from access code service
+            Delete Access Code method from access code service
             </summary>
             <param name="idaccesscode"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchVisitorAccessCodes(System.String)">
+            <summary>
+            Search Visitor Acess Codes from AccessCodeService
+            </summary>
+            <param name="idvisitor"></param>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService">
             <summary>
@@ -125,6 +177,11 @@
             <summary>
             Delete Access Code
             </summary>    
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchVisitorAccessCodes(System.String)">
+            <Summary>
+            Search visitor access codes
+            </Summary>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AntiForgeryTokenManagement.Controllers.AntiForgeryTokenController">
             <summary>
@@ -1602,6 +1659,11 @@
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.AnyAccessCode(System.String,System.String)">
             <Summary>
             Any access code
+            </Summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.SearchVisitorAccessCodes(System.String)">
+            <Summary>
+            Search visitor access codes
             </Summary>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IEmployeeRepository">

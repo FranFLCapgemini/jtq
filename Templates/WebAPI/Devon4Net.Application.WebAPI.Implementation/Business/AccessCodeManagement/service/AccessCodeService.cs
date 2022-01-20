@@ -38,12 +38,16 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         }
         
         /// <summary>
-        /// Access Code Service Implementation
+        /// Create Access Code Service Implementation
         /// </summary>
         /// <param name="idvisitor"></param>
         /// <param name="queue"></param>
         public async Task<AccessCodeDto> CreateAccessCode(string idvisitor, string queue)
         {
+            if (string.IsNullOrWhiteSpace(idvisitor)||string.IsNullOrWhiteSpace(queue))
+            {
+                //throw new ArgumentException();
+            }
             Devon4NetLogger.Debug("CreateAccessCode method from AccesCodeService");
             //If visitor doesn't have any code
             if (!await _AccessCodeRepository.AnyAccessCode(idvisitor, queue))
@@ -52,11 +56,12 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
                 await _QueueRepository.IncrementCustomers(queue);
                 return AccessCodeConverter.ModelToDto(accesscode);
             }
+            //Custom exception
             return null;
         }
         
         /// <summary>
-        /// Access Code method from access code service
+        /// Delete Access Code method from access code service
         /// </summary>
         /// <param name="idaccesscode"></param>
         public async Task<string> DeleteAccessCode(string idaccesscode)
@@ -66,6 +71,16 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
             if(ac != null)
                 await _QueueRepository.DecrementCustomers(ac.QueueId).ConfigureAwait(false);
             return await _AccessCodeRepository.DeleteAccessCode(idaccesscode).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Search Visitor Acess Codes from AccessCodeService
+        /// </summary>
+        /// <param name="idvisitor"></param>
+        public async Task<IList<AccessCode>> SearchVisitorAccessCodes(string idvisitor)
+        {
+            Devon4NetLogger.Debug("SearchVisitorAccessCodes method from AccessCode Service");
+            return await _AccessCodeRepository.SearchVisitorAccessCodes(idvisitor).ConfigureAwait(false);
         }
     }
 }

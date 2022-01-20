@@ -23,5 +23,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Delete Access Code
         /// </summary>    
         Task<string> DeleteAccessCode(String idaccesscode);
+
+        ///<Summary>
+        ///Search visitor access codes
+        ///</Summary>
+        Task<IList<AccessCode>> SearchVisitorAccessCodes(string idvisitor);
     }
 }

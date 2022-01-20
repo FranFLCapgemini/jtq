@@ -63,5 +63,18 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
             return GetFirstOrDefault(t=>t.IdaccessCode==idaccesscode);
         }
 
+        /// <summary>
+        /// Check if a visitor has any access code in a queue
+        /// </summary>
+        /// <param name="queueid"></param>
+        /// <param name="visitorid"></param>
+        /// <returns></returns>
+        public async Task<bool> AnyAccessCode(string queueid, string visitorid)
+        {
+            Devon4NetLogger.Debug("AnyAccessCode method from repository AccessCode repository");
+            var check = await Get(t=> t.VisitorId==queueid && t.QueueId==visitorid);
+            return check==null||check.Any();
+        }
+
     }
 }

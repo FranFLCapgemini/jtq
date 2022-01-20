@@ -1311,6 +1311,14 @@
             <param name="idaccesscode"></param>
             <returns></returns>
         </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.AnyAccessCode(System.String,System.String)">
+            <summary>
+            Check if a visitor has any access code in a queue
+            </summary>
+            <param name="queueid"></param>
+            <param name="visitorid"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.EmployeeRepository">
             <summary>
             Repository implementation for the Employee
@@ -1402,6 +1410,12 @@
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.QueueRepository.IncrementCustomers(System.String)">
             <summary>
             Customers ++
+            </summary>
+            <param name="idqueue"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.QueueRepository.DecrementCustomers(System.String)">
+            <summary>
+            Customers --
             </summary>
             <param name="idqueue"></param>
         </member>
@@ -1585,6 +1599,11 @@
             Create access code
             </Summary>
         </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.AnyAccessCode(System.String,System.String)">
+            <Summary>
+            Any access code
+            </Summary>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IEmployeeRepository">
             <summary>
             EmployeeRepository interface
@@ -1659,6 +1678,12 @@
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IQueueRepository.IncrementCustomers(System.String)">
             <summary>
             Customers ++
+            </summary>
+            <param name="idqueue"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IQueueRepository.DecrementCustomers(System.String)">
+            <summary>
+            Customers --
             </summary>
             <param name="idqueue"></param>
         </member>

@@ -22,5 +22,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         ///Create access code
         ///</Summary>
         Task<AccessCode> CreateAccessCode(string idvisitor, string queue);
+
+        ///<Summary>
+        ///Any access code
+        ///</Summary>
+        Task<bool> AnyAccessCode(string queueid, string visitorid);
     }
 }

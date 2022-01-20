@@ -32,14 +32,16 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// <param name="name"></param>
         public async Task<Queue> CreateQueue(string name)
         {
-            var queue=new Queue();
-            queue.Idqueue=Guid.NewGuid().ToString();
-            queue.Name=name;
-            queue.Active=true;
-            queue.CurrentNumber=0.ToString();
-            queue.MinAttentionTime=0.ToString();
-            queue.AttentionTime=0.ToString();
-            queue.Customers=0;
+            var queue = new Queue
+            {
+                Idqueue = Guid.NewGuid().ToString(),
+                Name = name,
+                Active = true,
+                CurrentNumber = 0.ToString(),
+                MinAttentionTime = 0.ToString(),
+                AttentionTime = 0.ToString(),
+                Customers = 0
+            };
             return await Create(queue).ConfigureAwait(false);
         }
         /// <summary>
@@ -49,7 +51,18 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         public async Task<int?> IncrementCustomers(string idqueue)
         {
             var q = await GetFirstOrDefault(t => t.Idqueue == idqueue).ConfigureAwait(false);
-            q.Customers ++;
+            q.Customers++;
+            await Update(q).ConfigureAwait(false);
+            return q.Customers;
+        }
+        /// <summary>
+        /// Customers --
+        /// </summary>
+        /// <param name="idqueue"></param>
+        public async Task<int?> DecrementCustomers(string idqueue)
+        {
+            var q = await GetFirstOrDefault(t => t.Idqueue == idqueue).ConfigureAwait(false);
+            q.Customers--;
             await Update(q).ConfigureAwait(false);
             return q.Customers;
         }

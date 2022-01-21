@@ -6,6 +6,7 @@ using Devon4Net.Application.WebAPI.Implementation.Domain.Database;
 using Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Converters;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
+using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions;
 
 namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service
 {
@@ -33,6 +34,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <param name="idaccesscode"></param>
         public Task<AccessCode> SearchAccessCodebyIdAccessCode(string idaccesscode)
         {
+            if (string.IsNullOrWhiteSpace(idaccesscode))
+            {
+                throw new NullOrWhiteSpaceArgument("Null or white space argument");
+            }
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeService");
             return _AccessCodeRepository.SearchAccessCodebyIdaccesscode(idaccesscode);
         }
@@ -46,7 +51,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         {
             if (string.IsNullOrWhiteSpace(idvisitor)||string.IsNullOrWhiteSpace(queue))
             {
-                //throw new ArgumentException();
+                throw new NullOrWhiteSpaceArgument("Null or white space arguments");
             }
             Devon4NetLogger.Debug("CreateAccessCode method from AccesCodeService");
             //If visitor doesn't have any code
@@ -56,8 +61,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
                 await _QueueRepository.IncrementCustomers(queue);
                 return AccessCodeConverter.ModelToDto(accesscode);
             }
-            //Custom exception
-            return null;
+            throw new AlreadyHasCodeException($"Visitor already has access code in {queue} queue");
         }
         
         /// <summary>
@@ -66,6 +70,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <param name="idaccesscode"></param>
         public async Task<string> DeleteAccessCode(string idaccesscode)
         {
+            if (string.IsNullOrWhiteSpace(idaccesscode))
+            {
+                throw new NullOrWhiteSpaceArgument("Null or white space argument");
+            }
             Devon4NetLogger.Debug($"DeleteAccessCode method from service DeleteAccessCode with id: {idaccesscode}");
             var ac = await _AccessCodeRepository.SearchAccessCodebyIdaccesscode(idaccesscode);
             if(ac != null)
@@ -79,6 +87,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <param name="idvisitor"></param>
         public async Task<IList<AccessCode>> SearchVisitorAccessCodes(string idvisitor)
         {
+            if (string.IsNullOrWhiteSpace(idvisitor))
+            {
+                throw new NullOrWhiteSpaceArgument("Null or white space argument");
+            }
             Devon4NetLogger.Debug("SearchVisitorAccessCodes method from AccessCode Service");
             return await _AccessCodeRepository.SearchVisitorAccessCodes(idvisitor).ConfigureAwait(false);
         }

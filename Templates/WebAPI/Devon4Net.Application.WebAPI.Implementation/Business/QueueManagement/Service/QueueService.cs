@@ -39,7 +39,13 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.S
         /// Create queue
         /// </summary>
         /// <param name="name"></param>
-        public Task<Queue> CreateQueue(string name){
+        public Task<Queue> CreateQueue(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                //La excepción está en AccesCodeManagement, duplicar mal
+                throw new NullOrWhiteSpaceArgument("Null or white space arguments");
+            }
             Devon4NetLogger.Debug("CreateQueue method from QueueService");
             return _QueueRepository.CreateQueue(name);
         }        

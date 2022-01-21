@@ -45,7 +45,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Search Visitor Access Codes method from AccessCodeController
         /// </summary>
         /// <param name="idvisitor"></param>
-        [HttpGet("searchAccessCodeByIdAccesscode")]
+        [HttpGet("searchVisitorAccessCodes")]
         [ProducesResponseType(typeof(AccessCodeDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

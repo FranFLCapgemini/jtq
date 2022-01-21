@@ -1,7 +1,7 @@
 ﻿using Devon4Net.Infrastructure.Common.Exceptions;
 using Microsoft.AspNetCore.Http;
 
-namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions
+namespace Devon4Net.Application.WebAPI.Implementation.Exceptions
 {
     /// <summary>
     /// Custom exception NullOrWhiteSpaceArgument

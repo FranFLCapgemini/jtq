@@ -6,6 +6,7 @@ using Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Converters;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Dto;
+using Devon4Net.Application.WebAPI.Implementation.Exceptions;
 
 namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Service
 {

@@ -122,46 +122,6 @@
             <param name="serializationInfo"></param>
             <param name="streamingContext"></param>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument">
-            <summary>
-            Custom exception NullOrWhiteSpaceArgument
-            </summary>
-        </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument.StatusCode">
-            <summary>
-            The forced http status code to be fired on the exception manager
-            </summary>
-        </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument.ShowMessage">
-            <summary>
-            Show the message on the response?
-            </summary>
-        </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument"/> class.
-            </summary>
-        </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument"/> class.
-            </summary>
-            <param name="message">The message that describes the error.</param>
-        </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.String,System.Exception)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument"/> class.
-            </summary>
-            <param name="message"></param>
-            <param name="innerException"></param>
-        </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions.NullOrWhiteSpaceArgument"/> class.
-            </summary>
-            <param name="serializationInfo"></param>
-            <param name="streamingContext"></param>
-        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService">
             <summary>
             Access Code Service Implementation
@@ -1298,6 +1258,46 @@
             AccessCodes
             </summary>
         </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms">
+            <summary>
+            Custom exception MustAcceptTerms
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.StatusCode">
+            <summary>
+            The forced http status code to be fired on the exception manager
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.ShowMessage">
+            <summary>
+            Show the message on the response?
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            </summary>
+            <param name="serializationInfo"></param>
+            <param name="streamingContext"></param>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service.IVisitorService">
             <summary>
             TodoService interface
@@ -1836,6 +1836,46 @@
             <Summary>
             Login visitor
             </Summary>
+        </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument">
+            <summary>
+            Custom exception NullOrWhiteSpaceArgument
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.StatusCode">
+            <summary>
+            The forced http status code to be fired on the exception manager
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.ShowMessage">
+            <summary>
+            Show the message on the response?
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            </summary>
+            <param name="serializationInfo"></param>
+            <param name="streamingContext"></param>
         </member>
     </members>
 </doc>

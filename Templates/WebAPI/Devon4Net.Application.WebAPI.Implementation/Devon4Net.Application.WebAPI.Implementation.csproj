@@ -27,19 +27,15 @@
     <PackageReference Include="Devon4Net.Infrastructure.CircuitBreaker" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.Extensions" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.FluentValidation" Version="6.0.1" />
+    <PackageReference Include="Devon4Net.Infrastructure.Grpc" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.JWT" Version="6.0.1" />
+    <PackageReference Include="Devon4Net.Infrastructure.Kafka" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.LiteDb" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.MediatR" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.Middleware" Version="6.0.1" />
     <PackageReference Include="Devon4Net.Infrastructure.RabbitMQ" Version="6.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Devon4Net.Infrastructure.Swagger" Version="6.0.1" />
+    <PackageReference Include="Devon4Net.Infrastructure.WebAPI" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>

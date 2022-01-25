@@ -30,7 +30,17 @@
       "ProjectGuid": "ff900ab8-3571-4c96-94b7-be85bf639c99",
       "DisplayName": "Devon4Net.Infrastructure.UnitOfWork",
       "ColorIndex": 4
+    },
+    "7d09738c-20cf-4aa5-875e-402d0b89bd61": {
+      "ProjectGuid": "7d09738c-20cf-4aa5-875e-402d0b89bd61",
+      "DisplayName": "jtq.UnitTests",
+      "ColorIndex": 5
+    },
+    "4b5fe8e1-517d-4917-ad0d-c0d0a28c4cfe": {
+      "ProjectGuid": "4b5fe8e1-517d-4917-ad0d-c0d0a28c4cfe",
+      "DisplayName": "jtq.UnitTests",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }

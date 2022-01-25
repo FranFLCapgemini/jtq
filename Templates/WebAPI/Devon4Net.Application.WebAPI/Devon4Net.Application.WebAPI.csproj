@@ -16,30 +16,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Devon4Net.Infrastructure.CircuitBreaker" Version="6.0.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Devon4Net.Infrastructure.Cors" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.Grpc" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.JWT" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.Kafka" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.LiteDb" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.MediatR" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.Middleware" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.RabbitMQ" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.Swagger" Version="6.0.1" />
-    <PackageReference Include="Devon4Net.Infrastructure.WebAPI" Version="6.0.1" />
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Devon4Net.Application.WebAPI.Implementation\Devon4Net.Application.WebAPI.Implementation.csproj" />
   </ItemGroup>
 

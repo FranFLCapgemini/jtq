@@ -5,7 +5,7 @@ using Devon4Net.Application.WebAPI.Implementation.Domain.Database;
 using Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
-using Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions;
+using Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions;    
 
 namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Service
 {

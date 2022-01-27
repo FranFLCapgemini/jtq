@@ -7,7 +7,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
     /// Custom exception MustAcceptTerms
     /// </summary>
     [Serializable]
-    internal class MustAcceptTerms : Exception, IWebApiException
+    public class MustAcceptTerms : Exception, IWebApiException
     {
         /// <summary>
         /// The forced http status code to be fired on the exception manager

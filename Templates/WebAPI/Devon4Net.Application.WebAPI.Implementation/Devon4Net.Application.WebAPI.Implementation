@@ -1348,6 +1348,8 @@
             <Summary>
             Login visitor
             </Summary>
+             <param name="username"></param>
+             <param name="pass"></param>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Configuration.DevonConfiguration">
             <summary>

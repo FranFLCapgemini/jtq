@@ -47,10 +47,12 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
             Devon4NetLogger.Debug($"CreateVisitor method from service VisitorService with values : {username},{pass}");
             return _VisitorRepository.CreateVisitor(username,name,pass,tlf,acceptedCommercial,acceptedTerms);
         }
-        
+
         ///<Summary>
         ///Login visitor
         ///</Summary>
+        /// <param name="username"></param>
+        /// <param name="pass"></param>
         public Task<bool> Login(string username, string pass)
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(pass))

@@ -7,7 +7,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Exceptions
     /// Custom exception NullOrWhiteSpaceArgument
     /// </summary>
     [Serializable]
-    internal class NullOrWhiteSpaceArgument : Exception, IWebApiException
+    public class NullOrWhiteSpaceArgument : Exception, IWebApiException
     {
         /// <summary>
         /// The forced http status code to be fired on the exception manager

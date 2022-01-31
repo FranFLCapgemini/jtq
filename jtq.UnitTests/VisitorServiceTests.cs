@@ -7,7 +7,6 @@ using Xunit;
 using System.Threading.Tasks;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
-using System;
 using Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions;
 
 namespace jtq.UnitTests
@@ -19,9 +18,10 @@ namespace jtq.UnitTests
         public async Task CreateVisitor_CorrectArguments_VisitorCreated()
         {
             var ivisitorrepository = new Mock<IVisitorRepository>();
+            //returns Async
             ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
                 .Returns(Task.FromResult(new Visitor()));
-            Mock<IUnitOfWork<JtqContext>> uow = new Mock<IUnitOfWork<JtqContext>>();
+            Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
 

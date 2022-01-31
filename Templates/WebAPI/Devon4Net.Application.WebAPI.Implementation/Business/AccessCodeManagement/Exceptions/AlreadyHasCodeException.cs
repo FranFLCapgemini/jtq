@@ -7,7 +7,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
     /// Custom exception AlreadyHasCodeException
     /// </summary>
     [Serializable]
-    internal class AlreadyHasCodeException: Exception, IWebApiException
+    public class AlreadyHasCodeException: Exception, IWebApiException
     {
         /// <summary>
         /// The forced http status code to be fired on the exception manager

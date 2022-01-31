@@ -22,7 +22,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// Get active queues
         /// </summary>
         public async Task<IList<Queue>> GetActiveQueues()
-        { 
+        {
             return await Get(t => t.Active==true).ConfigureAwait(false);;
         }
 

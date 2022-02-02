@@ -133,11 +133,11 @@
             </summary>
             <param name="uoW"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchAccessCodebyIdAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchAccessCodebyId(System.String)">
             <summary>
             Search Access Code Service
             </summary>
-            <param name="idaccesscode"></param>
+            <param name="id"></param>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.CreateAccessCode(System.String,System.String)">
             <summary>
@@ -163,7 +163,7 @@
             Access code interface
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchAccessCodebyIdAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchAccessCodebyId(System.String)">
             <summary>
             Search access code
             </summary>    
@@ -1403,7 +1403,7 @@
             <param name="idaccesscode"></param>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.SearchAccessCodebyIdaccesscode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.SearchAccessCodebyId(System.String)">
             <summary>
             search access code
             </summary>
@@ -1683,7 +1683,7 @@
             Access code repository interface
             </Summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.SearchAccessCodebyIdaccesscode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository.SearchAccessCodebyId(System.String)">
             <Summary>
             Search access code
             </Summary>

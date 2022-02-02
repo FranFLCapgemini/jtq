@@ -9,37 +9,42 @@ using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.
 using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
 using System.Collections.Generic;
+using System;
 
 namespace jtq.UnitTests
 {
     public class AccessCodeServiceTests
     {
         [Fact]
-        public async Task SearchAccessCodebyIdAccessCode_CorrectID_ReturnAccessCode()
+        public async Task SearchAccessCodebyId_CorrectID_ReturnAccessCode()
         {
             var accesscoderepository = new Mock<IAccessCodeRepository>();
-            accesscoderepository.Setup(x => x.SearchAccessCodebyIdaccesscode(It.IsAny<string>())).ReturnsAsync(new AccessCode());
+            accesscoderepository.Setup(x => x.SearchAccessCodebyId(It.IsAny<string>())).
+                ReturnsAsync(new AccessCode() { IdaccessCode="id"});
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            var accesscode = await _accesscodeservice.SearchAccessCodebyIdAccessCode("id");
+            var accesscode = await _accesscodeservice.SearchAccessCodebyId("id").ConfigureAwait(false);
 
+            //revisar assert, mirar null y excepciones
+            //comprobar que el repositorio hace el return que estoy probando
             Assert.NotNull(accesscode);
             Assert.IsType<AccessCode>(accesscode);
+
         }
 
         [Fact]
-        public async Task SearchAccessCodebyIdAccessCode_NullOrWhiteSpaceArgument_NullOrWhiteSpaceArgumentException()
+        public async Task SearchAccessCodebyId_NullOrWhiteSpaceArgument_NullOrWhiteSpaceArgumentException()
         {
             var accesscoderepository = new Mock<IAccessCodeRepository>();
-            accesscoderepository.Setup(x => x.SearchAccessCodebyIdaccesscode(It.IsAny<string>())).ReturnsAsync(new AccessCode());
+            accesscoderepository.Setup(x => x.SearchAccessCodebyId(It.IsAny<string>())).ReturnsAsync(new AccessCode());
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchAccessCodebyIdAccessCode(" ").ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchAccessCodebyIdAccessCode(null).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchAccessCodebyId(" ").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchAccessCodebyId(null).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]

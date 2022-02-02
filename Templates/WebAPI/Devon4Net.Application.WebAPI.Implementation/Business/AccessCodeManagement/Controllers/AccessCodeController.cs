@@ -38,7 +38,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         public async Task<ActionResult> SearchAccessCodebyIdAccesscode(String idaccesscode)
         {
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeController");
-            return Ok(await _AccessCodeService.SearchAccessCodebyIdAccessCode(idaccesscode).ConfigureAwait(false));
+            return Ok(await _AccessCodeService.SearchAccessCodebyId(idaccesscode).ConfigureAwait(false));
         }
 
         /// <summary>

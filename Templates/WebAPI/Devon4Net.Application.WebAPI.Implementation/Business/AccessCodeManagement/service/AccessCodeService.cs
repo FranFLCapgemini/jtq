@@ -32,15 +32,15 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <summary>
         /// Search Access Code Service
         /// </summary>
-        /// <param name="idaccesscode"></param>
-        public Task<AccessCode> SearchAccessCodebyIdAccessCode(string idaccesscode)
+        /// <param name="id"></param>
+        public Task<AccessCode> SearchAccessCodebyId(string id)
         {
-            if (string.IsNullOrWhiteSpace(idaccesscode))
+            if (string.IsNullOrWhiteSpace(id))
             {
                 throw new NullOrWhiteSpaceArgument("Null or white space argument");
             }
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeService");
-            return _AccessCodeRepository.SearchAccessCodebyIdaccesscode(idaccesscode);
+            return _AccessCodeRepository.SearchAccessCodebyId(id);
         }
         
         /// <summary>
@@ -59,7 +59,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
             if (!await _AccessCodeRepository.AnyAccessCode(idvisitor, queue))
             {
                 var accesscode = await _AccessCodeRepository.CreateAccessCode(idvisitor, queue).ConfigureAwait(false);
-                await _QueueRepository.IncrementCustomers(queue);
+                await _QueueRepository.IncrementCustomers(queue).ConfigureAwait(false);
                 return AccessCodeConverter.ModelToDto(accesscode);
             }
             throw new AlreadyHasCodeException($"Visitor already has access code in {queue} queue");
@@ -76,7 +76,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
                 throw new NullOrWhiteSpaceArgument("Null or white space argument");
             }
             Devon4NetLogger.Debug($"DeleteAccessCode method from service DeleteAccessCode with id: {idaccesscode}");
-            var ac = await _AccessCodeRepository.SearchAccessCodebyIdaccesscode(idaccesscode);
+            var ac = await _AccessCodeRepository.SearchAccessCodebyId(idaccesscode);
             if(ac != null)
                 await _QueueRepository.DecrementCustomers(ac.QueueId).ConfigureAwait(false);
             return await _AccessCodeRepository.DeleteAccessCode(idaccesscode).ConfigureAwait(false);

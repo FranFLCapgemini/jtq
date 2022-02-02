@@ -11,7 +11,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         ///<Summary>
         ///Search access code
         ///</Summary>
-        Task<AccessCode> SearchAccessCodebyIdaccesscode(String TicketNumber);
+        Task<AccessCode> SearchAccessCodebyId(String id);
 
         ///<Summary>
         ///Delete acces code

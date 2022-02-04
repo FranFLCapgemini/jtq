@@ -7,7 +7,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
     /// Custom exception MustAcceptTerms
     /// </summary>
     [Serializable]
-    public class MustAcceptTerms : Exception, IWebApiException
+    public class MustAcceptTermsException : Exception, IWebApiException
     {
         /// <summary>
         /// The forced http status code to be fired on the exception manager
@@ -20,36 +20,36 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         public bool ShowMessage => true;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MustAcceptTerms"/> class.
+        /// Initializes a new instance of the <see cref="MustAcceptTermsException"/> class.
         /// </summary>
-        public MustAcceptTerms()
+        public MustAcceptTermsException()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MustAcceptTerms"/> class.
+        /// Initializes a new instance of the <see cref="MustAcceptTermsException"/> class.
         /// </summary>
         /// <param name="message">The message that describes the error.</param>
-        public MustAcceptTerms(string message)
+        public MustAcceptTermsException(string message)
             : base(message)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MustAcceptTerms"/> class.
+        /// Initializes a new instance of the <see cref="MustAcceptTermsException"/> class.
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>
-        public MustAcceptTerms(string message, Exception innerException) : base(message, innerException)
+        public MustAcceptTermsException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MustAcceptTerms"/> class.
+        /// Initializes a new instance of the <see cref="MustAcceptTermsException"/> class.
         /// </summary>
         /// <param name="serializationInfo"></param>
         /// <param name="streamingContext"></param>
-        protected MustAcceptTerms(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected MustAcceptTermsException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
             : base(serializationInfo, streamingContext)
         {
         }

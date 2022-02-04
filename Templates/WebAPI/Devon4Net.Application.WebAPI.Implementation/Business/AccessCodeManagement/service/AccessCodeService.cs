@@ -9,7 +9,7 @@ using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
 
-namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service
+namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service
 {
     /// <summary>
     /// Access Code Service Implementation
@@ -47,22 +47,22 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Create Access Code Service Implementation
         /// </summary>
         /// <param name="idvisitor"></param>
-        /// <param name="queue"></param>
-        public async Task<AccessCodeDto> CreateAccessCode(string idvisitor, string queue)
+        /// <param name="idqueue"></param>
+        public async Task<AccessCodeDto> CreateAccessCode(string idvisitor, string idqueue)
         {
-            if (string.IsNullOrWhiteSpace(idvisitor)||string.IsNullOrWhiteSpace(queue))
+            if (string.IsNullOrWhiteSpace(idvisitor)||string.IsNullOrWhiteSpace(idqueue))
             {
                 throw new NullOrWhiteSpaceArgument("Null or white space arguments");
             }
             Devon4NetLogger.Debug("CreateAccessCode method from AccesCodeService");
             //If visitor doesn't have any code
-            if (!await _AccessCodeRepository.AnyAccessCode(idvisitor, queue))
+            if (!await _AccessCodeRepository.AnyAccessCode(idvisitor, idqueue))
             {
-                var accesscode = await _AccessCodeRepository.CreateAccessCode(idvisitor, queue).ConfigureAwait(false);
-                await _QueueRepository.IncrementCustomers(queue).ConfigureAwait(false);
+                var accesscode = await _AccessCodeRepository.CreateAccessCode(idvisitor, idqueue).ConfigureAwait(false);
+                await _QueueRepository.IncrementCustomers(idqueue).ConfigureAwait(false);
                 return AccessCodeConverter.ModelToDto(accesscode);
             }
-            throw new AlreadyHasCodeException($"Visitor already has access code in {queue} queue");
+            throw new AlreadyHasCodeException($"Visitor already has access code in {idqueue} queue");
         }
         
         /// <summary>
@@ -79,6 +79,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
             var ac = await _AccessCodeRepository.SearchAccessCodebyId(idaccesscode);
             if(ac != null)
                 await _QueueRepository.DecrementCustomers(ac.QueueId).ConfigureAwait(false);
+
             return await _AccessCodeRepository.DeleteAccessCode(idaccesscode).ConfigureAwait(false);
         }
 

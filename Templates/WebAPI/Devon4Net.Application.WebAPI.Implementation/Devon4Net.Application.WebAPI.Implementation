@@ -9,7 +9,7 @@
              Access Code Controller
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.#ctor(Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.#ctor(Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.IAccessCodeService)">
             <summary>
             Constructor
             </summary>
@@ -122,63 +122,63 @@
             <param name="serializationInfo"></param>
             <param name="streamingContext"></param>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService">
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService">
             <summary>
             Access Code Service Implementation
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.#ctor(Devon4Net.Domain.UnitOfWork.UnitOfWork.IUnitOfWork{Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext})">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService.#ctor(Devon4Net.Domain.UnitOfWork.UnitOfWork.IUnitOfWork{Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext})">
             <summary>
             Access Code Service Implementation
             </summary>
             <param name="uoW"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchAccessCodebyId(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService.SearchAccessCodebyId(System.String)">
             <summary>
             Search Access Code Service
             </summary>
             <param name="id"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.CreateAccessCode(System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService.CreateAccessCode(System.String,System.String)">
             <summary>
             Create Access Code Service Implementation
             </summary>
             <param name="idvisitor"></param>
-            <param name="queue"></param>
+            <param name="idqueue"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.DeleteAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService.DeleteAccessCode(System.String)">
             <summary>
             Delete Access Code method from access code service
             </summary>
             <param name="idaccesscode"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.AccessCodeService.SearchVisitorAccessCodes(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService.SearchVisitorAccessCodes(System.String)">
             <summary>
             Search Visitor Acess Codes from AccessCodeService
             </summary>
             <param name="idvisitor"></param>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService">
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.IAccessCodeService">
             <summary>
             Access code interface
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchAccessCodebyId(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.IAccessCodeService.SearchAccessCodebyId(System.String)">
             <summary>
             Search access code
             </summary>    
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.CreateAccessCode(System.String,System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.IAccessCodeService.CreateAccessCode(System.String,System.String)">
             <summary>
             Create access code
             </summary>    
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.DeleteAccessCode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.IAccessCodeService.DeleteAccessCode(System.String)">
             <summary>
             Delete Access Code
             </summary>    
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service.IAccessCodeService.SearchVisitorAccessCodes(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.IAccessCodeService.SearchVisitorAccessCodes(System.String)">
             <Summary>
             Search visitor access codes
             </Summary>
@@ -1258,42 +1258,42 @@
             AccessCodes
             </summary>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms">
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException">
             <summary>
             Custom exception MustAcceptTerms
             </summary>
         </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.StatusCode">
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException.StatusCode">
             <summary>
             The forced http status code to be fired on the exception manager
             </summary>
         </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.ShowMessage">
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException.ShowMessage">
             <summary>
             Show the message on the response?
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException"/> class.
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException"/> class.
             </summary>
             <param name="message">The message that describes the error.</param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor(System.String,System.Exception)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException.#ctor(System.String,System.Exception)">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException"/> class.
             </summary>
             <param name="message"></param>
             <param name="innerException"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTerms"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement.Exceptions.MustAcceptTermsException"/> class.
             </summary>
             <param name="serializationInfo"></param>
             <param name="streamingContext"></param>

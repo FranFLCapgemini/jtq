@@ -1,7 +1,7 @@
 using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Dto;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 
-namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.service
+namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service
 {
     /// <summary>
     /// Access code interface
@@ -12,7 +12,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <summary>
         /// Search access code
         /// </summary>    
-        Task<AccessCode> SearchAccessCodebyId(string idaccesscode);
+        Task<AccessCode> SearchAccessCodebyId(string id);
 
         /// <summary>
         /// Create access code
@@ -22,7 +22,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <summary>
         /// Delete Access Code
         /// </summary>    
-        Task<string> DeleteAccessCode(String idaccesscode);
+        Task<string> DeleteAccessCode(string id);
 
         ///<Summary>
         ///Search visitor access codes

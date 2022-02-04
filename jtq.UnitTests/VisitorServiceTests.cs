@@ -54,7 +54,7 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
 
-            await Assert.ThrowsAsync<MustAcceptTerms>(async () => await _visitorService.CreateVisitor("user", "name", "pass", "665665665", true, false).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<MustAcceptTermsException>(async () => await _visitorService.CreateVisitor("user", "name", "pass", "665665665", true, false).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]

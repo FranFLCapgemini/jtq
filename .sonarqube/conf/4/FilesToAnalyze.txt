@@ -1,0 +1,10 @@
+﻿C:\Users\fferna14\Documents\PruebaDevon\jtq\jtq.UnitTests\AccessCodeServiceTests.cs
+C:\Users\fferna14\Documents\PruebaDevon\jtq\jtq.UnitTests\QueueServiceTests.cs
+C:\Users\fferna14\Documents\PruebaDevon\jtq\jtq.UnitTests\VisitorServiceTests.cs
+C:\Users\fferna14\.nuget\packages\microsoft.net.test.sdk\17.0.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\fferna14\.nuget\packages\microsoft.testplatform.testhost\17.0.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\fferna14\.nuget\packages\microsoft.testplatform.testhost\17.0.0\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\fferna14\.nuget\packages\microsoft.testplatform.testhost\17.0.0\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\fferna14\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\fferna14\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\fferna14\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll

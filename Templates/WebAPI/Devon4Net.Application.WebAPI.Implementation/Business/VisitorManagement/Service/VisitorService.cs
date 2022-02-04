@@ -42,7 +42,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
                 throw new NullOrWhiteSpaceArgument("Null or white space argument");
 
             if (!acceptedTerms)
-                throw new MustAcceptTerms("accepted terms must be true");
+                throw new MustAcceptTermsException("accepted terms must be true");
 
             Devon4NetLogger.Debug($"CreateVisitor method from service VisitorService with values : {username},{pass}");
             return _VisitorRepository.CreateVisitor(username,name,pass,tlf,acceptedCommercial,acceptedTerms);

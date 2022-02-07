@@ -34,9 +34,6 @@ namespace jtq.UnitTests
             queuelist = queuelist.ToList();
 
             Assert.NotNull(queuelist);
-            Assert.NotNull(queuelist.ElementAt(0));
-            Assert.NotNull(queuelist.ElementAt(1));
-            Assert.NotNull(queuelist.ElementAt(2));
             Assert.True(queuelist.ElementAt(0).Active);
             Assert.True(queuelist.ElementAt(1).Active);
             Assert.True(queuelist.ElementAt(2).Active);
@@ -47,14 +44,16 @@ namespace jtq.UnitTests
         public async Task CreateQueue_CorrectArguments_QueueCreated()
         {
             var queuerepository = new Mock<IQueueRepository>();
-            queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue());
+            queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue() { Idqueue="id"});
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
             var _queueservice = new QueueService(uow.Object);
 
-            var queue = await _queueservice.CreateQueue("testqueue");
+            QueueDto queue = await _queueservice.CreateQueue("testqueue").ConfigureAwait(false);
 
             Assert.NotNull(queue);
+            Assert.NotNull(queue.Idqueue);
+            queuerepository.Verify( x => x.CreateQueue(It.IsAny<string>()),Times.Once);  
         }
 
         [Fact]

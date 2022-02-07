@@ -4,7 +4,6 @@ using Devon4Net.Infrastructure.Log;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Database;
 using Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Converters;
-using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Dto;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
 
@@ -40,14 +39,15 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.S
         /// Create queue
         /// </summary>
         /// <param name="name"></param>
-        public Task<Queue> CreateQueue(string name)
+        public async Task<QueueDto> CreateQueue(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
                 throw new NullOrWhiteSpaceArgument("Null or white space arguments");
             }
             Devon4NetLogger.Debug("CreateQueue method from QueueService");
-            return _QueueRepository.CreateQueue(name);
+            var queue = await _QueueRepository.CreateQueue(name).ConfigureAwait(false);
+            return QueueConverter.ModelToDto(queue);
         }        
     }
 }

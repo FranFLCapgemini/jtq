@@ -18,6 +18,6 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.S
         /// Create queue
         /// </summary>
         /// <param name="name"></param>
-        Task<Queue> CreateQueue(string name);
+        Task<QueueDto> CreateQueue(string name);
     }
 }

@@ -33,14 +33,15 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Search Access Code Service
         /// </summary>
         /// <param name="id"></param>
-        public Task<AccessCode> SearchAccessCodebyId(string id)
+        public async Task<AccessCodeDto> SearchAccessCodebyId(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
             {
                 throw new NullOrWhiteSpaceArgument("Null or white space argument");
             }
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeService");
-            return _AccessCodeRepository.SearchAccessCodebyId(id);
+            var ac = await _AccessCodeRepository.SearchAccessCodebyId(id);
+            return AccessCodeConverter.ModelToDto(ac);
         }
         
         /// <summary>

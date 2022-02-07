@@ -27,18 +27,12 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            AccessCode accesscode = await _accesscodeservice.SearchAccessCodebyId("id").ConfigureAwait(false);
+            AccessCodeDto accesscode = await _accesscodeservice.SearchAccessCodebyId("id").ConfigureAwait(false);
 
-            //revisar assert, mirar null y excepciones
-            //comprobar que el repositorio hace el return que estoy probando
             Assert.NotNull(accesscode);
             Assert.NotNull(accesscode.IdaccessCode);
             Assert.NotNull(accesscode.TicketNumber);
             accesscoderepository.Verify(x => x.SearchAccessCodebyId(It.IsAny<string>()),Times.Once);
-            //Devolver dto en lugar de entidades
-            //Usar verify
-
-
         }
 
         [Fact]
@@ -59,7 +53,7 @@ namespace jtq.UnitTests
         {
             var accesscoderepository = new Mock<IAccessCodeRepository>();
             var queuerepository = new Mock<IQueueRepository>();
-            accesscoderepository.Setup(x => x.CreateAccessCode(It.IsAny<string>(),It.IsAny<string>())).ReturnsAsync(new AccessCode());
+            accesscoderepository.Setup(x => x.CreateAccessCode(It.IsAny<string>(),It.IsAny<string>())).ReturnsAsync(new AccessCode() { IdaccessCode="id", TicketNumber="1"});
 
             Mock<IUnitOfWork<JtqContext>> uow = new();
             //false if visitor doesn't have any code in the queue
@@ -68,9 +62,12 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            var accesscode = await _accesscodeservice.CreateAccessCode("visitor", "queue").ConfigureAwait(false);
+            AccessCodeDto accesscode = await _accesscodeservice.CreateAccessCode("visitor", "queue").ConfigureAwait(false);
 
             Assert.NotNull(accesscode);
+            Assert.NotNull(accesscode.IdaccessCode);
+            Assert.NotNull(accesscode.TicketNumber);
+            accesscoderepository.Verify(x => x.CreateAccessCode(It.IsAny<string>(), It.IsAny<string>()), Times.Once);
         }
 
         [Fact]
@@ -120,8 +117,7 @@ namespace jtq.UnitTests
             var deleted = await _accesscodeservice.DeleteAccessCode(accesscode.IdaccessCode).ConfigureAwait(false);
 
             Assert.NotNull(deleted);
-            Assert.IsType<string>(deleted);
-            
+            accesscoderepository.Verify( x => x.DeleteAccessCode(It.IsAny<string>()), Times.Once);            
         }
 
         [Fact]
@@ -158,7 +154,10 @@ namespace jtq.UnitTests
             var aclist = await _accesscodeservice.SearchVisitorAccessCodes(visitorid);
 
             Assert.NotNull(aclist);
-            Assert.IsType<List<AccessCode>>(aclist);
+            Assert.NotNull(aclist[0].IdaccessCode);
+            Assert.NotNull(aclist[1].IdaccessCode);
+            Assert.NotNull(aclist[2].IdaccessCode);
+            accesscoderepository.Verify(x => x.SearchVisitorAccessCodes(It.IsAny<string>()), Times.Once);
         }
 
         [Fact]

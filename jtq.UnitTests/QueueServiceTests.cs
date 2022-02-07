@@ -8,23 +8,39 @@ using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Servi
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
 using System.Collections.Generic;
+using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Dto;
+using System.Linq;
 
 namespace jtq.UnitTests
 {
     public class QueueServiceTests
     {
         [Fact]
-        public async Task GetActiveQueues_ReturnsQueueList()
+        public async Task GetActiveQueues_ExistingActiveQueues_ReturnsQueueList()
         {
             var queuerepository = new Mock<IQueueRepository>();
-            queuerepository.Setup(x => x.GetActiveQueues()).ReturnsAsync(new List<Queue>());
+            queuerepository.Setup(x => x.GetActiveQueues()).
+                ReturnsAsync(new List<Queue>()
+                {
+                    new Queue(){ Idqueue = "id1", Name ="test1", Active=true},
+                    new Queue(){ Idqueue = "id2", Name ="test2", Active=true},
+                    new Queue(){ Idqueue = "id3", Name ="test3", Active=true}
+                });;
             Mock <IUnitOfWork<JtqContext>> uow= new();
             uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
             var _queueservice = new QueueService(uow.Object);
 
-            var queuelist = await _queueservice.GetActiveQueues();
+            IEnumerable<QueueDto> queuelist = await _queueservice.GetActiveQueues().ConfigureAwait(false);
+            queuelist = queuelist.ToList();
 
             Assert.NotNull(queuelist);
+            Assert.NotNull(queuelist.ElementAt(0));
+            Assert.NotNull(queuelist.ElementAt(1));
+            Assert.NotNull(queuelist.ElementAt(2));
+            Assert.True(queuelist.ElementAt(0).Active);
+            Assert.True(queuelist.ElementAt(1).Active);
+            Assert.True(queuelist.ElementAt(2).Active);
+            queuerepository.Verify(x => x.GetActiveQueues(),Times.Once);
         }
 
         [Fact]

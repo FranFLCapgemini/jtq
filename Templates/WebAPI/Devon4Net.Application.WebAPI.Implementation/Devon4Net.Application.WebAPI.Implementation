@@ -150,7 +150,7 @@
             <summary>
             Delete Access Code method from access code service
             </summary>
-            <param name="idaccesscode"></param>
+            <param name="id"></param>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service.AccessCodeService.SearchVisitorAccessCodes(System.String)">
             <summary>
@@ -1407,7 +1407,7 @@
             <summary>
             search access code
             </summary>
-            <param name="idaccesscode"></param>
+            <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.AnyAccessCode(System.String,System.String)">
@@ -1416,6 +1416,13 @@
             </summary>
             <param name="queueid"></param>
             <param name="visitorid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.AccessCodeRepository.SearchVisitorAccessCodes(System.String)">
+            <summary>
+            Returns all visitor access codes
+            </summary>
+            <param name="idvisitor"></param>
             <returns></returns>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.EmployeeRepository">
@@ -1459,25 +1466,25 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.jtqRepository">
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.JtqRepository">
             <summary>
             Repository implementation for jtq
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.jtqRepository.#ctor(Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.JtqRepository.#ctor(Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext)">
             <summary>
             Constructor
             </summary>
             <param name="context"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.jtqRepository.GetPrueba(System.Linq.Expressions.Expression{System.Func{Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Prueba,System.Boolean}})">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.JtqRepository.GetPrueba(System.Linq.Expressions.Expression{System.Func{Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Prueba,System.Boolean}})">
             <summary>
             Get method
             </summary>
             <param name="predicate"></param>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.jtqRepository.CreatePrueba(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.JtqRepository.CreatePrueba(System.String)">
             <summary>
             CreatePrueba method
             </summary>
@@ -1611,6 +1618,46 @@
             </summary>
             <param name="modelBuilder"></param>
         </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext">
+            <summary>
+            JtqContext class
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.#ctor">
+            <summary>
+            JtqContext() constructor
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext})">
+            <summary>
+            JtqContext(DbContextOptions) constructor
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.AccessCodes">
+            <summary>
+            AccessCodes
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.Pruebas">
+            <summary>
+            Pruebas
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.Queues">
+            <summary>
+            Queues
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.Visitors">
+            <summary>
+            visitors
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.Database.JtqContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            OnModelCreating method
+            </summary>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Database.TodoContext">
             <summary>
             Context definition
@@ -1632,6 +1679,56 @@
             Model rules definition
             </summary>
             <param name="modelBuilder"></param>
+        </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode">
+            <summary>
+            Entity class for Todos
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.IdaccessCode">
+            <summary>
+            IdaccessCode
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.TicketNumber">
+            <summary>
+            TicketNumber
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.CreationTime">
+            <summary>
+            CreationTime
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.StartTime">
+            <summary>
+            StartTime
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.EndTime">
+            <summary>
+            EndTime
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.VisitorId">
+            <summary>
+            VisitorId
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.QueueId">
+            <summary>
+            QueueId
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.Queue">
+            <summary>
+            Queue
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.AccessCode.Visitor">
+            <summary>
+            Visitor
+            </summary>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Employee">
             <summary>
@@ -1658,6 +1755,76 @@
             mail
             </summary>
         </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Prueba">
+            <summary>
+            Entity Prueba
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Prueba.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Prueba.Nombre">
+            <summary>
+            Nombre
+            </summary>
+        </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue">
+            <summary>
+            Entity Queue
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.#ctor">
+            <summary>
+            Queue constructor
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.IdQueue">
+            <summary>
+            Idqueue
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.Logo">
+            <summary>
+            Logo
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.CurrentNumber">
+            <summary>
+            CurrentNumber
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.AttentionTime">
+            <summary>
+            AttentionTime
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.MinAttentionTime">
+            <summary>
+            MinAttentionTime
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.Active">
+            <summary>
+            Active
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.Customers">
+            <summary>
+            Customers
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Queue.AccessCodes">
+            <summary>
+            AccessCodes
+            </summary>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Todos">
             <summary>
             Entity class for Todos
@@ -1676,6 +1843,61 @@
         <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Todos.Done">
             <summary>
             Done
+            </summary>
+        </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor">
+            <summary>
+            Visitor
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.#ctor">
+            <summary>
+            Visitor constructor
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.IdVisitor">
+            <summary>
+            IdVisitor
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.Username">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.PhoneNumber">
+            <summary>
+            PhoneNumber
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.AcceptedCommercial">
+            <summary>
+            AcceptedCommercial
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.AcceptedTerms">
+            <summary>
+            AcceptedTerms
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.UserType">
+            <summary>
+            UserType
+            </summary>
+        </member>
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Domain.Entities.Visitor.AccessCodes">
+            <summary>
+            AccessCodes
             </summary>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IAccessCodeRepository">
@@ -1759,7 +1981,7 @@
             <summary>
             
             </summary>
-            <param name="nombre"></param>
+            <param name="name"></param>
             <returns></returns>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IQueueRepository">
@@ -1839,45 +2061,60 @@
             Login visitor
             </Summary>
         </member>
-        <member name="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument">
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException">
             <summary>
             Custom exception NullOrWhiteSpaceArgument
             </summary>
         </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.StatusCode">
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException.StatusCode">
             <summary>
             The forced http status code to be fired on the exception manager
             </summary>
         </member>
-        <member name="P:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.ShowMessage">
+        <member name="P:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException.ShowMessage">
             <summary>
             Show the message on the response?
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException"/> class.
             </summary>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException"/> class.
             </summary>
             <param name="message">The message that describes the error.</param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.String,System.Exception)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException.#ctor(System.String,System.Exception)">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException"/> class.
             </summary>
             <param name="message"></param>
             <param name="innerException"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
-            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgument"/> class.
+            Initializes a new instance of the <see cref="T:Devon4Net.Application.WebAPI.Implementation.Exceptions.NullOrWhiteSpaceArgumentException"/> class.
             </summary>
             <param name="serializationInfo"></param>
             <param name="streamingContext"></param>
+        </member>
+        <member name="T:Devon4Net.Application.WebAPI.Implementation.Migrations.InitialCreate">
+            <summary>
+            InitialCreate migration
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Up method
+            </summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Down method
+            </summary>
         </member>
     </members>
 </doc>

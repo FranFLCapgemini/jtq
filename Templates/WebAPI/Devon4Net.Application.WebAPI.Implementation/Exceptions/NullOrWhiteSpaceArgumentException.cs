@@ -7,7 +7,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Exceptions
     /// Custom exception NullOrWhiteSpaceArgument
     /// </summary>
     [Serializable]
-    public class NullOrWhiteSpaceArgument : Exception, IWebApiException
+    public class NullOrWhiteSpaceArgumentException : Exception, IWebApiException
     {
         /// <summary>
         /// The forced http status code to be fired on the exception manager
@@ -20,36 +20,36 @@ namespace Devon4Net.Application.WebAPI.Implementation.Exceptions
         public bool ShowMessage => true;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgument"/> class.
+        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgumentException"/> class.
         /// </summary>
-        public NullOrWhiteSpaceArgument()
+        public NullOrWhiteSpaceArgumentException()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgument"/> class.
+        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgumentException"/> class.
         /// </summary>
         /// <param name="message">The message that describes the error.</param>
-        public NullOrWhiteSpaceArgument(string message)
+        public NullOrWhiteSpaceArgumentException(string message)
             : base(message)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgument"/> class.
+        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgumentException"/> class.
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>
-        public NullOrWhiteSpaceArgument(string message, Exception innerException) : base(message, innerException)
+        public NullOrWhiteSpaceArgumentException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgument"/> class.
+        /// Initializes a new instance of the <see cref="NullOrWhiteSpaceArgumentException"/> class.
         /// </summary>
         /// <param name="serializationInfo"></param>
         /// <param name="streamingContext"></param>
-        protected NullOrWhiteSpaceArgument(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
+        protected NullOrWhiteSpaceArgumentException(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
             : base(serializationInfo, streamingContext)
         {
         }

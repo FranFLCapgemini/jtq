@@ -55,7 +55,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// <summary>
         /// search access code
         /// </summary>
-        /// <param name="idaccesscode"></param>
+        /// <param name="id"></param>
         /// <returns></returns>
         public async Task<AccessCode> SearchAccessCodebyId(string id)
         {

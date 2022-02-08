@@ -43,7 +43,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.S
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new NullOrWhiteSpaceArgument("Null or white space arguments");
+                throw new NullOrWhiteSpaceArgumentException("Null or white space arguments");
             }
             Devon4NetLogger.Debug("CreateQueue method from QueueService");
             var queue = await _QueueRepository.CreateQueue(name).ConfigureAwait(false);

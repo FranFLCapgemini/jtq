@@ -46,13 +46,13 @@ C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Applicati
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Dto\LoginDto.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Dto\LoginResponseToken.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Dto\VisitorDto.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTerms.cs
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTermsException.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Service\IVisitorService.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Service\VisitorService.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Configuration\DevonConfiguration.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\AccessCodeRepository.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\EmployeeRepository.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\jtqRepository.cs
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\JtqRepository.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\QueueRepository.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\TodoRepository.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\VisitorRepository.cs
@@ -71,7 +71,7 @@ C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Applicati
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IQueueRepository.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\ITodoRepository.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IVisitorRepository.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgument.cs
+C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgumentException.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\20220114112513_InitialCreate.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\20220114112513_InitialCreate.Designer.cs
 C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\JtqContextModelSnapshot.cs

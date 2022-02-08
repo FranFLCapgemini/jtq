@@ -61,39 +61,40 @@
 44 )
 44Y j55 $
 
-44ö ™55& 6¶
+44ö ™55& 6º
 £C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\AccessCodeService.cs
 
  "P
-/ D !++ (;; ,==' <OO 0SS .aa .(
-* : >> &QQ &
+/ D !++ 0<< ,>>' <PP 0TT .bb .(
+* : ?? &RR &
 
   (
 9 <E H$ ' "
 
-$$  4
-$$< >&&* ,++> @
+$$) =
+$$E G&&* ,++F H
+++ ,,2 4
 
-33) 9(
-33A J55* 3;;; D==N W<
-33S X55P U;;F K==Y ^>>: ?AAT Y
-== ??6 @
+44) 9(
+44A J66* 3<<; D>>N W<
+44S Z66P W<<F M>>Y `??: ABBT [
+>> @@6 @
 
-HH" 22
-HH: FJJ* 6NNd pOOF RSS@ L
-OO PP QQ: <
+II" 22
+II: <KK* ,OOd fPPF HTT@ B
+PP QQ RR: <
 
-ZZ- E
-ZZM V\\* 3aaH Qü
+[[- E
+[[M V]]* 3bbH Qü
 §C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\IAccessCodeService.cs
 
 
 
  '
 
- -
+ 0
 
-5 A
+8 :
 
  ,
 
@@ -103,7 +104,7 @@
 
  %
 
-- 9
+- /
 
   8
 
@@ -521,22 +522,23 @@
 
 $ 3
 
- 
+ "
 
-' +Ã
+* .‚
 ôC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Service\QueueService.cs
 
- (
-* : ## /22 #
+ (
+* : "" /11 .
 
- 
-4 7@ C "
+ 
+4 7@ C "
 
-  1 @
-## $$ 
+1 @
+"" ## 
 
-++ &
-++. 2--* .220 4∑
+**$ /
+**7 ;,,* .11; ?
+11 22- 2∑
 úC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\RabbitMqManagement\Commands\TodoCommand.cs
 
  
@@ -761,30 +763,30 @@
 
 ** 
 
-../ :Ë
-°C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTerms.cs
+../ :Ò
+™C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTermsException.cs
 
 
 
-  
+ )
 
  
 
  
 
- 
+ '
 
-!! 
-!!& -"" 
+!! '
+!!/ 6"" 
 
-++ 
-++& -++P W
-++9 G++Y g
+++ '
+++/ 6++Y `
+++B P++b p
 
-44 !
-44Q b55 $
+44 *
+44Z k55 $
 
-44í ¢55& 6¶
+44õ ´55& 6¶
 ûC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Service\IVisitorService.cs
 
  $
@@ -848,7 +850,7 @@
 NNE MPP QQ (
 \\= E^^ __ `` (
 \\V c^^0 =__4 A``/ <
-cc@ Hee Ø
+cc@ Hee £
 íC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\AccessCodeRepository.cs
 
  %
@@ -864,13 +866,11 @@
 "" ## $$ %% && ''  *
 
 //" 2
-//: F22= I44 
-
-22 
-22( )22- .
+//: F22/ ;44 
+22 22  
 
 <<& :
-<<B N??> J
+<<B D??> @
 ??+ ,??. /
 
 HH  -
@@ -879,9 +879,9 @@
 KK LL LL  %
 KK" #KK& 'KK> ?
 
-OO- E
-OOM VQQ/ 8
-QQ QQ" #È
+TT- E
+TTM VVV/ 8
+VV VV" #È
 êC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\EmployeeRepository.cs
 
  #
@@ -905,7 +905,7 @@
 ??8 :AAk mBB4 6FF II@ B
 BB DD 
 BB' (BB, -†
-ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\jtqRepository.cs
+ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\JtqRepository.cs
 
  
 
@@ -1001,110 +1001,124 @@
 * 0!! $$ '' 
 !!  !!!% &
 $$  !$$% &
-''  !''% &Ö
+''  !''% &¢
 ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs
-		 #+ 5
+ #+ 5
 
- 
+ 
 
- 
-7 > 
+ 
+7 >G N
 
-) 4
+) 4
 
-% ,
+##% ,
 
-$ *
+''$ *
 
-& .
+++& .
 
-  /J
-= I  XX ff 
-èè 
-∑∑# /ñ
-, 2   ## %% (( ** ,, 00 44 88 == AA FF KK QQ 
-     # $
-((  !((% &
-**  !**% &
-,,  !,,% &
-00  !00% &
-44  !44% &
-88  !88% &
-==  !==% &
+00  /J
+00= I22 55 oo }} 
+¶¶ 
+ŒŒ# /ñ
+55, 277 :: << ?? AA CC GG KK OO TT XX ]] bb hh 
+77 77# $
+??  !??% &
 AA  !AA% &
-FF  !FF% &
-KK KK# $
-LL LL# $
-MM# $MM( )
-QQ QQ# $
-RR RR# $
-SS# $SS( )2
-XX( .ZZ \\ __ cc 
-__  !__% &
-cc  !cc% &t
-ff' -hh kk mm pp tt xx }} 
-ÅÅ 
-ÖÖ 
-ââ 
+CC  !CC% &
+GG  !GG% &
+KK  !KK% &
+OO  !OO% &
+TT  !TT% &
+XX  !XX% &
+]]  !]]% &
+bb bb# $
+cc cc# $
+dd# $dd( )
 hh hh# $
-pp  !pp% &
-tt  !tt% &
-xx  !xx% &
-}}  !}}% &
-
-ÅÅ  !
-ÅÅ% &
-
-ÖÖ  !
-ÖÖ% &
-
-ââ  !
-ââ% &ê
-
-èè) /
-ëë 
+ii ii# $
+jj# $jj( )2
+oo( .qq ss vv zz 
+vv  !vv% &
+zz  !zz% &Ä
+}}' - 
+ÇÇ 
+ÑÑ 
+áá 
+ãã 
+èè 
 îî 
-ññ 
-ôô 
-ùù 
-üü 
-°° 
-¶¶ 
+òò 
+úú 
+†† 
+ # $
+
+áá  !
+áá% &
+
+ãã  !
+ãã% &
+
+èè  !
+èè% &
+
+îî  !
+îî% &
+
+òò  !
+òò% &
+
+úú  !
+úú% &
+
+††  !
+††% &ê
+
+¶¶) /
+®® 
 ´´ 
-ØØ 
-±± 
+≠≠ 
+∞∞ 
+¥¥ 
+∂∂ 
+∏∏ 
+ΩΩ 
+¬¬ 
+∆∆ 
+»» 
 
-ëë 
-ëë# $
+®® 
+®®# $
 
-ôô  !
-ôô% &
+∞∞  !
+∞∞% &
 
-ùù  !
-ùù% &
+¥¥  !
+¥¥% &
 
-üü  !
-üü% &
+∂∂  !
+∂∂% &
 
-°°  !
-°°% &
+∏∏  !
+∏∏% &
 
-¶¶  !
-¶¶% &
+ΩΩ  !
+ΩΩ% &
 
-´´  !
-´´% &
+¬¬  !
+¬¬% &
 
-ØØ  !
-ØØ% &
+∆∆  !
+∆∆% &
 
-±±  !
-±±% &
+»»  !
+»»% &
 
-∫∫ +
-∑∑ "
+‘‘ +
+ŒŒ "
 
-∫∫9 Eú
+‘‘9 Eú
 áC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\TodoContext.cs
 		 , 7
 
@@ -1119,27 +1133,25 @@
 !!  !!!% &Å
 ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\AccessCode.cs
 
- #
+ #
 
- "
+ "
 
-		 "
+ "
 
-
-
- "
+ "
 
- 
+ 
 
- 
+ 
 
- 
+   
 
- 
+$$ 
 
- "
+(( "
 
- &√
+,, &√
 ÑC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Employee.cs
 
  !
@@ -1153,35 +1165,33 @@
  ©
 ÇC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Prueba.cs
 
- 
+		 
 
- 
+ 
 
-		 í
+ í
 ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Queue.cs
 
- 
+		 
 
- 
-/ :
-
- 
+ 
+66/ : 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- #
+"" #
 
- #
+&& #
 
- &
+** &
 
- 
+.. 
 
- ¥
+22 ¥
 ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Todos.cs
 
  
@@ -1193,28 +1203,26 @@
  î
 ÉC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Visitor.cs
 
-  
+		  
 
- 
-/ :
-
- 
+ 
+77/ : 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+"" 
 
- !
+&& !
 
- '
+** '
 
- "
+.. "
 
- º
+22 º
 ùC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IAccessCodeRepository.cs
 
 		 *
@@ -1225,13 +1233,13 @@
 
  %
 
-- 7
+- 9
 
  )
 
 1 :
 
-C H
+C J
 
   
 
@@ -1279,7 +1287,7 @@
 
  !
 
-) /˚
+) -˚
 òC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IQueueRepository.cs
 
 
@@ -1341,55 +1349,58 @@
 
   (
 
-1 5÷
-èC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgument.cs
+1 5ﬂ
+òC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgumentException.cs
 
 
 
- )
+ 2
 
  
 
  
 
- '
+ 0
 
-!! '
-!!/ 6"" 
+!! 0
+!!8 ?"" 
 
-++ '
-++/ 6++Y `
-++B P++b p
+++ 0
+++8 ?++b i
+++K Y++k y
 
-44 *
-44Z k55 $
+44 3
+44c t55 $
 
-44õ ´55& 6Ê
+44§ ¥55& 6Ë
 ìC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\20220114112513_InitialCreate.cs
 
- &
+
+
+ &
 
-		  "P
-		4 D   88 QQ uu zz 
-   "
- " 
-2 37 8Z
-   "" #$$  &&  (($ )**$ ),,' ,.. "//  %
-11 "33 
-330 1335 6Z
-:: <<  %>> $@@  BB $DD" 'FF) .GG$ )HH $
-JJ "LL 
-LL0 1LL5 6P
-SS UU# (WW# (YY# ([[  %]] #__  %aa #(
-dd "ff gg ll 
-ff0 1ff5 6
-ii  !ii% &
-nn  !nn% &
+  "R
+4 D  $$ >> WW {{ 
+ÄÄ 
+   "
+ " 
+2 37 8Z
+&& (( #**  ,,  ..$ )00$ )22' ,44 "55  %
+77 "99 
+990 1995 6Z
+@@ BB  %DD $FF  HH $JJ" 'LL) .MM$ )NN $
+PP "RR 
+RR0 1RR5 6P
+YY [[# (]]# (__# (aa  %cc #ee  %gg #(
+jj "ll mm rr 
+ll0 1ll5 6
+oo  !oo% &
+tt  !tt% &
 
-ÄÄ  $<
+ââ  $<
 
-ÄÄ6 F
-ÇÇ 
-ÖÖ 
-àà 
-ãã 
+ââ6 F
+ãã 
+éé 
+ëë 
+îî 

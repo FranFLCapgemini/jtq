@@ -20,7 +20,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.C
 
             return new QueueDto
             {
-                Idqueue = item.Idqueue,
+                Idqueue = item.IdQueue,
                 Name= item.Name,
                 Logo= item.Logo,
                 CurrentNumber= item.CurrentNumber,

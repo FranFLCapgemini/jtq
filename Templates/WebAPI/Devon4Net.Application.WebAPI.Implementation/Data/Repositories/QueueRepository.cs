@@ -34,7 +34,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         {
             var queue = new Queue
             {
-                Idqueue = Guid.NewGuid().ToString(),
+                IdQueue = Guid.NewGuid().ToString(),
                 Name = name,
                 Active = true,
                 CurrentNumber = 0.ToString(),
@@ -50,7 +50,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// <param name="idqueue"></param>
         public async Task<int?> IncrementCustomers(string idqueue)
         {
-            var q = await GetFirstOrDefault(t => t.Idqueue == idqueue).ConfigureAwait(false);
+            var q = await GetFirstOrDefault(t => t.IdQueue == idqueue).ConfigureAwait(false);
             q.Customers++;
             await Update(q).ConfigureAwait(false);
             return q.Customers;
@@ -61,7 +61,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// <param name="idqueue"></param>
         public async Task<int?> DecrementCustomers(string idqueue)
         {
-            var q = await GetFirstOrDefault(t => t.Idqueue == idqueue).ConfigureAwait(false);
+            var q = await GetFirstOrDefault(t => t.IdQueue == idqueue).ConfigureAwait(false);
             q.Customers--;
             await Update(q).ConfigureAwait(false);
             return q.Customers;

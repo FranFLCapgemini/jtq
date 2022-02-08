@@ -30,7 +30,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         public Task<Visitor> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms)
         {
             var visitor=new Visitor();
-            visitor.Idvisitor=Guid.NewGuid().ToString();
+            visitor.IdVisitor=Guid.NewGuid().ToString();
             visitor.Username=username;
             visitor.Name=name;
             visitor.Password=pass;

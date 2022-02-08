@@ -4,8 +4,14 @@
 
 namespace Devon4Net.Application.WebAPI.Implementation.Migrations
 {
+    /// <summary>
+    /// InitialCreate migration
+    /// </summary>
     public partial class InitialCreate : Migration
     {
+        /// <summary>
+        /// Up method
+        /// </summary>
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
@@ -125,6 +131,9 @@ namespace Devon4Net.Application.WebAPI.Implementation.Migrations
                 column: "queueID");
         }
 
+        /// <summary>
+        /// Down method
+        /// </summary>
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

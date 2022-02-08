@@ -675,7 +675,7 @@ StatusCode 
 {66 	
 }77 	
 }88 
-}99 ·9
+}99 Ω;
 £C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\AccessCodeService.cs
 	namespace 	
 	Devon4Net
@@ -757,17 +757,17 @@ Repository# -
 )@ A
 ;A B
 } 	
-public$$ 
-Task$$ 
-<$$ 
-
-AccessCode$$ 
->$$  
-SearchAccessCodebyId$$  4
-($$4 5
-string$$5 ;
-id$$< >
-)$$> ?
+public$$ 
+async$$ 
+Task$$ 
+<$$ 
+AccessCodeDto$$ '
+>$$' ( 
+SearchAccessCodebyId$$) =
+($$= >
+string$$> D
+id$$E G
+)$$G H
 {%% 	
 if&& 
 (&& 
@@ -780,12 +780,12 @@ AccessCode$$ 
 )&&- .
 {'' 
 throw(( 
-new(( $
-NullOrWhiteSpaceArgument(( 2
-(((2 3
-$str((3 Q
-)((Q R
-;((R S
+new(( -
+!NullOrWhiteSpaceArgumentException(( ;
+(((; <
+$str((< Z
+)((Z [
+;(([ \
 })) 
 Devon4NetLogger** 
 .** 
@@ -793,281 +793,293 @@ AccessCode$$ 
 (**! "
 $str**" R
 )**R S
-;**S T
-return++ !
-_AccessCodeRepository++ (
-.++( ) 
-SearchAccessCodebyId++) =
-(++= >
-id++> @
-)++@ A
-;++A B
-},, 	
-public33 
-async33 
-Task33 
-<33 
-AccessCodeDto33 '
->33' (
-CreateAccessCode33) 9
-(339 :
-string33: @
-	idvisitor33A J
-,33J K
-string33L R
-queue33S X
-)33X Y
-{44 	
-if55 
-(55 
-string55 
-.55 
-IsNullOrWhiteSpace55 )
-(55) *
-	idvisitor55* 3
-)553 4
-||554 6
-string556 <
-.55< =
-IsNullOrWhiteSpace55= O
-(55O P
-queue55P U
-)55U V
-)55V W
-{66 
-throw77 
-new77 $
-NullOrWhiteSpaceArgument77 2
-(772 3
-$str773 R
-)77R S
-;77S T
-}88 
-Devon4NetLogger99 
-.99 
-Debug99 !
-(99! "
-$str99" Q
-)99Q R
-;99R S
-if;; 
-(;; 
-!;; 
-await;; !
-_AccessCodeRepository;; ,
-.;;, -
-AnyAccessCode;;- :
-(;;: ;
-	idvisitor;;; D
-,;;D E
-queue;;F K
-);;K L
-);;L M
-{<< 
-var== 
+;**S T
+var++ 
+ac++ 
+=++ 
+await++ !
+_AccessCodeRepository++ 0
+.++0 1 
+SearchAccessCodebyId++1 E
+(++E F
+id++F H
+)++H I
+;++I J
+return,, 
+AccessCodeConverter,, &
+.,,& '
 
-accesscode== 
-===  
-await==! &!
-_AccessCodeRepository==' <
-.==< =
-CreateAccessCode=== M
-(==M N
-	idvisitor==N W
-,==W X
-queue==Y ^
-)==^ _
-.==_ `
-ConfigureAwait==` n
-(==n o
-false==o t
-)==t u
-;==u v
-await>> 
-_QueueRepository>> &
-.>>& '
-IncrementCustomers>>' 9
-(>>9 :
-queue>>: ?
-)>>? @
-.>>@ A
-ConfigureAwait>>A O
-(>>O P
-false>>P U
-)>>U V
-;>>V W
-return?? 
-AccessCodeConverter?? *
-.??* +
+ModelToDto,,' 1
+(,,1 2
+ac,,2 4
+),,4 5
+;,,5 6
+}-- 	
+public44 
+async44 
+Task44 
+<44 
+AccessCodeDto44 '
+>44' (
+CreateAccessCode44) 9
+(449 :
+string44: @
+	idvisitor44A J
+,44J K
+string44L R
+idqueue44S Z
+)44Z [
+{55 	
+if66 
+(66 
+string66 
+.66 
+IsNullOrWhiteSpace66 )
+(66) *
+	idvisitor66* 3
+)663 4
+||664 6
+string666 <
+.66< =
+IsNullOrWhiteSpace66= O
+(66O P
+idqueue66P W
+)66W X
+)66X Y
+{77 
+throw88 
+new88 -
+!NullOrWhiteSpaceArgumentException88 ;
+(88; <
+$str88< [
+)88[ \
+;88\ ]
+}99 
+Devon4NetLogger:: 
+.:: 
+Debug:: !
+(::! "
+$str::" Q
+)::Q R
+;::R S
+if<< 
+(<< 
+!<< 
+await<< !
+_AccessCodeRepository<< ,
+.<<, -
+AnyAccessCode<<- :
+(<<: ;
+	idvisitor<<; D
+,<<D E
+idqueue<<F M
+)<<M N
+)<<N O
+{== 
+var>> 
 
-ModelToDto??+ 5
-(??5 6
+accesscode>> 
+=>>  
+await>>! &!
+_AccessCodeRepository>>' <
+.>>< =
+CreateAccessCode>>= M
+(>>M N
+	idvisitor>>N W
+,>>W X
+idqueue>>Y `
+)>>` a
+.>>a b
+ConfigureAwait>>b p
+(>>p q
+false>>q v
+)>>v w
+;>>w x
+await?? 
+_QueueRepository?? &
+.??& '
+IncrementCustomers??' 9
+(??9 :
+idqueue??: A
+)??A B
+.??B C
+ConfigureAwait??C Q
+(??Q R
+false??R W
+)??W X
+;??X Y
+return@@ 
+AccessCodeConverter@@ *
+.@@* +
 
-accesscode??6 @
-)??@ A
-;??A B
-}@@ 
-throwAA 
-newAA #
-AlreadyHasCodeExceptionAA -
-(AA- .
-$"AA. 0
-$strAA0 S
-{AAS T
-queueAAT Y
-}AAY Z
-$strAAZ `
-"AA` a
-)AAa b
-;AAb c
-}BB 	
-publicHH 
-asyncHH 
-TaskHH 
-<HH 
-stringHH  
->HH  !
-DeleteAccessCodeHH" 2
-(HH2 3
-stringHH3 9
-idaccesscodeHH: F
-)HHF G
-{II 	
-ifJJ 
-(JJ 
-stringJJ 
-.JJ 
-IsNullOrWhiteSpaceJJ )
-(JJ) *
-idaccesscodeJJ* 6
-)JJ6 7
-)JJ7 8
-{KK 
-throwLL 
-newLL $
-NullOrWhiteSpaceArgumentLL 2
-(LL2 3
-$strLL3 Q
-)LLQ R
-;LLR S
-}MM 
-Devon4NetLoggerNN 
-.NN 
-DebugNN !
-(NN! "
-$"NN" $
-$strNN$ c
-{NNc d
-idaccesscodeNNd p
-}NNp q
-"NNq r
-)NNr s
-;NNs t
-varOO 
-acOO 
-=OO 
-awaitOO !
-_AccessCodeRepositoryOO 0
-.OO0 1 
-SearchAccessCodebyIdOO1 E
-(OOE F
-idaccesscodeOOF R
-)OOR S
-;OOS T
-ifPP 
-(PP 
-acPP 
-!=PP 
-nullPP 
-)PP 
-awaitQQ 
-_QueueRepositoryQQ &
-.QQ& '
-DecrementCustomersQQ' 9
-(QQ9 :
-acQQ: <
-.QQ< =
-QueueIdQQ= D
-)QQD E
-.QQE F
-ConfigureAwaitQQF T
-(QQT U
-falseQQU Z
-)QQZ [
-;QQ[ \
-returnSS 
-awaitSS !
-_AccessCodeRepositorySS .
-.SS. /
-DeleteAccessCodeSS/ ?
-(SS? @
-idaccesscodeSS@ L
-)SSL M
-.SSM N
-ConfigureAwaitSSN \
-(SS\ ]
-falseSS] b
-)SSb c
-;SSc d
-}TT 	
-publicZZ 
-asyncZZ 
-TaskZZ 
-<ZZ 
-IListZZ 
-<ZZ  
+ModelToDto@@+ 5
+(@@5 6
 
-AccessCodeZZ  *
->ZZ* +
->ZZ+ ,$
-SearchVisitorAccessCodesZZ- E
-(ZZE F
-stringZZF L
-	idvisitorZZM V
-)ZZV W
-{[[ 	
-if\\ 
-(\\ 
-string\\ 
-.\\ 
-IsNullOrWhiteSpace\\ )
-(\\) *
-	idvisitor\\* 3
-)\\3 4
-)\\4 5
-{]] 
-throw^^ 
-new^^ $
-NullOrWhiteSpaceArgument^^ 2
-(^^2 3
-$str^^3 Q
-)^^Q R
-;^^R S
-}__ 
-Devon4NetLogger`` 
-.`` 
-Debug`` !
-(``! "
-$str``" [
-)``[ \
-;``\ ]
-returnaa 
-awaitaa !
-_AccessCodeRepositoryaa .
-.aa. /$
-SearchVisitorAccessCodesaa/ G
-(aaG H
-	idvisitoraaH Q
-)aaQ R
-.aaR S
-ConfigureAwaitaaS a
-(aaa b
-falseaab g
-)aag h
-;aah i
-}bb 	
-}cc 
-}dd ∏
+accesscode@@6 @
+)@@@ A
+;@@A B
+}AA 
+throwBB 
+newBB #
+AlreadyHasCodeExceptionBB -
+(BB- .
+$"BB. 0
+$strBB0 S
+{BBS T
+idqueueBBT [
+}BB[ \
+$strBB\ b
+"BBb c
+)BBc d
+;BBd e
+}CC 	
+publicII 
+asyncII 
+TaskII 
+<II 
+stringII  
+>II  !
+DeleteAccessCodeII" 2
+(II2 3
+stringII3 9
+idII: <
+)II< =
+{JJ 	
+ifKK 
+(KK 
+stringKK 
+.KK 
+IsNullOrWhiteSpaceKK )
+(KK) *
+idKK* ,
+)KK, -
+)KK- .
+{LL 
+throwMM 
+newMM -
+!NullOrWhiteSpaceArgumentExceptionMM ;
+(MM; <
+$strMM< Z
+)MMZ [
+;MM[ \
+}NN 
+Devon4NetLoggerOO 
+.OO 
+DebugOO !
+(OO! "
+$"OO" $
+$strOO$ c
+{OOc d
+idOOd f
+}OOf g
+"OOg h
+)OOh i
+;OOi j
+varPP 
+acPP 
+=PP 
+awaitPP !
+_AccessCodeRepositoryPP 0
+.PP0 1 
+SearchAccessCodebyIdPP1 E
+(PPE F
+idPPF H
+)PPH I
+;PPI J
+ifQQ 
+(QQ 
+acQQ 
+!=QQ 
+nullQQ 
+)QQ 
+awaitRR 
+_QueueRepositoryRR &
+.RR& '
+DecrementCustomersRR' 9
+(RR9 :
+acRR: <
+.RR< =
+QueueIdRR= D
+)RRD E
+.RRE F
+ConfigureAwaitRRF T
+(RRT U
+falseRRU Z
+)RRZ [
+;RR[ \
+returnTT 
+awaitTT !
+_AccessCodeRepositoryTT .
+.TT. /
+DeleteAccessCodeTT/ ?
+(TT? @
+idTT@ B
+)TTB C
+.TTC D
+ConfigureAwaitTTD R
+(TTR S
+falseTTS X
+)TTX Y
+;TTY Z
+}UU 	
+public[[ 
+async[[ 
+Task[[ 
+<[[ 
+IList[[ 
+<[[  
+
+AccessCode[[  *
+>[[* +
+>[[+ ,$
+SearchVisitorAccessCodes[[- E
+([[E F
+string[[F L
+	idvisitor[[M V
+)[[V W
+{\\ 	
+if]] 
+(]] 
+string]] 
+.]] 
+IsNullOrWhiteSpace]] )
+(]]) *
+	idvisitor]]* 3
+)]]3 4
+)]]4 5
+{^^ 
+throw__ 
+new__ -
+!NullOrWhiteSpaceArgumentException__ ;
+(__; <
+$str__< Z
+)__Z [
+;__[ \
+}`` 
+Devon4NetLoggeraa 
+.aa 
+Debugaa !
+(aa! "
+$straa" [
+)aa[ \
+;aa\ ]
+returnbb 
+awaitbb !
+_AccessCodeRepositorybb .
+.bb. /$
+SearchVisitorAccessCodesbb/ G
+(bbG H
+	idvisitorbbH Q
+)bbQ R
+.bbR S
+ConfigureAwaitbbS a
+(bba b
+falsebbb g
+)bbg h
+;bbh i
+}cc 	
+}dd 
+}ee ß
 §C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\IAccessCodeService.cs
 	namespace 	
 	Devon4Net
@@ -1097,16 +1109,15 @@ AccessCodeZZ  *
  '
 { 
 Task 
-< 
-
-AccessCode 
->  
-SearchAccessCodebyId -
-(- .
-string. 4
-idaccesscode5 A
-)A B
-;B C
+< 
+AccessCodeDto 
+>  
+SearchAccessCodebyId 0
+(0 1
+string1 7
+id8 :
+): ;
+;; <
 Task 
 < 
 AccessCodeDto 
@@ -1126,10 +1137,10 @@ AccessCode 
 > 
 DeleteAccessCode %
 (% &
-String& ,
-idaccesscode- 9
-)9 :
-;: ;
+string& ,
+id- /
+)/ 0
+;0 1
 Task 
 < 
 IList 
@@ -5261,7 +5272,7 @@ ModelToDto )
 = 
 item 
 . 
-Idqueue &
+IdQueue &
 ,& '
 Name 
 = 
@@ -5410,7 +5421,7 @@ ModelToDto )
 ;22( )
 }22* +
 }33 
-}44 ®
+}44 ´
 öC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Service\IQueueService.cs
 	namespace 	
 	Devon4Net
@@ -5447,172 +5458,218 @@ ModelToDto )
 )4 5
 ;5 6
 Task 
-< 
-Queue 
-> 
-CreateQueue 
-(  
-string  &
-name' +
-)+ ,
-;, -
+< 
+QueueDto 
+> 
+CreateQueue "
+(" #
+string# )
+name* .
+). /
+;/ 0
 } 
-} è
+} ”
 ôC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Service\QueueService.cs
-	namespace 	
-	Devon4Net
+	namespace
+
+ 	
+	Devon4Net
+
+
  
-. 
-Application 
-.  
-WebAPI  &
-.& '
-Implementation' 5
-.5 6
-Business6 >
-.> ?
-QueueManagement? N
-.N O
-ServiceO V
-{ 
-public 
+.
+
+ 
+Application
+
+ 
+.
+
+  
+WebAPI
+
+  &
+.
+
+& '
+Implementation
+
+' 5
+.
+
+5 6
+Business
+
+6 >
+.
+
+> ?
+QueueManagement
+
+? N
+.
+
+N O
+Service
+
+O V
+{ 
+public 
 
-class 
-QueueService 
-: 
-Service &
-<& '
+class 
+QueueService 
+: 
+Service &
+<& '
 
-JtqContext' 1
->1 2
-,2 3
-IQueueService4 A
-{ 
-private 
-readonly 
-IQueueRepository )
-_QueueRepository* :
-;: ;
-public 
-QueueService 
-( 
-IUnitOfWork '
-<' (
+JtqContext' 1
+>1 2
+,2 3
+IQueueService4 A
+{ 
+private 
+readonly 
+IQueueRepository )
+_QueueRepository* :
+;: ;
+public 
+QueueService 
+( 
+IUnitOfWork '
+<' (
 
-JtqContext( 2
->2 3
-uoW4 7
-)7 8
-:9 :
-base; ?
-(? @
-uoW@ C
-)C D
-{ 	
-_QueueRepository 
-= 
-uoW "
-." #
+JtqContext( 2
+>2 3
+uoW4 7
+)7 8
+:9 :
+base; ?
+(? @
+uoW@ C
+)C D
+{ 	
+_QueueRepository 
+= 
+uoW "
+." #
 
-Repository# -
-<- .
-IQueueRepository. >
->> ?
-(? @
-)@ A
-;A B
-} 	
-public   
-async   
-Task   
-<   
-IEnumerable   %
-<  % &
-QueueDto  & .
->  . /
->  / 0
-GetActiveQueues  1 @
-(  @ A
-)  B C
-{!! 	
-Devon4NetLogger"" 
-."" 
-Debug"" !
-(""! "
-$str""" O
-)""O P
-;""P Q
-var## 
-result## 
-=## 
-await## 
-_QueueRepository## /
-.##/ 0
-GetActiveQueues##0 ?
-(##? @
-)##@ A
-.##A B
-ConfigureAwait##B P
-(##P Q
-false##Q V
-)##V W
-;##W X
-return$$ 
-result$$ 
-.$$ 
-Select$$  
-($$  !
-QueueConverter$$! /
-.$$/ 0
+Repository# -
+<- .
+IQueueRepository. >
+>> ?
+(? @
+)@ A
+;A B
+} 	
+public 
+async 
+Task 
+< 
+IEnumerable %
+<% &
+QueueDto& .
+>. /
+>/ 0
+GetActiveQueues1 @
+(@ A
+)B C
+{   	
+Devon4NetLogger!! 
+.!! 
+Debug!! !
+(!!! "
+$str!!" O
+)!!O P
+;!!P Q
+var"" 
+result"" 
+="" 
+await"" 
+_QueueRepository"" /
+.""/ 0
+GetActiveQueues""0 ?
+(""? @
+)""@ A
+.""A B
+ConfigureAwait""B P
+(""P Q
+false""Q V
+)""V W
+;""W X
+return## 
+result## 
+.## 
+Select##  
+(##  !
+QueueConverter##! /
+.##/ 0
 
-ModelToDto$$0 :
-)$$: ;
-;$$; <
-}%% 	
-public++ 
-Task++ 
-<++ 
-Queue++ 
->++ 
-CreateQueue++ &
-(++& '
-string++' -
-name++. 2
-)++2 3
-{,, 	
-if-- 
-(-- 
-string-- 
-.-- 
-IsNullOrWhiteSpace-- )
-(--) *
-name--* .
-)--. /
-)--/ 0
-{.. 
-throw// 
-new// $
-NullOrWhiteSpaceArgument// 2
-(//2 3
-$str//3 R
-)//R S
-;//S T
-}00 
-Devon4NetLogger11 
-.11 
-Debug11 !
-(11! "
-$str11" H
-)11H I
-;11I J
-return22 
-_QueueRepository22 #
-.22# $
-CreateQueue22$ /
-(22/ 0
-name220 4
-)224 5
-;225 6
+ModelToDto##0 :
+)##: ;
+;##; <
+}$$ 	
+public** 
+async** 
+Task** 
+<** 
+QueueDto** "
+>**" #
+CreateQueue**$ /
+(**/ 0
+string**0 6
+name**7 ;
+)**; <
+{++ 	
+if,, 
+(,, 
+string,, 
+.,, 
+IsNullOrWhiteSpace,, )
+(,,) *
+name,,* .
+),,. /
+),,/ 0
+{-- 
+throw.. 
+new.. -
+!NullOrWhiteSpaceArgumentException.. ;
+(..; <
+$str..< [
+)..[ \
+;..\ ]
+}// 
+Devon4NetLogger00 
+.00 
+Debug00 !
+(00! "
+$str00" H
+)00H I
+;00I J
+var11 
+queue11 
+=11 
+await11 
+_QueueRepository11 .
+.11. /
+CreateQueue11/ :
+(11: ;
+name11; ?
+)11? @
+.11@ A
+ConfigureAwait11A O
+(11O P
+false11P U
+)11U V
+;11V W
+return22 
+QueueConverter22 !
+.22! "
+
+ModelToDto22" ,
+(22, -
+queue22- 2
+)222 3
+;223 4
 }33 	
 }44 
 }55 ı
@@ -7833,8 +7890,8 @@ AccessCode..# -
 ;..E F
 }..G H
 }// 
-}00 ˘
-°C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTerms.cs
+}00 Ø
+™C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTermsException.cs
 	namespace 	
 	Devon4Net
  
@@ -7861,22 +7918,22 @@ ExceptionsQ [
 
 class
 
- 
-MustAcceptTerms
+ $
+MustAcceptTermsException
 
-  
+ )
 :
 
-! "
+* +
 	Exception
 
-# ,
+, 5
 ,
 
-, -
+5 6
 IWebApiException
 
-. >
+7 G
 { 
 public 
 int 
@@ -7893,18 +7950,18 @@ StatusCode 
 =>  "
 true# '
 ;' (
-public 
-MustAcceptTerms 
-( 
-)  
+public $
+MustAcceptTermsException '
+(' (
+)( )
 { 	
 } 	
-public!! 
-MustAcceptTerms!! 
-(!! 
-string!! %
-message!!& -
-)!!- .
+public!! $
+MustAcceptTermsException!! '
+(!!' (
+string!!( .
+message!!/ 6
+)!!6 7
 :"" 
 base"" 
 ("" 
@@ -7912,49 +7969,49 @@ StatusCode 
 )"" 
 {## 	
 }$$ 	
-public++ 
-MustAcceptTerms++ 
-(++ 
-string++ %
-message++& -
-,++- .
-	Exception++/ 8
-innerException++9 G
-)++G H
-:++I J
-base++K O
-(++O P
-message++P W
-,++W X
-innerException++Y g
-)++g h
+public++ $
+MustAcceptTermsException++ '
+(++' (
+string++( .
+message++/ 6
+,++6 7
+	Exception++8 A
+innerException++B P
+)++P Q
+:++R S
+base++T X
+(++X Y
+message++Y `
+,++` a
+innerException++b p
+)++p q
 {,, 	
 }-- 	
-	protected44 
-MustAcceptTerms44 !
-(44! "
-System44" (
-.44( )
-Runtime44) 0
-.440 1
-Serialization441 >
-.44> ?
-SerializationInfo44? P
-serializationInfo44Q b
-,44b c
-System44d j
-.44j k
-Runtime44k r
-.44r s
-Serialization	44s Ä
+	protected44 $
+MustAcceptTermsException44 *
+(44* +
+System44+ 1
+.441 2
+Runtime442 9
+.449 :
+Serialization44: G
+.44G H
+SerializationInfo44H Y
+serializationInfo44Z k
+,44k l
+System44m s
+.44s t
+Runtime44t {
+.44{ |
+Serialization	44| â
 .
-44Ä Å
+44â ä
 StreamingContext
-44Å ë
+44ä ö
 streamingContext
-44í ¢
+44õ ´
 )
-44¢ £
+44´ ¨
 :55 
 base55 
 (55 
@@ -8029,7 +8086,7 @@ StatusCode 
 )5 6
 ;6 7
 } 
-} í"
+} ≠"
 ùC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Service\VisitorService.cs
 	namespace
 
@@ -8187,24 +8244,24 @@ Repository% /
 )
 ))õ ú
 throw** 
-new** $
-NullOrWhiteSpaceArgument** 2
-(**2 3
-$str**3 Q
-)**Q R
-;**R S
+new** -
+!NullOrWhiteSpaceArgumentException** ;
+(**; <
+$str**< Z
+)**Z [
+;**[ \
 if,, 
 (,, 
 !,, 
 acceptedTerms,, 
 ),, 
 throw-- 
-new-- 
-MustAcceptTerms-- )
-(--) *
-$str--* G
-)--G H
-;--H I
+new-- $
+MustAcceptTermsException-- 2
+(--2 3
+$str--3 P
+)--P Q
+;--Q R
 Devon4NetLogger// 
 .// 
 Debug// !
@@ -8271,12 +8328,12 @@ Repository% /
 )::U V
 )::V W
 throw;; 
-new;; $
-NullOrWhiteSpaceArgument;; 2
-(;;2 3
-$str;;3 Q
-);;Q R
-;;;R S
+new;; -
+!NullOrWhiteSpaceArgumentException;; ;
+(;;; <
+$str;;< Z
+);;Z [
+;;;[ \
 Devon4NetLogger== 
 .== 
 Debug== !
@@ -8673,7 +8730,7 @@ ClaimTypesee? I
 ;een o
 }ff 	
 }gg 
-}hh Á,
+}hh û,
 íC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\AccessCodeRepository.cs
 	namespace 	
 	Devon4Net
@@ -8840,27 +8897,24 @@ AccessCode''  *
 (11! "
 $str11" `
 )11` a
-;11a b
-var22 
-deleted22 
-=22 
-await22 
-Delete22  &
-(22& '
-t22( )
-=>22* ,
-t22- .
-.22. /
-IdaccessCode22/ ;
-==22; =
-idaccesscode22= I
-)22I J
-.22J K
-ConfigureAwait22K Y
-(22Y Z
-false22Z _
-)22_ `
-;22` a
+;11a b
+await22 
+Delete22 
+(22 
+t22 
+=>22 
+t22  
+.22  !
+IdaccessCode22! -
+==22- /
+idaccesscode22/ ;
+)22; <
+.22< =
+ConfigureAwait22= K
+(22K L
+false22L Q
+)22Q R
+;22R S
 return44 
 idaccesscode44 
 ;44  
@@ -8874,9 +8928,9 @@ AccessCode<< $
 ><<$ % 
 SearchAccessCodebyId<<& :
 (<<: ;
-string<<; A
-idaccesscode<<B N
-)<<N O
+string<<; A
+id<<B D
+)<<D E
 {== 	
 Devon4NetLogger>> 
 .>> 
@@ -8894,15 +8948,15 @@ AccessCode<< $
 t??. /
 .??/ 0
 IdaccessCode??0 <
-==??< >
-idaccesscode??> J
-)??J K
-.??K L
-ConfigureAwait??L Z
-(??Z [
-false??[ `
-)??` a
-;??a b
+==??< >
+id??> @
+)??@ A
+.??A B
+ConfigureAwait??B P
+(??P Q
+false??Q V
+)??V W
+;??W X
 }@@ 	
 publicHH 
 asyncHH 
@@ -8964,38 +9018,38 @@ AccessCode<< $
 )LL* +
 ;LL+ ,
 }MM 	
-publicOO 
-asyncOO 
-TaskOO 
-<OO 
-IListOO 
-<OO  
+publicTT 
+asyncTT 
+TaskTT 
+<TT 
+IListTT 
+<TT  
 
-AccessCodeOO  *
->OO* +
->OO+ ,$
-SearchVisitorAccessCodesOO- E
-(OOE F
-stringOOF L
-	idvisitorOOM V
-)OOV W
-{PP 	
-returnQQ 
-awaitQQ 
-GetQQ 
-(QQ 
-tQQ 
-=>QQ !
-tQQ" #
-.QQ# $
-	VisitorIdQQ$ -
-==QQ- /
-	idvisitorQQ/ 8
-)QQ8 9
-;QQ9 :
-}RR 	
-}TT 
-}UU ‚ 
+AccessCodeTT  *
+>TT* +
+>TT+ ,$
+SearchVisitorAccessCodesTT- E
+(TTE F
+stringTTF L
+	idvisitorTTM V
+)TTV W
+{UU 	
+returnVV 
+awaitVV 
+GetVV 
+(VV 
+tVV 
+=>VV !
+tVV" #
+.VV# $
+	VisitorIdVV$ -
+==VV- /
+	idvisitorVV/ 8
+)VV8 9
+;VV9 :
+}WW 	
+}YY 
+}ZZ ‚ 
 êC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\EmployeeRepository.cs
 	namespace 	
 	Devon4Net
@@ -9231,7 +9285,7 @@ Expression1 ;
 }JJ 	
 }KK 
 }LL Ü
-ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\jtqRepository.cs
+ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\JtqRepository.cs
 	namespace 	
 	Devon4Net
  
@@ -9249,7 +9303,7 @@ Expression1 ;
 public 
 
 class 
-jtqRepository 
+JtqRepository 
 :  
 
 Repository! +
@@ -9260,7 +9314,7 @@ Repository! +
 IjtqRepository5 C
 { 
 public 
-jtqRepository 
+JtqRepository 
 ( 
 
 JtqContext '
@@ -9359,7 +9413,7 @@ Expression- 7
 ;**! "
 }++ 	
 }-- 
-}.. ß%
+}.. ò%
 çC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\QueueRepository.cs
 	namespace 	
 	Devon4Net
@@ -9433,7 +9487,6 @@ JtqContext )
 falseA F
 )F G
 ;G H
-;H I
 } 	
 public!! 
 async!! 
@@ -9453,7 +9506,7 @@ JtqContext )
 new## 
 Queue## !
 {$$ 
-Idqueue%% 
+IdQueue%% 
 =%% 
 Guid%% 
 .%% 
@@ -9538,7 +9591,7 @@ JtqContext )
 =>55. 0
 t551 2
 .552 3
-Idqueue553 :
+IdQueue553 :
 ==55; =
 idqueue55> E
 )55E F
@@ -9593,7 +9646,7 @@ JtqContext )
 =>@@. 0
 t@@1 2
 .@@2 3
-Idqueue@@3 :
+IdQueue@@3 :
 ==@@; =
 idqueue@@> E
 )@@E F
@@ -9982,7 +10035,7 @@ JtqContext! +
 ;  % &
 visitor!! 
 .!! 
-	Idvisitor!! 
+	IdVisitor!! 
 =!! 
 Guid!! "
 .!!" #
@@ -10238,7 +10291,7 @@ IsRequired(( 
 ;** 
 }++ 	
 },, 
-}-- çÖ
+}-- ÒÜ
 ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs
 	namespace 	
 	Devon4Net
@@ -10254,341 +10307,219 @@ IsRequired(( 
 .< =
 Database= E
 { 
-public		 
+public 
 
-partial		 
-class		 
+partial 
+class 
 
-JtqContext		 #
-:		$ %
-	DbContext		& /
-{
-
- 
-public 
+JtqContext #
+:$ %
+	DbContext& /
+{ 
+public 
 
-JtqContext 
-( 
-) 
-{ 	
-} 	
-public 
+JtqContext 
+( 
+) 
+{ 	
+} 	
+public 
 
-JtqContext 
-( 
-DbContextOptions *
-<* +
+JtqContext 
+( 
+DbContextOptions *
+<* +
 
-JtqContext+ 5
->5 6
-options7 >
-)> ?
-: 
-base 
-( 
-options 
-) 
-{ 	
-} 	
-public 
-virtual 
-DbSet 
-< 
+JtqContext+ 5
+>5 6
+options7 >
+)> ?
+:@ A
+baseB F
+(F G
+optionsG N
+)N O
+{ 	
+} 	
+public 
+virtual 
+DbSet 
+< 
 
-AccessCode '
->' (
-AccessCodes) 4
-{5 6
-get7 :
-;: ;
-set< ?
-;? @
-}A B
-public 
-virtual 
-DbSet 
-< 
-Prueba #
-># $
-Pruebas% ,
-{- .
-get/ 2
-;2 3
-set4 7
-;7 8
-}9 :
-public 
-virtual 
-DbSet 
-< 
-Queue "
->" #
-Queues$ *
-{+ ,
-get- 0
-;0 1
-set2 5
-;5 6
-}7 8
-public 
-virtual 
-DbSet 
-< 
-Visitor $
->$ %
-Visitors& .
-{/ 0
-get1 4
-;4 5
-set6 9
-;9 :
-}; <
-	protected 
-override 
-void 
-OnModelCreating  /
-(/ 0
-ModelBuilder0 <
-modelBuilder= I
-)I J
-{ 	
-modelBuilder 
-. 
-UseCollation %
-(% &
-$str& :
-): ;
-. 
+AccessCode '
+>' (
+AccessCodes) 4
+{5 6
+get7 :
+;: ;
+set< ?
+;? @
+}A B
+public## 
+virtual## 
+DbSet## 
+<## 
+Prueba## #
+>### $
+Pruebas##% ,
+{##- .
+get##/ 2
+;##2 3
+set##4 7
+;##7 8
+}##9 :
+public'' 
+virtual'' 
+DbSet'' 
+<'' 
+Queue'' "
+>''" #
+Queues''$ *
+{''+ ,
+get''- 0
+;''0 1
+set''2 5
+;''5 6
+}''7 8
+public++ 
+virtual++ 
+DbSet++ 
+<++ 
+Visitor++ $
+>++$ %
+Visitors++& .
+{++/ 0
+get++1 4
+;++4 5
+set++6 9
+;++9 :
+}++; <
+	protected00 
+override00 
+void00 
+OnModelCreating00  /
+(00/ 0
+ModelBuilder000 <
+modelBuilder00= I
+)00I J
+{11 	
+modelBuilder22 
+.22 
+UseCollation22 %
+(22% &
+$str22& :
+)22: ;
+.33 
 
-HasCharSet 
-( 
-$str %
-)% &
-;& '
-modelBuilder 
-. 
-Entity 
-<  
+HasCharSet33 
+(33 
+$str33 %
+)33% &
+;33& '
+modelBuilder55 
+.55 
+Entity55 
+<55  
 
-AccessCode  *
->* +
-(+ ,
-entity, 2
-=>3 5
-{ 
-entity   
-.   
-HasKey   
-(   
-e   
-=>    "
-e  # $
-.  $ %
-IdaccessCode  % 1
-)  1 2
-.!! 
-HasName!! 
-(!! 
-$str!! &
-)!!& '
-;!!' (
-entity## 
-.## 
-ToTable## 
-(## 
-$str## +
-)##+ ,
-;##, -
-entity%% 
-.%% 
+AccessCode55  *
+>55* +
+(55+ ,
+entity55, 2
+=>553 5
+{66 
+entity77 
+.77 
+HasKey77 
+(77 
+e77 
+=>77  "
+e77# $
+.77$ %
+IdaccessCode77% 1
+)771 2
+.88 
+HasName88 
+(88 
+$str88 &
+)88& '
+;88' (
+entity:: 
+.:: 
+ToTable:: 
+(:: 
+$str:: +
+)::+ ,
+;::, -
+entity<< 
+.<< 
 
-HasCharSet%% !
-(%%! "
-$str%%" (
-)%%( )
-.&& 
-UseCollation&& !
-(&&! "
-$str&&" 3
-)&&3 4
-;&&4 5
-entity(( 
-.(( 
-HasIndex(( 
-(((  
-e((  !
-=>((" $
-e((% &
-.((& '
-	VisitorId((' 0
-,((0 1
-$str((2 A
-)((A B
-;((B C
-entity** 
-.** 
-HasIndex** 
-(**  
-e**  !
-=>**" $
-e**% &
-.**& '
-QueueId**' .
-,**. /
-$str**0 A
-)**A B
-;**B C
-entity,, 
-.,, 
-Property,, 
-(,,  
-e,,  !
-=>,," $
-e,,% &
-.,,& '
-IdaccessCode,,' 3
-),,3 4
-.-- 
-HasMaxLength-- !
-(--! "
-$num--" %
-)--% &
-... 
-HasColumnName.. "
-(.." #
-$str..# 1
-)..1 2
-;..2 3
-entity00 
-.00 
-Property00 
-(00  
-e00  !
-=>00" $
-e00% &
-.00& '
-CreationTime00' 3
-)003 4
-.11 
-HasMaxLength11 !
-(11! "
-$num11" %
-)11% &
-.22 
-HasColumnName22 "
-(22" #
-$str22# 1
-)221 2
-;222 3
-entity44 
-.44 
-Property44 
-(44  
-e44  !
-=>44" $
-e44% &
-.44& '
-EndTime44' .
-)44. /
-.55 
-HasMaxLength55 !
-(55! "
-$num55" %
-)55% &
-.66 
-HasColumnName66 "
-(66" #
-$str66# ,
-)66, -
-;66- .
-entity88 
-.88 
-Property88 
-(88  
-e88  !
-=>88" $
-e88% &
-.88& '
-QueueId88' .
-)88. /
-.99 
-
-IsRequired99 
-(99  
-)99  !
-.:: 
-HasMaxLength:: !
-(::! "
-$num::" %
-)::% &
-.;; 
-HasColumnName;; "
-(;;" #
-$str;;# ,
-);;, -
-;;;- .
-entity== 
-.== 
-Property== 
-(==  
-e==  !
-=>==" $
-e==% &
-.==& '
-	StartTime==' 0
-)==0 1
-.>> 
-HasMaxLength>> !
-(>>! "
-$num>>" %
-)>>% &
-.?? 
-HasColumnName?? "
-(??" #
-$str??# .
-)??. /
-;??/ 0
+HasCharSet<< !
+(<<! "
+$str<<" (
+)<<( )
+.== 
+UseCollation== !
+(==! "
+$str==" 3
+)==3 4
+;==4 5
+entity?? 
+.?? 
+HasIndex?? 
+(??  
+e??  !
+=>??" $
+e??% &
+.??& '
+	VisitorId??' 0
+,??0 1
+$str??2 A
+)??A B
+;??B C
 entityAA 
 .AA 
-PropertyAA 
+HasIndexAA 
 (AA  
 eAA  !
 =>AA" $
 eAA% &
-.AA& '
-TicketNumberAA' 3
-)AA3 4
-.BB 
-
-IsRequiredBB 
-(BB  
-)BB  !
-.CC 
-HasMaxLengthCC !
-(CC! "
-$numCC" %
-)CC% &
-.DD 
-HasColumnNameDD "
-(DD" #
-$strDD# 1
-)DD1 2
-;DD2 3
-entityFF 
-.FF 
-PropertyFF 
-(FF  
-eFF  !
-=>FF" $
-eFF% &
-.FF& '
-	VisitorIdFF' 0
-)FF0 1
-.GG 
-
-IsRequiredGG 
+.AA& '
+QueueIdAA' .
+,AA. /
+$strAA0 A
+)AAA B
+;AAB C
+entityCC 
+.CC 
+PropertyCC 
+(CC  
+eCC  !
+=>CC" $
+eCC% &
+.CC& '
+IdaccessCodeCC' 3
+)CC3 4
+.DD 
+HasMaxLengthDD !
+(DD! "
+$numDD" %
+)DD% &
+.EE 
+HasColumnNameEE "
+(EE" #
+$strEE# 1
+)EE1 2
+;EE2 3
+entityGG 
+.GG 
+PropertyGG 
 (GG  
-)GG  !
+eGG  !
+=>GG" $
+eGG% &
+.GG& '
+CreationTimeGG' 3
+)GG3 4
 .HH 
 HasMaxLengthHH !
 (HH! "
@@ -10597,901 +10528,1135 @@ IsRequiredGG 
 .II 
 HasColumnNameII "
 (II" #
-$strII# .
-)II. /
-;II/ 0
+$strII# 1
+)II1 2
+;II2 3
 entityKK 
-.KK 
-HasOneKK 
-(KK 
-dKK 
-=>KK  "
-dKK# $
-.KK$ %
-QueueKK% *
-)KK* +
-.LL 
-WithManyLL 
-(LL 
-pLL 
-=>LL  "
-pLL# $
-.LL$ %
-AccessCodesLL% 0
-)LL0 1
+.KK 
+PropertyKK 
+(KK  
+eKK  !
+=>KK" $
+eKK% &
+.KK& '
+EndTimeKK' .
+)KK. /
+.LL 
+HasMaxLengthLL !
+(LL! "
+$numLL" %
+)LL% &
 .MM 
-HasForeignKeyMM "
-(MM" #
-dMM# $
-=>MM% '
-dMM( )
-.MM) *
-QueueIdMM* 1
-)MM1 2
-.NN 
-OnDeleteNN 
-(NN 
-DeleteBehaviorNN ,
-.NN, -
-ClientSetNullNN- :
-)NN: ;
-.OO 
-HasConstraintNameOO &
-(OO& '
-$strOO' 8
-)OO8 9
-;OO9 :
-entityQQ 
-.QQ 
-HasOneQQ 
-(QQ 
-dQQ 
-=>QQ  "
-dQQ# $
-.QQ$ %
-VisitorQQ% ,
-)QQ, -
-.RR 
-WithManyRR 
-(RR 
-pRR 
-=>RR  "
-pRR# $
-.RR$ %
-AccessCodesRR% 0
-)RR0 1
-.SS 
-HasForeignKeySS "
-(SS" #
-dSS# $
-=>SS% '
-dSS( )
-.SS) *
-	VisitorIdSS* 3
-)SS3 4
-.TT 
-OnDeleteTT 
-(TT 
-DeleteBehaviorTT ,
-.TT, -
-ClientSetNullTT- :
-)TT: ;
-.UU 
-HasConstraintNameUU &
-(UU& '
-$strUU' 6
-)UU6 7
-;UU7 8
-}VV 
-)VV 
-;VV 
-modelBuilderXX 
-.XX 
-EntityXX 
-<XX  
-PruebaXX  &
->XX& '
-(XX' (
-entityXX( .
-=>XX/ 1
-{YY 
-entityZZ 
-.ZZ 
-ToTableZZ 
-(ZZ 
-$strZZ '
-)ZZ' (
-;ZZ( )
-entity\\ 
-.\\ 
+HasColumnNameMM "
+(MM" #
+$strMM# ,
+)MM, -
+;MM- .
+entityOO 
+.OO 
+PropertyOO 
+(OO  
+eOO  !
+=>OO" $
+eOO% &
+.OO& '
+QueueIdOO' .
+)OO. /
+.PP 
 
-HasCharSet\\ !
-(\\! "
-$str\\" (
-)\\( )
-.]] 
-UseCollation]] !
-(]]! "
-$str]]" 3
-)]]3 4
-;]]4 5
-entity__ 
-.__ 
-Property__ 
-(__  
-e__  !
-=>__" $
-e__% &
-.__& '
-Id__' )
-)__) *
-.`` 
-HasMaxLength`` !
-(``! "
-$num``" %
-)``% &
-.aa 
-HasColumnNameaa "
-(aa" #
-$straa# '
-)aa' (
-;aa( )
-entitycc 
-.cc 
-Propertycc 
-(cc  
-ecc  !
-=>cc" $
-ecc% &
-.cc& '
-Nombrecc' -
-)cc- .
-.cc. /
-HasMaxLengthcc/ ;
-(cc; <
-$numcc< ?
-)cc? @
-;cc@ A
-}dd 
-)dd 
-;dd 
-modelBuilderff 
-.ff 
-Entityff 
-<ff  
-Queueff  %
->ff% &
-(ff& '
-entityff' -
-=>ff. 0
-{gg 
+IsRequiredPP 
+(PP  
+)PP  !
+.QQ 
+HasMaxLengthQQ !
+(QQ! "
+$numQQ" %
+)QQ% &
+.RR 
+HasColumnNameRR "
+(RR" #
+$strRR# ,
+)RR, -
+;RR- .
+entityTT 
+.TT 
+PropertyTT 
+(TT  
+eTT  !
+=>TT" $
+eTT% &
+.TT& '
+	StartTimeTT' 0
+)TT0 1
+.UU 
+HasMaxLengthUU !
+(UU! "
+$numUU" %
+)UU% &
+.VV 
+HasColumnNameVV "
+(VV" #
+$strVV# .
+)VV. /
+;VV/ 0
+entityXX 
+.XX 
+PropertyXX 
+(XX  
+eXX  !
+=>XX" $
+eXX% &
+.XX& '
+TicketNumberXX' 3
+)XX3 4
+.YY 
+
+IsRequiredYY 
+(YY  
+)YY  !
+.ZZ 
+HasMaxLengthZZ !
+(ZZ! "
+$numZZ" %
+)ZZ% &
+.[[ 
+HasColumnName[[ "
+([[" #
+$str[[# 1
+)[[1 2
+;[[2 3
+entity]] 
+.]] 
+Property]] 
+(]]  
+e]]  !
+=>]]" $
+e]]% &
+.]]& '
+	VisitorId]]' 0
+)]]0 1
+.^^ 
+
+IsRequired^^ 
+(^^  
+)^^  !
+.__ 
+HasMaxLength__ !
+(__! "
+$num__" %
+)__% &
+.`` 
+HasColumnName`` "
+(``" #
+$str``# .
+)``. /
+;``/ 0
+entitybb 
+.bb 
+HasOnebb 
+(bb 
+dbb 
+=>bb  "
+dbb# $
+.bb$ %
+Queuebb% *
+)bb* +
+.cc 
+WithManycc 
+(cc 
+pcc 
+=>cc  "
+pcc# $
+.cc$ %
+AccessCodescc% 0
+)cc0 1
+.dd 
+HasForeignKeydd "
+(dd" #
+ddd# $
+=>dd% '
+ddd( )
+.dd) *
+QueueIddd* 1
+)dd1 2
+.ee 
+OnDeleteee 
+(ee 
+DeleteBehavioree ,
+.ee, -
+ClientSetNullee- :
+)ee: ;
+.ff 
+HasConstraintNameff &
+(ff& '
+$strff' 8
+)ff8 9
+;ff9 :
 entityhh 
 .hh 
-HasKeyhh 
+HasOnehh 
 (hh 
-ehh 
+dhh 
 =>hh  "
-ehh# $
+dhh# $
 .hh$ %
-Idqueuehh% ,
+Visitorhh% ,
 )hh, -
-.ii 
-HasNameii 
-(ii 
-$strii &
-)ii& '
-;ii' (
-entitykk 
-.kk 
-ToTablekk 
-(kk 
-$strkk &
-)kk& '
-;kk' (
-entitymm 
-.mm 
+.ii 
+WithManyii 
+(ii 
+pii 
+=>ii  "
+pii# $
+.ii$ %
+AccessCodesii% 0
+)ii0 1
+.jj 
+HasForeignKeyjj "
+(jj" #
+djj# $
+=>jj% '
+djj( )
+.jj) *
+	VisitorIdjj* 3
+)jj3 4
+.kk 
+OnDeletekk 
+(kk 
+DeleteBehaviorkk ,
+.kk, -
+ClientSetNullkk- :
+)kk: ;
+.ll 
+HasConstraintNamell &
+(ll& '
+$strll' 6
+)ll6 7
+;ll7 8
+}mm 
+)mm 
+;mm 
+modelBuilderoo 
+.oo 
+Entityoo 
+<oo  
+Pruebaoo  &
+>oo& '
+(oo' (
+entityoo( .
+=>oo/ 1
+{pp 
+entityqq 
+.qq 
+ToTableqq 
+(qq 
+$strqq '
+)qq' (
+;qq( )
+entityss 
+.ss 
 
-HasCharSetmm !
-(mm! "
-$strmm" (
-)mm( )
-.nn 
-UseCollationnn !
-(nn! "
-$strnn" 3
-)nn3 4
-;nn4 5
-entitypp 
-.pp 
-Propertypp 
-(pp  
-epp  !
-=>pp" $
-epp% &
-.pp& '
-Idqueuepp' .
-)pp. /
-.qq 
-HasMaxLengthqq !
-(qq! "
-$numqq" %
-)qq% &
-.rr 
-HasColumnNamerr "
-(rr" #
-$strrr# ,
-)rr, -
-;rr- .
-entitytt 
-.tt 
-Propertytt 
-(tt  
-ett  !
-=>tt" $
-ett% &
-.tt& '
-AttentionTimett' 4
-)tt4 5
-.uu 
-HasMaxLengthuu !
-(uu! "
-$numuu" %
-)uu% &
-.vv 
-HasColumnNamevv "
-(vv" #
-$strvv# 2
-)vv2 3
-;vv3 4
-entityxx 
-.xx 
-Propertyxx 
-(xx  
-exx  !
-=>xx" $
-exx% &
-.xx& '
-CurrentNumberxx' 4
-)xx4 5
-.yy 
-HasMaxLengthyy !
-(yy! "
-$numyy" %
-)yy% &
-.zz 
-HasColumnNamezz "
-(zz" #
-$strzz# 2
-)zz2 3
-.{{ 
-HasDefaultValueSql{{ '
-({{' (
-$str{{( -
-){{- .
-;{{. /
-entity}} 
-.}} 
-Property}} 
-(}}  
-e}}  !
-=>}}" $
-e}}% &
-.}}& '
-	Customers}}' 0
-)}}0 1
-.~~ 
-HasColumnName~~ "
-(~~" #
-$str~~# .
-)~~. /
-. 
-HasDefaultValueSql '
-(' (
-$str( -
-)- .
-;. /
-entity
-ÅÅ 
+HasCharSetss !
+(ss! "
+$strss" (
+)ss( )
+.tt 
+UseCollationtt !
+(tt! "
+$strtt" 3
+)tt3 4
+;tt4 5
+entityvv 
+.vv 
+Propertyvv 
+(vv  
+evv  !
+=>vv" $
+evv% &
+.vv& '
+Idvv' )
+)vv) *
+.ww 
+HasMaxLengthww !
+(ww! "
+$numww" %
+)ww% &
+.xx 
+HasColumnNamexx "
+(xx" #
+$strxx# '
+)xx' (
+;xx( )
+entityzz 
+.zz 
+Propertyzz 
+(zz  
+ezz  !
+=>zz" $
+ezz% &
+.zz& '
+Nombrezz' -
+)zz- .
+.zz. /
+HasMaxLengthzz/ ;
+(zz; <
+$numzz< ?
+)zz? @
+;zz@ A
+}{{ 
+){{ 
+;{{ 
+modelBuilder}} 
+.}} 
+Entity}} 
+<}}  
+Queue}}  %
+>}}% &
+(}}& '
+entity}}' -
+=>}}. 0
+{~~ 
+entity 
+. 
+HasKey 
+( 
+e 
+=>  "
+e# $
+.$ %
+IdQueue% ,
+), -
 .
-ÅÅ 
-Property
-ÅÅ 
+ÄÄ 
+HasName
+ÄÄ 
 (
-ÅÅ  
-e
-ÅÅ  !
-=>
-ÅÅ" $
-e
-ÅÅ% &
-.
-ÅÅ& '
-Logo
-ÅÅ' +
-)
-ÅÅ+ ,
-.
-ÇÇ 
-HasMaxLength
-ÇÇ !
-(
-ÇÇ! "
-$num
-ÇÇ" %
-)
-ÇÇ% &
-.
-ÉÉ 
-HasColumnName
-ÉÉ "
-(
-ÉÉ" #
+ÄÄ 
 $str
-ÉÉ# )
+ÄÄ &
 )
-ÉÉ) *
+ÄÄ& '
 ;
-ÉÉ* +
+ÄÄ' (
 entity
-ÖÖ 
+ÇÇ 
 .
-ÖÖ 
-Property
-ÖÖ 
+ÇÇ 
+ToTable
+ÇÇ 
 (
-ÖÖ  
-e
-ÖÖ  !
-=>
-ÖÖ" $
-e
-ÖÖ% &
-.
-ÖÖ& '
-MinAttentionTime
-ÖÖ' 7
-)
-ÖÖ7 8
-.
-ÜÜ 
-HasMaxLength
-ÜÜ !
-(
-ÜÜ! "
-$num
-ÜÜ" %
-)
-ÜÜ% &
-.
-áá 
-HasColumnName
-áá "
-(
-áá" #
+ÇÇ 
 $str
-áá# 5
+ÇÇ &
 )
-áá5 6
+ÇÇ& '
 ;
-áá6 7
+ÇÇ' (
 entity
-ââ 
+ÑÑ 
 .
-ââ 
-Property
-ââ 
-(
-ââ  
-e
-ââ  !
-=>
-ââ" $
-e
-ââ% &
-.
-ââ& '
-Name
-ââ' +
-)
-ââ+ ,
-.
-ää 
+ÑÑ 
 
-IsRequired
-ää 
+HasCharSet
+ÑÑ !
 (
-ää  
+ÑÑ! "
+$str
+ÑÑ" (
 )
-ää  !
+ÑÑ( )
 .
-ãã 
-HasMaxLength
-ãã !
+ÖÖ 
+UseCollation
+ÖÖ !
 (
-ãã! "
-$num
-ãã" %
+ÖÖ! "
+$str
+ÖÖ" 3
 )
+ÖÖ3 4
+;
+ÖÖ4 5
+entity
+áá 
+.
+áá 
+Property
+áá 
+(
+áá  
+e
+áá  !
+=>
+áá" $
+e
+áá% &
+.
+áá& '
+IdQueue
+áá' .
+)
+áá. /
+.
+àà 
+HasMaxLength
+àà !
+(
+àà! "
+$num
+àà" %
+)
+àà% &
+.
+ââ 
+HasColumnName
+ââ "
+(
+ââ" #
+$str
+ââ# ,
+)
+ââ, -
+;
+ââ- .
+entity
+ãã 
+.
+ãã 
+Property
+ãã 
+(
+ãã  
+e
+ãã  !
+=>
+ãã" $
+e
 ãã% &
 .
-åå 
+ãã& '
+AttentionTime
+ãã' 4
+)
+ãã4 5
+.
+åå 
+HasMaxLength
+åå !
+(
+åå! "
+$num
+åå" %
+)
+åå% &
+.
+çç 
 HasColumnName
-åå "
+çç "
 (
-åå" #
+çç" #
 $str
-åå# )
+çç# 2
 )
-åå) *
+çç2 3
 ;
-åå* +
-}
-çç 
-)
-çç 
-;
-çç 
-modelBuilder
-èè 
-.
-èè 
-Entity
-èè 
-<
-èè  
-Visitor
-èè  '
->
-èè' (
-(
-èè( )
+çç3 4
 entity
-èè) /
-=>
-èè0 2
-{
-êê 
-entity
-ëë 
+èè 
 .
-ëë 
-HasKey
-ëë 
+èè 
+Property
+èè 
 (
-ëë 
+èè  
 e
-ëë 
+èè  !
 =>
-ëë  "
+èè" $
 e
-ëë# $
+èè% &
 .
-ëë$ %
-	Idvisitor
-ëë% .
+èè& '
+CurrentNumber
+èè' 4
 )
-ëë. /
+èè4 5
 .
-íí 
-HasName
-íí 
+êê 
+HasMaxLength
+êê !
 (
-íí 
+êê! "
+$num
+êê" %
+)
+êê% &
+.
+ëë 
+HasColumnName
+ëë "
+(
+ëë" #
 $str
-íí &
+ëë# 2
 )
-íí& '
+ëë2 3
+.
+íí  
+HasDefaultValueSql
+íí '
+(
+íí' (
+$str
+íí( -
+)
+íí- .
 ;
-íí' (
+íí. /
 entity
 îî 
 .
-îî 
-ToTable
-îî 
-(
-îî 
-$str
-îî (
-)
-îî( )
-;
-îî) *
-entity
-ññ 
-.
-ññ 
-
-HasCharSet
-ññ !
-(
-ññ! "
-$str
-ññ" (
-)
-ññ( )
-.
-óó 
-UseCollation
-óó !
-(
-óó! "
-$str
-óó" 3
-)
-óó3 4
-;
-óó4 5
-entity
-ôô 
-.
-ôô 
+îî 
 Property
-ôô 
+îî 
 (
-ôô  
+îî  
 e
-ôô  !
+îî  !
 =>
-ôô" $
+îî" $
 e
+îî% &
+.
+îî& '
+	Customers
+îî' 0
+)
+îî0 1
+.
+ïï 
+HasColumnName
+ïï "
+(
+ïï" #
+$str
+ïï# .
+)
+ïï. /
+.
+ññ  
+HasDefaultValueSql
+ññ '
+(
+ññ' (
+$str
+ññ( -
+)
+ññ- .
+;
+ññ. /
+entity
+òò 
+.
+òò 
+Property
+òò 
+(
+òò  
+e
+òò  !
+=>
+òò" $
+e
+òò% &
+.
+òò& '
+Logo
+òò' +
+)
+òò+ ,
+.
+ôô 
+HasMaxLength
+ôô !
+(
+ôô! "
+$num
+ôô" %
+)
 ôô% &
 .
-ôô& '
-	Idvisitor
-ôô' 0
-)
-ôô0 1
-.
-öö 
-HasMaxLength
-öö !
-(
-öö! "
-$num
-öö" %
-)
-öö% &
-.
-õõ 
+öö 
 HasColumnName
-õõ "
+öö "
 (
-õõ" #
+öö" #
 $str
-õõ# .
+öö# )
 )
-õõ. /
+öö) *
 ;
-õõ/ 0
+öö* +
 entity
-ùù 
+úú 
 .
-ùù 
+úú 
 Property
-ùù 
+úú 
 (
-ùù  
+úú  
 e
-ùù  !
+úú  !
 =>
-ùù" $
+úú" $
 e
+úú% &
+.
+úú& '
+MinAttentionTime
+úú' 7
+)
+úú7 8
+.
+ùù 
+HasMaxLength
+ùù !
+(
+ùù! "
+$num
+ùù" %
+)
 ùù% &
 .
-ùù& ' 
-AcceptedCommercial
-ùù' 9
-)
-ùù9 :
-.
-ùù: ;
+ûû 
 HasColumnName
-ùù; H
+ûû "
 (
-ùùH I
+ûû" #
 $str
-ùùI ]
+ûû# 5
 )
-ùù] ^
+ûû5 6
 ;
-ùù^ _
+ûû6 7
 entity
-üü 
+†† 
 .
-üü 
+†† 
 Property
-üü 
+†† 
 (
-üü  
+††  
 e
-üü  !
+††  !
 =>
-üü" $
+††" $
 e
-üü% &
+††% &
 .
-üü& '
-AcceptedTerms
-üü' 4
+††& '
+Name
+††' +
 )
-üü4 5
+††+ ,
 .
-üü5 6
-HasColumnName
-üü6 C
-(
-üüC D
-$str
-üüD S
-)
-üüS T
-;
-üüT U
-entity
-°° 
-.
-°° 
-Property
-°° 
+°° 
+
+IsRequired
+°° 
 (
 °°  
-e
-°°  !
-=>
-°°" $
-e
-°°% &
-.
-°°& '
-Name
-°°' +
 )
-°°+ ,
+°°  !
 .
-¢¢ 
-
-IsRequired
-¢¢ 
-(
-¢¢  
-)
-¢¢  !
-.
-££ 
+¢¢ 
 HasMaxLength
-££ !
+¢¢ !
 (
-££! "
+¢¢! "
 $num
-££" %
+¢¢" %
 )
-££% &
+¢¢% &
 .
-§§ 
+££ 
 HasColumnName
-§§ "
+££ "
 (
-§§" #
+££" #
 $str
-§§# )
+££# )
 )
-§§) *
+££) *
 ;
-§§* +
+££* +
+}
+§§ 
+)
+§§ 
+;
+§§ 
+modelBuilder
+¶¶ 
+.
+¶¶ 
+Entity
+¶¶ 
+<
+¶¶  
+Visitor
+¶¶  '
+>
+¶¶' (
+(
+¶¶( )
 entity
-¶¶ 
-.
-¶¶ 
-Property
-¶¶ 
-(
-¶¶  
-e
-¶¶  !
+¶¶) /
 =>
-¶¶" $
+¶¶0 2
+{
+ßß 
+entity
+®® 
+.
+®® 
+HasKey
+®® 
+(
+®® 
 e
-¶¶% &
+®® 
+=>
+®®  "
+e
+®®# $
 .
-¶¶& '
-Password
-¶¶' /
+®®$ %
+	IdVisitor
+®®% .
 )
-¶¶/ 0
+®®. /
 .
-ßß 
-
-IsRequired
-ßß 
+©© 
+HasName
+©© 
 (
-ßß  
-)
-ßß  !
-.
-®® 
-HasMaxLength
-®® !
-(
-®®! "
-$num
-®®" %
-)
-®®% &
-.
-©© 
-HasColumnName
-©© "
-(
-©©" #
+©© 
 $str
-©©# -
+©© &
 )
-©©- .
+©©& '
 ;
-©©. /
+©©' (
 entity
 ´´ 
 .
-´´ 
-Property
-´´ 
+´´ 
+ToTable
+´´ 
 (
-´´  
-e
-´´  !
-=>
-´´" $
-e
-´´% &
-.
-´´& '
-PhoneNumber
-´´' 2
+´´ 
+$str
+´´ (
 )
-´´2 3
+´´( )
+;
+´´) *
+entity
+≠≠ 
 .
-¨¨ 
+≠≠ 
+
+HasCharSet
+≠≠ !
+(
+≠≠! "
+$str
+≠≠" (
+)
+≠≠( )
+.
+ÆÆ 
+UseCollation
+ÆÆ !
+(
+ÆÆ! "
+$str
+ÆÆ" 3
+)
+ÆÆ3 4
+;
+ÆÆ4 5
+entity
+∞∞ 
+.
+∞∞ 
+Property
+∞∞ 
+(
+∞∞  
+e
+∞∞  !
+=>
+∞∞" $
+e
+∞∞% &
+.
+∞∞& '
+	IdVisitor
+∞∞' 0
+)
+∞∞0 1
+.
+±± 
 HasMaxLength
-¨¨ !
+±± !
 (
-¨¨! "
+±±! "
 $num
-¨¨" %
+±±" %
 )
-¨¨% &
-.
-≠≠ 
-HasColumnName
-≠≠ "
-(
-≠≠" #
-$str
-≠≠# 0
-)
-≠≠0 1
-;
-≠≠1 2
-entity
-ØØ 
-.
-ØØ 
-Property
-ØØ 
-(
-ØØ  
-e
-ØØ  !
-=>
-ØØ" $
-e
-ØØ% &
-.
-ØØ& '
-UserType
-ØØ' /
-)
-ØØ/ 0
-.
-ØØ0 1
-HasColumnName
-ØØ1 >
-(
-ØØ> ?
-$str
-ØØ? I
-)
-ØØI J
-;
-ØØJ K
-entity
-±± 
-.
-±± 
-Property
-±± 
-(
-±±  
-e
-±±  !
-=>
-±±" $
-e
 ±±% &
 .
-±±& '
-Username
-±±' /
+≤≤ 
+HasColumnName
+≤≤ "
+(
+≤≤" #
+$str
+≤≤# .
 )
-±±/ 0
+≤≤. /
+;
+≤≤/ 0
+entity
+¥¥ 
 .
-≤≤ 
+¥¥ 
+Property
+¥¥ 
+(
+¥¥  
+e
+¥¥  !
+=>
+¥¥" $
+e
+¥¥% &
+.
+¥¥& ' 
+AcceptedCommercial
+¥¥' 9
+)
+¥¥9 :
+.
+¥¥: ;
+HasColumnName
+¥¥; H
+(
+¥¥H I
+$str
+¥¥I ]
+)
+¥¥] ^
+;
+¥¥^ _
+entity
+∂∂ 
+.
+∂∂ 
+Property
+∂∂ 
+(
+∂∂  
+e
+∂∂  !
+=>
+∂∂" $
+e
+∂∂% &
+.
+∂∂& '
+AcceptedTerms
+∂∂' 4
+)
+∂∂4 5
+.
+∂∂5 6
+HasColumnName
+∂∂6 C
+(
+∂∂C D
+$str
+∂∂D S
+)
+∂∂S T
+;
+∂∂T U
+entity
+∏∏ 
+.
+∏∏ 
+Property
+∏∏ 
+(
+∏∏  
+e
+∏∏  !
+=>
+∏∏" $
+e
+∏∏% &
+.
+∏∏& '
+Name
+∏∏' +
+)
+∏∏+ ,
+.
+ππ 
 
 IsRequired
-≤≤ 
+ππ 
 (
-≤≤  
+ππ  
 )
-≤≤  !
+ππ  !
 .
-≥≥ 
+∫∫ 
 HasMaxLength
-≥≥ !
+∫∫ !
 (
-≥≥! "
+∫∫! "
 $num
-≥≥" %
+∫∫" %
 )
-≥≥% &
+∫∫% &
 .
-¥¥ 
+ªª 
 HasColumnName
-¥¥ "
+ªª "
 (
-¥¥" #
+ªª" #
 $str
-¥¥# -
+ªª# )
 )
-¥¥- .
+ªª) *
 ;
-¥¥. /
-}
-µµ 
-)
-µµ 
-;
-µµ $
-OnModelCreatingPartial
-∑∑ "
+ªª* +
+entity
+ΩΩ 
+.
+ΩΩ 
+Property
+ΩΩ 
 (
-∑∑" #
-modelBuilder
-∑∑# /
+ΩΩ  
+e
+ΩΩ  !
+=>
+ΩΩ" $
+e
+ΩΩ% &
+.
+ΩΩ& '
+Password
+ΩΩ' /
 )
-∑∑/ 0
+ΩΩ/ 0
+.
+ææ 
+
+IsRequired
+ææ 
+(
+ææ  
+)
+ææ  !
+.
+øø 
+HasMaxLength
+øø !
+(
+øø! "
+$num
+øø" %
+)
+øø% &
+.
+¿¿ 
+HasColumnName
+¿¿ "
+(
+¿¿" #
+$str
+¿¿# -
+)
+¿¿- .
 ;
-∑∑0 1
+¿¿. /
+entity
+¬¬ 
+.
+¬¬ 
+Property
+¬¬ 
+(
+¬¬  
+e
+¬¬  !
+=>
+¬¬" $
+e
+¬¬% &
+.
+¬¬& '
+PhoneNumber
+¬¬' 2
+)
+¬¬2 3
+.
+√√ 
+HasMaxLength
+√√ !
+(
+√√! "
+$num
+√√" %
+)
+√√% &
+.
+ƒƒ 
+HasColumnName
+ƒƒ "
+(
+ƒƒ" #
+$str
+ƒƒ# 0
+)
+ƒƒ0 1
+;
+ƒƒ1 2
+entity
+∆∆ 
+.
+∆∆ 
+Property
+∆∆ 
+(
+∆∆  
+e
+∆∆  !
+=>
+∆∆" $
+e
+∆∆% &
+.
+∆∆& '
+UserType
+∆∆' /
+)
+∆∆/ 0
+.
+∆∆0 1
+HasColumnName
+∆∆1 >
+(
+∆∆> ?
+$str
+∆∆? I
+)
+∆∆I J
+;
+∆∆J K
+entity
+»» 
+.
+»» 
+Property
+»» 
+(
+»»  
+e
+»»  !
+=>
+»»" $
+e
+»»% &
+.
+»»& '
+Username
+»»' /
+)
+»»/ 0
+.
+…… 
+
+IsRequired
+…… 
+(
+……  
+)
+……  !
+.
+   
+HasMaxLength
+   !
+(
+  ! "
+$num
+  " %
+)
+  % &
+.
+ÀÀ 
+HasColumnName
+ÀÀ "
+(
+ÀÀ" #
+$str
+ÀÀ# -
+)
+ÀÀ- .
+;
+ÀÀ. /
 }
-∏∏ 	
+ÃÃ 
+)
+ÃÃ 
+;
+ÃÃ $
+OnModelCreatingPartial
+ŒŒ "
+(
+ŒŒ" #
+modelBuilder
+ŒŒ# /
+)
+ŒŒ/ 0
+;
+ŒŒ0 1
+}
+œœ 	
 partial
-∫∫ 
+‘‘ 
 void
-∫∫ $
+‘‘ $
 OnModelCreatingPartial
-∫∫ +
+‘‘ +
 (
-∫∫+ ,
+‘‘+ ,
 ModelBuilder
-∫∫, 8
+‘‘, 8
 modelBuilder
-∫∫9 E
+‘‘9 E
 )
-∫∫E F
+‘‘E F
 ;
-∫∫F G
+‘‘F G
 }
-ªª 
-}ºº ö
+’’ 
+}÷÷ ö
 áC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\TodoContext.cs
 	namespace 	
 	Devon4Net
@@ -11592,130 +11757,112 @@ IsRequired"" 
 }&& 
 }'' ≠
 ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\AccessCode.cs
-	namespace 	
-	Devon4Net
+	namespace 	
+	Devon4Net
  
-. 
-Application 
-.  
-WebAPI  &
-.& '
-Implementation' 5
-.5 6
-Domain6 <
-.< =
-Entities= E
-{ 
-public 
+. 
+Application 
+.  
+WebAPI  &
+.& '
+Implementation' 5
+.5 6
+Domain6 <
+.< =
+Entities= E
+{ 
+public 
 
-partial 
-class 
+partial 
+class 
 
-AccessCode #
-{ 
-public 
-string 
-IdaccessCode "
-{# $
-get% (
-;( )
-set* -
-;- .
-}/ 0
-public		 
-string		 
-TicketNumber		 "
-{		# $
-get		% (
-;		( )
-set		* -
-;		- .
-}		/ 0
-public
-
- 
-string
-
- 
-CreationTime
-
- "
-{
-
-# $
-get
-
-% (
-;
-
-( )
-set
-
-* -
-;
-
-- .
-}
-
-/ 0
-public 
-string 
-	StartTime 
-{  !
-get" %
-;% &
-set' *
-;* +
-}, -
+AccessCode #
+{ 
 public 
-string 
-EndTime 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-string 
-	VisitorId 
-{  !
-get" %
-;% &
-set' *
-;* +
-}, -
-public 
-string 
-QueueId 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-virtual 
-Queue 
-Queue "
+string 
+IdaccessCode "
+{# $
+get% (
+;( )
+set* -
+;- .
+}/ 0
+public 
+string 
+TicketNumber "
 {# $
 get% (
 ;( )
 set* -
 ;- .
 }/ 0
-public 
-virtual 
-Visitor 
-Visitor &
-{' (
-get) ,
-;, -
-set. 1
-;1 2
-}3 4
-} 
-} ⁄
+public 
+string 
+CreationTime "
+{# $
+get% (
+;( )
+set* -
+;- .
+}/ 0
+public 
+string 
+	StartTime 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+public 
+string 
+EndTime 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public   
+string   
+	VisitorId   
+{    !
+get  " %
+;  % &
+set  ' *
+;  * +
+}  , -
+public$$ 
+string$$ 
+QueueId$$ 
+{$$ 
+get$$  #
+;$$# $
+set$$% (
+;$$( )
+}$$* +
+public(( 
+virtual(( 
+Queue(( 
+Queue(( "
+{((# $
+get((% (
+;((( )
+set((* -
+;((- .
+}((/ 0
+public,, 
+virtual,, 
+Visitor,, 
+Visitor,, &
+{,,' (
+get,,) ,
+;,,, -
+set,,. 1
+;,,1 2
+},,3 4
+}-- 
+}.. ⁄
 ÑC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Employee.cs
 	namespace 	
 	Devon4Net
@@ -11790,34 +11937,34 @@ AccessCode #
 .< =
 Entities= E
 { 
-public 
+public		 
 
-partial 
-class 
-Prueba 
-{ 
-public 
-string 
-Id 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public		 
-string		 
-Nombre		 
-{		 
-get		 "
-;		" #
-set		$ '
-;		' (
-}		) *
-}
+partial		 
+class		 
+Prueba		 
+{
 
- 
-} ˘
+ 
+public 
+string 
+Id 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+string 
+Nombre 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+} 
+} ˘
 ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Queue.cs
 	namespace 	
 	Devon4Net
@@ -11833,139 +11980,121 @@ AccessCode #
 .< =
 Entities= E
 { 
-public 
+public		 
 
-partial 
-class 
-Queue 
-{ 
-public 
-Queue 
-( 
-) 
-{		 	
-AccessCodes
+partial		 
+class		 
+Queue		 
+{
 
- 
-=
-
- 
-new
-
- 
-HashSet
-
- %
-<
-
-% &
+ 
+public 
+Queue 
+( 
+) 
+{ 	
+AccessCodes 
+= 
+new 
+HashSet %
+<% &
 
-AccessCode
-
-& 0
->
-
-0 1
-(
-
-1 2
-)
-
-2 3
-;
-
-3 4
-} 	
-public 
-string 
-Idqueue 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-string 
-Name 
-{ 
-get  
-;  !
-set" %
-;% &
-}' (
-public 
-string 
-Logo 
-{ 
-get  
-;  !
-set" %
-;% &
-}' (
-public 
-string 
-CurrentNumber #
-{$ %
-get& )
-;) *
-set+ .
-;. /
-}0 1
-public 
-string 
-AttentionTime #
-{$ %
-get& )
-;) *
-set+ .
-;. /
-}0 1
-public 
-string 
-MinAttentionTime &
-{' (
-get) ,
-;, -
-set. 1
-;1 2
-}3 4
-public 
-bool 
-? 
-Active 
-{ 
-get !
-;! "
-set# &
-;& '
-}( )
-public 
-int 
-? 
-	Customers 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-virtual 
-ICollection "
-<" #
+AccessCode& 0
+>0 1
+(1 2
+)2 3
+;3 4
+} 	
+public 
+string 
+IdQueue 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public 
+string 
+Name 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+public 
+string 
+Logo 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+public"" 
+string"" 
+CurrentNumber"" #
+{""$ %
+get""& )
+;"") *
+set""+ .
+;"". /
+}""0 1
+public&& 
+string&& 
+AttentionTime&& #
+{&&$ %
+get&&& )
+;&&) *
+set&&+ .
+;&&. /
+}&&0 1
+public** 
+string** 
+MinAttentionTime** &
+{**' (
+get**) ,
+;**, -
+set**. 1
+;**1 2
+}**3 4
+public.. 
+bool.. 
+?.. 
+Active.. 
+{.. 
+get.. !
+;..! "
+set..# &
+;..& '
+}..( )
+public22 
+int22 
+?22 
+	Customers22 
+{22 
+get22  #
+;22# $
+set22% (
+;22( )
+}22* +
+public66 
+virtual66 
+ICollection66 "
+<66" #
 
-AccessCode# -
->- .
-AccessCodes/ :
-{; <
-get= @
-;@ A
-setB E
-;E F
-}G H
-} 
-} æ
+AccessCode66# -
+>66- .
+AccessCodes66/ :
+{66; <
+get66= @
+;66@ A
+set66B E
+;66E F
+}66G H
+}77 
+}88 æ
 ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Todos.cs
 	namespace 	
 	Devon4Net
@@ -12031,140 +12160,122 @@ AccessCode# -
 .< =
 Entities= E
 { 
-public 
+public		 
 
-partial 
-class 
-Visitor  
-{ 
-public 
-Visitor 
-( 
-) 
-{		 	
-AccessCodes
+partial		 
+class		 
+Visitor		  
+{
 
- 
-=
-
- 
-new
-
- 
-HashSet
-
- %
-<
-
-% &
+ 
+public 
+Visitor 
+( 
+) 
+{ 	
+AccessCodes 
+= 
+new 
+HashSet %
+<% &
 
-AccessCode
-
-& 0
->
-
-0 1
-(
-
-1 2
-)
-
-2 3
-;
-
-3 4
-} 	
-public 
-string 
-	Idvisitor 
-{  !
-get" %
-;% &
-set' *
-;* +
-}, -
-public 
-string 
-Username 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-string 
-Name 
-{ 
-get  
-;  !
-set" %
-;% &
-}' (
-public 
-string 
-Password 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-string 
-PhoneNumber !
-{" #
-get$ '
-;' (
-set) ,
-;, -
-}. /
-public 
-bool 
-? 
-AcceptedCommercial '
-{( )
-get* -
-;- .
-set/ 2
-;2 3
-}4 5
-public 
-bool 
-? 
-AcceptedTerms "
-{# $
-get% (
-;( )
-set* -
-;- .
-}/ 0
-public 
-bool 
-? 
-UserType 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-virtual 
-ICollection "
-<" #
+AccessCode& 0
+>0 1
+(1 2
+)2 3
+;3 4
+} 	
+public 
+string 
+	IdVisitor 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+public 
+string 
+Username 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+string 
+Name 
+{ 
+get  
+;  !
+set" %
+;% &
+}' (
+public"" 
+string"" 
+Password"" 
+{""  
+get""! $
+;""$ %
+set""& )
+;"") *
+}""+ ,
+public&& 
+string&& 
+PhoneNumber&& !
+{&&" #
+get&&$ '
+;&&' (
+set&&) ,
+;&&, -
+}&&. /
+public** 
+bool** 
+?** 
+AcceptedCommercial** '
+{**( )
+get*** -
+;**- .
+set**/ 2
+;**2 3
+}**4 5
+public.. 
+bool.. 
+?.. 
+AcceptedTerms.. "
+{..# $
+get..% (
+;..( )
+set..* -
+;..- .
+}../ 0
+public22 
+bool22 
+?22 
+UserType22 
+{22 
+get22  #
+;22# $
+set22% (
+;22( )
+}22* +
+public77 
+virtual77 
+ICollection77 "
+<77" #
 
-AccessCode# -
->- .
-AccessCodes/ :
-{; <
-get= @
-;@ A
-setB E
-;E F
-}G H
-} 
-} Í
+AccessCode77# -
+>77- .
+AccessCodes77/ :
+{77; <
+get77= @
+;77@ A
+set77B E
+;77E F
+}77G H
+}88 
+}99 Ó
 ùC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IAccessCodeRepository.cs
 	namespace 	
 	Devon4Net
@@ -12194,7 +12305,7 @@ AccessCode 
 >  
 SearchAccessCodebyId -
 (- .
-String. 4
+string. 4
 id5 7
 )7 8
 ;8 9
@@ -12204,11 +12315,10 @@ AccessCode 
 > 
 DeleteAccessCode %
 (% &
-String& ,
-
-accesscode- 7
-)7 8
-;8 9
+string& ,
+idaccesscode- 9
+)9 :
+;: ;
 Task 
 < 
 
@@ -12219,10 +12329,10 @@ AccessCode 
 string* 0
 	idvisitor1 :
 ,: ;
-string< B
-queueC H
-)H I
-;I J
+string< B
+idqueueC J
+)J K
+;K L
 Task 
 < 
 bool 
@@ -12354,7 +12464,7 @@ Expression* 4
 )((- .
 ;((. /
 })) 
-}** ß	
+}** •	
 ñC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IjtqRepository.cs
 	namespace 	
 	Devon4Net
@@ -12426,10 +12536,10 @@ Expression& 0
 > 
 CreatePrueba !
 (! "
-string" (
-nombre) /
-)/ 0
-;0 1
+string" (
+name) -
+)- .
+;. /
 } 
 } ‰
 
@@ -12685,8 +12795,8 @@ Expression# -
 )5 6
 ;6 7
 } 
-} ¡
-èC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgument.cs
+} ˚
+òC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgumentException.cs
 	namespace 	
 	Devon4Net
  
@@ -12709,22 +12819,22 @@ Exceptions6 @
 
 class
 
- $
-NullOrWhiteSpaceArgument
+ -
+!NullOrWhiteSpaceArgumentException
 
- )
+ 2
 :
 
-* +
+3 4
 	Exception
 
-, 5
+5 >
 ,
 
-5 6
+> ?
 IWebApiException
 
-7 G
+@ P
 { 
 public 
 int 
@@ -12741,18 +12851,18 @@ StatusCode 
 =>  "
 true# '
 ;' (
-public $
-NullOrWhiteSpaceArgument '
-(' (
-)( )
+public -
+!NullOrWhiteSpaceArgumentException 0
+(0 1
+)1 2
 { 	
 } 	
-public!! $
-NullOrWhiteSpaceArgument!! '
-(!!' (
-string!!( .
-message!!/ 6
-)!!6 7
+public!! -
+!NullOrWhiteSpaceArgumentException!! 0
+(!!0 1
+string!!1 7
+message!!8 ?
+)!!? @
 :"" 
 base"" 
 ("" 
@@ -12760,49 +12870,51 @@ StatusCode 
 )"" 
 {## 	
 }$$ 	
-public++ $
-NullOrWhiteSpaceArgument++ '
-(++' (
-string++( .
-message++/ 6
-,++6 7
-	Exception++8 A
-innerException++B P
-)++P Q
-:++R S
-base++T X
-(++X Y
-message++Y `
-,++` a
-innerException++b p
-)++p q
+public++ -
+!NullOrWhiteSpaceArgumentException++ 0
+(++0 1
+string++1 7
+message++8 ?
+,++? @
+	Exception++A J
+innerException++K Y
+)++Y Z
+:++[ \
+base++] a
+(++a b
+message++b i
+,++i j
+innerException++k y
+)++y z
 {,, 	
 }-- 	
-	protected44 $
-NullOrWhiteSpaceArgument44 *
-(44* +
-System44+ 1
-.441 2
-Runtime442 9
-.449 :
-Serialization44: G
-.44G H
-SerializationInfo44H Y
-serializationInfo44Z k
-,44k l
-System44m s
-.44s t
-Runtime44t {
-.44{ |
-Serialization	44| â
+	protected44 -
+!NullOrWhiteSpaceArgumentException44 3
+(443 4
+System444 :
+.44: ;
+Runtime44; B
+.44B C
+Serialization44C P
+.44P Q
+SerializationInfo44Q b
+serializationInfo44c t
+,44t u
+System44v |
+.44| }
+Runtime	44} Ñ
 .
-44â ä
+44Ñ Ö
+Serialization
+44Ö í
+.
+44í ì
 StreamingContext
-44ä ö
+44ì £
 streamingContext
-44õ ´
+44§ ¥
 )
-44´ ¨
+44¥ µ
 :55 
 base55 
 (55 
@@ -12813,7 +12925,7 @@ StatusCode 
 {66 	
 }77 	
 }88 
-}99 ≤ú
+}99 ÷ú
 ìC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\20220114112513_InitialCreate.cs
 	namespace 	
 	Devon4Net
@@ -12828,316 +12940,212 @@ StatusCode 
 
 Migrations6 @
 { 
-public 
-
-partial 
-class 
-InitialCreate &
-:' (
-	Migration) 2
-{ 
-	protected		 
-override		 
-void		 
-Up		  "
-(		" #
-MigrationBuilder		# 3
-migrationBuilder		4 D
-)		D E
-{
+public
 
- 	
-migrationBuilder 
-. 
-AlterDatabase *
-(* +
-)+ ,
-. 
+ 
+
+partial
+
+ 
+class
+
+ 
+InitialCreate
+
+ &
+:
+
+' (
+	Migration
+
+) 2
+{ 
+	protected 
+override 
+void 
+Up  "
+(" #
+MigrationBuilder# 3
+migrationBuilder4 D
+)D E
+{ 	
+migrationBuilder 
+. 
+AlterDatabase *
+(* +
+)+ ,
+. 
 
-Annotation 
-( 
-$str +
-,+ ,
-$str- 6
-)6 7
-;7 8
-migrationBuilder 
-. 
-CreateTable (
-(( )
-name 
-: 
-$str 
-, 
-columns 
-: 
-table 
-=> !
-new" %
-{ 
-ID 
-= 
-table 
-. 
-Column %
-<% &
-string& ,
->, -
-(- .
-type. 2
-:2 3
-$str4 B
-,B C
-	maxLengthD M
-:M N
-$numO R
-,R S
-nullableT \
-:\ ]
-false^ c
-,c d
-	collatione n
-:n o
-$str	p Å
+Annotation 
+( 
+$str +
+,+ ,
+$str- 6
+)6 7
+;7 8
+migrationBuilder 
+. 
+CreateTable (
+(( )
+name 
+: 
+$str 
+, 
+columns 
+: 
+table 
+=> !
+new" %
+{ 
+ID 
+= 
+table 
+. 
+Column %
+<% &
+string& ,
+>, -
+(- .
+type. 2
+:2 3
+$str4 B
+,B C
+	maxLengthD M
+:M N
+$numO R
+,R S
+nullableT \
+:\ ]
+false^ c
+,c d
+	collatione n
+:n o
+$str	p Å
 )
-Å Ç
-. 
+Å Ç
+. 
 
-Annotation #
-(# $
-$str$ 3
-,3 4
-$str5 ;
-); <
-,< =
-Nombre 
-= 
-table "
-." #
-Column# )
-<) *
-string* 0
->0 1
-(1 2
-type2 6
-:6 7
-$str8 F
-,F G
-	maxLengthH Q
-:Q R
-$numS V
-,V W
-nullableX `
-:` a
-trueb f
-,f g
-	collationh q
-:q r
-$str	s Ñ
-)
-Ñ Ö
-. 
-
-Annotation #
-(# $
-$str$ 3
-,3 4
-$str5 ;
-); <
-} 
-, 
-constraints 
-: 
-table "
-=># %
-{ 
-table 
-. 
-
-PrimaryKey $
-($ %
-$str% 0
-,0 1
-x2 3
-=>4 6
-x7 8
-.8 9
-ID9 ;
+Annotation #
+(# $
+$str$ 3
+,3 4
+$str5 ;
 ); <
-;< =
-} 
-) 
-. 
-
-Annotation 
-( 
-$str +
-,+ ,
-$str- 3
-)3 4
-. 
-
-Annotation 
-( 
-$str 2
-,2 3
-$str4 E
-)E F
-;F G
-migrationBuilder 
-. 
-CreateTable (
-(( )
-name 
-: 
-$str 
-, 
-columns   
-:   
-table   
-=>   !
-new  " %
-{!! 
-IDQueue"" 
-="" 
-table"" #
-.""# $
-Column""$ *
-<""* +
-string""+ 1
->""1 2
-(""2 3
-type""3 7
-:""7 8
-$str""9 G
-,""G H
-	maxLength""I R
-:""R S
-$num""T W
-,""W X
-nullable""Y a
-:""a b
-false""c h
-,""h i
-	collation""j s
-:""s t
-$str	""u Ü
+,< =
+Nombre 
+= 
+table "
+." #
+Column# )
+<) *
+string* 0
+>0 1
+(1 2
+type2 6
+:6 7
+$str8 F
+,F G
+	maxLengthH Q
+:Q R
+$numS V
+,V W
+nullableX `
+:` a
+trueb f
+,f g
+	collationh q
+:q r
+$str	s Ñ
 )
-""Ü á
-.## 
+Ñ Ö
+. 
 
-Annotation## #
-(### $
-$str##$ 3
-,##3 4
-$str##5 ;
-)##; <
-,##< =
-name$$ 
-=$$ 
-table$$  
-.$$  !
-Column$$! '
-<$$' (
-string$$( .
->$$. /
-($$/ 0
-type$$0 4
-:$$4 5
-$str$$6 D
-,$$D E
-	maxLength$$F O
-:$$O P
-$num$$Q T
-,$$T U
-nullable$$V ^
-:$$^ _
-false$$` e
-,$$e f
-	collation$$g p
-:$$p q
-$str	$$r É
-)
-$$É Ñ
-.%% 
+Annotation #
+(# $
+$str$ 3
+,3 4
+$str5 ;
+); <
+} 
+, 
+constraints 
+: 
+table "
+=># %
+{ 
+table 
+. 
 
-Annotation%% #
-(%%# $
-$str%%$ 3
-,%%3 4
-$str%%5 ;
-)%%; <
-,%%< =
-logo&& 
-=&& 
-table&&  
-.&&  !
-Column&&! '
-<&&' (
-string&&( .
->&&. /
-(&&/ 0
-type&&0 4
-:&&4 5
-$str&&6 D
-,&&D E
-	maxLength&&F O
-:&&O P
-$num&&Q T
-,&&T U
-nullable&&V ^
-:&&^ _
-true&&` d
-,&&d e
-	collation&&f o
-:&&o p
-$str	&&q Ç
-)
-&&Ç É
-.'' 
+PrimaryKey $
+($ %
+$str% 0
+,0 1
+x2 3
+=>4 6
+x7 8
+.8 9
+ID9 ;
+); <
+;< =
+}   
+)   
+.!! 
 
-Annotation'' #
-(''# $
-$str''$ 3
-,''3 4
-$str''5 ;
-)''; <
-,''< =
-currentNumber(( !
-=((" #
-table(($ )
-.(() *
-Column((* 0
-<((0 1
-string((1 7
->((7 8
-(((8 9
-type((9 =
-:((= >
-$str((? M
-,((M N
-	maxLength((O X
-:((X Y
-$num((Z ]
-,((] ^
-nullable((_ g
-:((g h
-true((i m
-,((m n
-defaultValueSql((o ~
-:((~ 
-$str
-((Ä Ö
-,
-((Ö Ü
-	collation
-((á ê
-:
-((ê ë
-$str
-((í £
+Annotation!! 
+(!! 
+$str!! +
+,!!+ ,
+$str!!- 3
+)!!3 4
+."" 
+
+Annotation"" 
+("" 
+$str"" 2
+,""2 3
+$str""4 E
+)""E F
+;""F G
+migrationBuilder$$ 
+.$$ 
+CreateTable$$ (
+($$( )
+name%% 
+:%% 
+$str%% 
+,%% 
+columns&& 
+:&& 
+table&& 
+=>&& !
+new&&" %
+{'' 
+IDQueue(( 
+=(( 
+table(( #
+.((# $
+Column(($ *
+<((* +
+string((+ 1
+>((1 2
+(((2 3
+type((3 7
+:((7 8
+$str((9 G
+,((G H
+	maxLength((I R
+:((R S
+$num((T W
+,((W X
+nullable((Y a
+:((a b
+false((c h
+,((h i
+	collation((j s
+:((s t
+$str	((u Ü
 )
-((£ §
+((Ü á
 .)) 
 
 Annotation)) #
@@ -13146,33 +13154,33 @@ Annotation)) #
 ,))3 4
 $str))5 ;
 ))); <
-,))< =
-attentionTime** !
-=**" #
-table**$ )
-.**) *
-Column*** 0
-<**0 1
-string**1 7
->**7 8
-(**8 9
-type**9 =
-:**= >
-$str**? M
-,**M N
-	maxLength**O X
-:**X Y
-$num**Z ]
-,**] ^
-nullable**_ g
-:**g h
-true**i m
-,**m n
-	collation**o x
-:**x y
-$str	**z ã
+,))< =
+name** 
+=** 
+table**  
+.**  !
+Column**! '
+<**' (
+string**( .
+>**. /
+(**/ 0
+type**0 4
+:**4 5
+$str**6 D
+,**D E
+	maxLength**F O
+:**O P
+$num**Q T
+,**T U
+nullable**V ^
+:**^ _
+false**` e
+,**e f
+	collation**g p
+:**p q
+$str	**r É
 )
-**ã å
+**É Ñ
 .++ 
 
 Annotation++ #
@@ -13181,33 +13189,33 @@ Annotation++ #
 ,++3 4
 $str++5 ;
 )++; <
-,++< =
-minAttentionTime,, $
-=,,% &
-table,,' ,
-.,,, -
-Column,,- 3
-<,,3 4
-string,,4 :
->,,: ;
-(,,; <
-type,,< @
-:,,@ A
-$str,,B P
-,,,P Q
-	maxLength,,R [
-:,,[ \
-$num,,] `
-,,,` a
-nullable,,b j
-:,,j k
-true,,l p
-,,,p q
-	collation,,r {
-:,,{ |
-$str	,,} é
+,++< =
+logo,, 
+=,, 
+table,,  
+.,,  !
+Column,,! '
+<,,' (
+string,,( .
+>,,. /
+(,,/ 0
+type,,0 4
+:,,4 5
+$str,,6 D
+,,,D E
+	maxLength,,F O
+:,,O P
+$num,,Q T
+,,,T U
+nullable,,V ^
+:,,^ _
+true,,` d
+,,,d e
+	collation,,f o
+:,,o p
+$str	,,q Ç
 )
-,,é è
+,,Ç É
 .-- 
 
 Annotation-- #
@@ -13216,231 +13224,240 @@ Annotation-- #
 ,--3 4
 $str--5 ;
 )--; <
-,--< =
-Active.. 
-=.. 
-table.. "
-..." #
-Column..# )
-<..) *
-bool..* .
->... /
-(../ 0
-type..0 4
-:..4 5
-$str..6 B
-,..B C
-nullable..D L
-:..L M
-true..N R
-)..R S
-,..S T
-	customers// 
-=// 
-table//  %
-.//% &
-Column//& ,
-<//, -
-int//- 0
->//0 1
-(//1 2
-type//2 6
-://6 7
-$str//8 =
-,//= >
-nullable//? G
-://G H
-true//I M
-,//M N
-defaultValueSql//O ^
-://^ _
-$str//` e
-)//e f
-}00 
-,00 
-constraints11 
-:11 
-table11 "
-=>11# %
-{22 
-table33 
-.33 
-
-PrimaryKey33 $
-(33$ %
-$str33% .
-,33. /
-x330 1
-=>332 4
-x335 6
-.336 7
-IDQueue337 >
-)33> ?
-;33? @
-}44 
-)44 
-.55 
-
-Annotation55 
-(55 
-$str55 +
-,55+ ,
-$str55- 3
-)553 4
-.66 
-
-Annotation66 
-(66 
-$str66 2
-,662 3
-$str664 E
-)66E F
-;66F G
-migrationBuilder88 
-.88 
-CreateTable88 (
-(88( )
-name99 
-:99 
-$str99 
-,99  
-columns:: 
-::: 
-table:: 
-=>:: !
-new::" %
-{;; 
-	IDVisitor<< 
-=<< 
-table<<  %
-.<<% &
-Column<<& ,
-<<<, -
-string<<- 3
-><<3 4
-(<<4 5
-type<<5 9
-:<<9 :
-$str<<; I
-,<<I J
-	maxLength<<K T
-:<<T U
-$num<<V Y
-,<<Y Z
-nullable<<[ c
-:<<c d
-false<<e j
-,<<j k
-	collation<<l u
-:<<u v
-$str	<<w à
+,--< =
+currentNumber.. !
+=.." #
+table..$ )
+...) *
+Column..* 0
+<..0 1
+string..1 7
+>..7 8
+(..8 9
+type..9 =
+:..= >
+$str..? M
+,..M N
+	maxLength..O X
+:..X Y
+$num..Z ]
+,..] ^
+nullable.._ g
+:..g h
+true..i m
+,..m n
+defaultValueSql..o ~
+:..~ 
+$str
+..Ä Ö
+,
+..Ö Ü
+	collation
+..á ê
+:
+..ê ë
+$str
+..í £
 )
-<<à â
-.== 
+..£ §
+.// 
 
-Annotation== #
-(==# $
-$str==$ 3
-,==3 4
-$str==5 ;
-)==; <
-,==< =
-username>> 
-=>> 
-table>> $
-.>>$ %
-Column>>% +
-<>>+ ,
-string>>, 2
->>>2 3
-(>>3 4
-type>>4 8
-:>>8 9
-$str>>: H
-,>>H I
-	maxLength>>J S
-:>>S T
-$num>>U X
-,>>X Y
-nullable>>Z b
-:>>b c
-false>>d i
-,>>i j
-	collation>>k t
-:>>t u
-$str	>>v á
+Annotation// #
+(//# $
+$str//$ 3
+,//3 4
+$str//5 ;
+)//; <
+,//< =
+attentionTime00 !
+=00" #
+table00$ )
+.00) *
+Column00* 0
+<000 1
+string001 7
+>007 8
+(008 9
+type009 =
+:00= >
+$str00? M
+,00M N
+	maxLength00O X
+:00X Y
+$num00Z ]
+,00] ^
+nullable00_ g
+:00g h
+true00i m
+,00m n
+	collation00o x
+:00x y
+$str	00z ã
 )
->>á à
-.?? 
+00ã å
+.11 
 
-Annotation?? #
-(??# $
-$str??$ 3
-,??3 4
-$str??5 ;
-)??; <
-,??< =
-name@@ 
-=@@ 
-table@@  
-.@@  !
-Column@@! '
-<@@' (
-string@@( .
->@@. /
-(@@/ 0
-type@@0 4
-:@@4 5
-$str@@6 D
-,@@D E
-	maxLength@@F O
-:@@O P
-$num@@Q T
-,@@T U
-nullable@@V ^
-:@@^ _
-false@@` e
-,@@e f
-	collation@@g p
-:@@p q
-$str	@@r É
+Annotation11 #
+(11# $
+$str11$ 3
+,113 4
+$str115 ;
+)11; <
+,11< =
+minAttentionTime22 $
+=22% &
+table22' ,
+.22, -
+Column22- 3
+<223 4
+string224 :
+>22: ;
+(22; <
+type22< @
+:22@ A
+$str22B P
+,22P Q
+	maxLength22R [
+:22[ \
+$num22] `
+,22` a
+nullable22b j
+:22j k
+true22l p
+,22p q
+	collation22r {
+:22{ |
+$str	22} é
 )
-@@É Ñ
-.AA 
+22é è
+.33 
 
-AnnotationAA #
-(AA# $
-$strAA$ 3
-,AA3 4
-$strAA5 ;
-)AA; <
-,AA< =
-passwordBB 
-=BB 
-tableBB $
-.BB$ %
-ColumnBB% +
-<BB+ ,
-stringBB, 2
->BB2 3
-(BB3 4
-typeBB4 8
-:BB8 9
-$strBB: H
-,BBH I
-	maxLengthBBJ S
-:BBS T
-$numBBU X
-,BBX Y
-nullableBBZ b
-:BBb c
-falseBBd i
-,BBi j
-	collationBBk t
-:BBt u
-$str	BBv á
+Annotation33 #
+(33# $
+$str33$ 3
+,333 4
+$str335 ;
+)33; <
+,33< =
+Active44 
+=44 
+table44 "
+.44" #
+Column44# )
+<44) *
+bool44* .
+>44. /
+(44/ 0
+type440 4
+:444 5
+$str446 B
+,44B C
+nullable44D L
+:44L M
+true44N R
+)44R S
+,44S T
+	customers55 
+=55 
+table55  %
+.55% &
+Column55& ,
+<55, -
+int55- 0
+>550 1
+(551 2
+type552 6
+:556 7
+$str558 =
+,55= >
+nullable55? G
+:55G H
+true55I M
+,55M N
+defaultValueSql55O ^
+:55^ _
+$str55` e
+)55e f
+}66 
+,66 
+constraints77 
+:77 
+table77 "
+=>77# %
+{88 
+table99 
+.99 
+
+PrimaryKey99 $
+(99$ %
+$str99% .
+,99. /
+x990 1
+=>992 4
+x995 6
+.996 7
+IDQueue997 >
+)99> ?
+;99? @
+}:: 
+):: 
+.;; 
+
+Annotation;; 
+(;; 
+$str;; +
+,;;+ ,
+$str;;- 3
+);;3 4
+.<< 
+
+Annotation<< 
+(<< 
+$str<< 2
+,<<2 3
+$str<<4 E
+)<<E F
+;<<F G
+migrationBuilder>> 
+.>> 
+CreateTable>> (
+(>>( )
+name?? 
+:?? 
+$str?? 
+,??  
+columns@@ 
+:@@ 
+table@@ 
+=>@@ !
+new@@" %
+{AA 
+	IDVisitorBB 
+=BB 
+tableBB  %
+.BB% &
+ColumnBB& ,
+<BB, -
+stringBB- 3
+>BB3 4
+(BB4 5
+typeBB5 9
+:BB9 :
+$strBB; I
+,BBI J
+	maxLengthBBK T
+:BBT U
+$numBBV Y
+,BBY Z
+nullableBB[ c
+:BBc d
+falseBBe j
+,BBj k
+	collationBBl u
+:BBu v
+$str	BBw à
 )
-BBá à
+BBà â
 .CC 
 
 AnnotationCC #
@@ -13449,33 +13466,33 @@ AnnotationCC #
 ,CC3 4
 $strCC5 ;
 )CC; <
-,CC< =
-phoneNumberDD 
-=DD  !
-tableDD" '
-.DD' (
-ColumnDD( .
-<DD. /
-stringDD/ 5
->DD5 6
-(DD6 7
-typeDD7 ;
-:DD; <
-$strDD= K
-,DDK L
-	maxLengthDDM V
-:DDV W
-$numDDX [
-,DD[ \
-nullableDD] e
-:DDe f
-trueDDg k
-,DDk l
-	collationDDm v
-:DDv w
-$str	DDx â
+,CC< =
+usernameDD 
+=DD 
+tableDD $
+.DD$ %
+ColumnDD% +
+<DD+ ,
+stringDD, 2
+>DD2 3
+(DD3 4
+typeDD4 8
+:DD8 9
+$strDD: H
+,DDH I
+	maxLengthDDJ S
+:DDS T
+$numDDU X
+,DDX Y
+nullableDDZ b
+:DDb c
+falseDDd i
+,DDi j
+	collationDDk t
+:DDt u
+$str	DDv á
 )
-DDâ ä
+DDá à
 .EE 
 
 AnnotationEE #
@@ -13484,245 +13501,245 @@ AnnotationEE #
 ,EE3 4
 $strEE5 ;
 )EE; <
-,EE< =
-acceptedCommercialFF &
-=FF' (
-tableFF) .
-.FF. /
-ColumnFF/ 5
-<FF5 6
-boolFF6 :
->FF: ;
-(FF; <
-typeFF< @
-:FF@ A
-$strFFB N
-,FFN O
-nullableFFP X
-:FFX Y
-trueFFZ ^
-)FF^ _
-,FF_ `
-acceptedTermsGG !
-=GG" #
-tableGG$ )
-.GG) *
-ColumnGG* 0
-<GG0 1
-boolGG1 5
->GG5 6
-(GG6 7
-typeGG7 ;
-:GG; <
-$strGG= I
-,GGI J
-nullableGGK S
-:GGS T
-trueGGU Y
-)GGY Z
-,GGZ [
-userTypeHH 
+,EE< =
+nameFF 
+=FF 
+tableFF  
+.FF  !
+ColumnFF! '
+<FF' (
+stringFF( .
+>FF. /
+(FF/ 0
+typeFF0 4
+:FF4 5
+$strFF6 D
+,FFD E
+	maxLengthFFF O
+:FFO P
+$numFFQ T
+,FFT U
+nullableFFV ^
+:FF^ _
+falseFF` e
+,FFe f
+	collationFFg p
+:FFp q
+$str	FFr É
+)
+FFÉ Ñ
+.GG 
+
+AnnotationGG #
+(GG# $
+$strGG$ 3
+,GG3 4
+$strGG5 ;
+)GG; <
+,GG< =
+passwordHH 
 =HH 
 tableHH $
 .HH$ %
 ColumnHH% +
-<HH+ ,
-boolHH, 0
->HH0 1
-(HH1 2
-typeHH2 6
-:HH6 7
-$strHH8 D
-,HHD E
-nullableHHF N
-:HHN O
-trueHHP T
-)HHT U
-}II 
-,II 
-constraintsJJ 
-:JJ 
-tableJJ "
-=>JJ# %
-{KK 
-tableLL 
-.LL 
-
-PrimaryKeyLL $
-(LL$ %
-$strLL% .
-,LL. /
-xLL0 1
-=>LL2 4
-xLL5 6
-.LL6 7
-	IDVisitorLL7 @
-)LL@ A
-;LLA B
-}MM 
-)MM 
-.NN 
-
-AnnotationNN 
-(NN 
-$strNN +
-,NN+ ,
-$strNN- 3
-)NN3 4
-.OO 
-
-AnnotationOO 
-(OO 
-$strOO 2
-,OO2 3
-$strOO4 E
-)OOE F
-;OOF G
-migrationBuilderQQ 
-.QQ 
-CreateTableQQ (
-(QQ( )
-nameRR 
-:RR 
-$strRR "
-,RR" #
-columnsSS 
-:SS 
-tableSS 
-=>SS !
-newSS" %
-{TT 
-IDAccessCodeUU  
-=UU! "
-tableUU# (
-.UU( )
-ColumnUU) /
-<UU/ 0
-stringUU0 6
->UU6 7
-(UU7 8
-typeUU8 <
-:UU< =
-$strUU> L
-,UUL M
-	maxLengthUUN W
-:UUW X
-$numUUY \
-,UU\ ]
-nullableUU^ f
-:UUf g
-falseUUh m
-,UUm n
-	collationUUo x
-:UUx y
-$str	UUz ã
+<HH+ ,
+stringHH, 2
+>HH2 3
+(HH3 4
+typeHH4 8
+:HH8 9
+$strHH: H
+,HHH I
+	maxLengthHHJ S
+:HHS T
+$numHHU X
+,HHX Y
+nullableHHZ b
+:HHb c
+falseHHd i
+,HHi j
+	collationHHk t
+:HHt u
+$str	HHv á
 )
-UUã å
-.VV 
+HHá à
+.II 
 
-AnnotationVV #
-(VV# $
-$strVV$ 3
-,VV3 4
-$strVV5 ;
-)VV; <
-,VV< =
-ticketNumberWW  
-=WW! "
-tableWW# (
-.WW( )
-ColumnWW) /
-<WW/ 0
-stringWW0 6
->WW6 7
-(WW7 8
-typeWW8 <
-:WW< =
-$strWW> L
-,WWL M
-	maxLengthWWN W
-:WWW X
-$numWWY \
-,WW\ ]
-nullableWW^ f
-:WWf g
-falseWWh m
-,WWm n
-	collationWWo x
-:WWx y
-$str	WWz ã
+AnnotationII #
+(II# $
+$strII$ 3
+,II3 4
+$strII5 ;
+)II; <
+,II< =
+phoneNumberJJ 
+=JJ  !
+tableJJ" '
+.JJ' (
+ColumnJJ( .
+<JJ. /
+stringJJ/ 5
+>JJ5 6
+(JJ6 7
+typeJJ7 ;
+:JJ; <
+$strJJ= K
+,JJK L
+	maxLengthJJM V
+:JJV W
+$numJJX [
+,JJ[ \
+nullableJJ] e
+:JJe f
+trueJJg k
+,JJk l
+	collationJJm v
+:JJv w
+$str	JJx â
 )
-WWã å
-.XX 
+JJâ ä
+.KK 
 
-AnnotationXX #
-(XX# $
-$strXX$ 3
-,XX3 4
-$strXX5 ;
-)XX; <
-,XX< =
-creationTimeYY  
-=YY! "
-tableYY# (
-.YY( )
-ColumnYY) /
-<YY/ 0
-stringYY0 6
->YY6 7
-(YY7 8
-typeYY8 <
-:YY< =
-$strYY> L
-,YYL M
-	maxLengthYYN W
-:YYW X
-$numYYY \
-,YY\ ]
-nullableYY^ f
-:YYf g
-trueYYh l
-,YYl m
-	collationYYn w
-:YYw x
-$str	YYy ä
-)
-YYä ã
-.ZZ 
+AnnotationKK #
+(KK# $
+$strKK$ 3
+,KK3 4
+$strKK5 ;
+)KK; <
+,KK< =
+acceptedCommercialLL &
+=LL' (
+tableLL) .
+.LL. /
+ColumnLL/ 5
+<LL5 6
+boolLL6 :
+>LL: ;
+(LL; <
+typeLL< @
+:LL@ A
+$strLLB N
+,LLN O
+nullableLLP X
+:LLX Y
+trueLLZ ^
+)LL^ _
+,LL_ `
+acceptedTermsMM !
+=MM" #
+tableMM$ )
+.MM) *
+ColumnMM* 0
+<MM0 1
+boolMM1 5
+>MM5 6
+(MM6 7
+typeMM7 ;
+:MM; <
+$strMM= I
+,MMI J
+nullableMMK S
+:MMS T
+trueMMU Y
+)MMY Z
+,MMZ [
+userTypeNN 
+=NN 
+tableNN $
+.NN$ %
+ColumnNN% +
+<NN+ ,
+boolNN, 0
+>NN0 1
+(NN1 2
+typeNN2 6
+:NN6 7
+$strNN8 D
+,NND E
+nullableNNF N
+:NNN O
+trueNNP T
+)NNT U
+}OO 
+,OO 
+constraintsPP 
+:PP 
+tablePP "
+=>PP# %
+{QQ 
+tableRR 
+.RR 
 
-AnnotationZZ #
-(ZZ# $
-$strZZ$ 3
-,ZZ3 4
-$strZZ5 ;
-)ZZ; <
-,ZZ< =
-	startTime[[ 
-=[[ 
-table[[  %
-.[[% &
-Column[[& ,
-<[[, -
-string[[- 3
->[[3 4
-([[4 5
-type[[5 9
-:[[9 :
-$str[[; I
-,[[I J
-	maxLength[[K T
-:[[T U
-$num[[V Y
-,[[Y Z
-nullable[[[ c
-:[[c d
-true[[e i
-,[[i j
-	collation[[k t
-:[[t u
-$str	[[v á
+PrimaryKeyRR $
+(RR$ %
+$strRR% .
+,RR. /
+xRR0 1
+=>RR2 4
+xRR5 6
+.RR6 7
+	IDVisitorRR7 @
+)RR@ A
+;RRA B
+}SS 
+)SS 
+.TT 
+
+AnnotationTT 
+(TT 
+$strTT +
+,TT+ ,
+$strTT- 3
+)TT3 4
+.UU 
+
+AnnotationUU 
+(UU 
+$strUU 2
+,UU2 3
+$strUU4 E
+)UUE F
+;UUF G
+migrationBuilderWW 
+.WW 
+CreateTableWW (
+(WW( )
+nameXX 
+:XX 
+$strXX "
+,XX" #
+columnsYY 
+:YY 
+tableYY 
+=>YY !
+newYY" %
+{ZZ 
+IDAccessCode[[  
+=[[! "
+table[[# (
+.[[( )
+Column[[) /
+<[[/ 0
+string[[0 6
+>[[6 7
+([[7 8
+type[[8 <
+:[[< =
+$str[[> L
+,[[L M
+	maxLength[[N W
+:[[W X
+$num[[Y \
+,[[\ ]
+nullable[[^ f
+:[[f g
+false[[h m
+,[[m n
+	collation[[o x
+:[[x y
+$str	[[z ã
 )
-[[á à
+[[ã å
 .\\ 
 
 Annotation\\ #
@@ -13731,33 +13748,33 @@ Annotation\\ #
 ,\\3 4
 $str\\5 ;
 )\\; <
-,\\< =
-endTime]] 
-=]] 
-table]] #
-.]]# $
-Column]]$ *
-<]]* +
-string]]+ 1
->]]1 2
-(]]2 3
-type]]3 7
-:]]7 8
-$str]]9 G
-,]]G H
-	maxLength]]I R
-:]]R S
-$num]]T W
-,]]W X
-nullable]]Y a
-:]]a b
-true]]c g
-,]]g h
-	collation]]i r
-:]]r s
-$str	]]t Ö
+,\\< =
+ticketNumber]]  
+=]]! "
+table]]# (
+.]]( )
+Column]]) /
+<]]/ 0
+string]]0 6
+>]]6 7
+(]]7 8
+type]]8 <
+:]]< =
+$str]]> L
+,]]L M
+	maxLength]]N W
+:]]W X
+$num]]Y \
+,]]\ ]
+nullable]]^ f
+:]]f g
+false]]h m
+,]]m n
+	collation]]o x
+:]]x y
+$str	]]z ã
 )
-]]Ö Ü
+]]ã å
 .^^ 
 
 Annotation^^ #
@@ -13766,33 +13783,33 @@ Annotation^^ #
 ,^^3 4
 $str^^5 ;
 )^^; <
-,^^< =
-	visitorID__ 
-=__ 
-table__  %
-.__% &
-Column__& ,
-<__, -
-string__- 3
->__3 4
-(__4 5
-type__5 9
-:__9 :
-$str__; I
-,__I J
-	maxLength__K T
-:__T U
-$num__V Y
-,__Y Z
-nullable__[ c
-:__c d
-false__e j
-,__j k
-	collation__l u
-:__u v
-$str	__w à
+,^^< =
+creationTime__  
+=__! "
+table__# (
+.__( )
+Column__) /
+<__/ 0
+string__0 6
+>__6 7
+(__7 8
+type__8 <
+:__< =
+$str__> L
+,__L M
+	maxLength__N W
+:__W X
+$num__Y \
+,__\ ]
+nullable__^ f
+:__f g
+true__h l
+,__l m
+	collation__n w
+:__w x
+$str	__y ä
 )
-__à â
+__ä ã
 .`` 
 
 Annotation`` #
@@ -13801,33 +13818,33 @@ Annotation`` #
 ,``3 4
 $str``5 ;
 )``; <
-,``< =
-queueIDaa 
-=aa 
-tableaa #
-.aa# $
-Columnaa$ *
-<aa* +
-stringaa+ 1
->aa1 2
-(aa2 3
-typeaa3 7
-:aa7 8
-$straa9 G
-,aaG H
-	maxLengthaaI R
-:aaR S
-$numaaT W
-,aaW X
-nullableaaY a
-:aaa b
-falseaac h
-,aah i
-	collationaaj s
-:aas t
-$str	aau Ü
+,``< =
+	startTimeaa 
+=aa 
+tableaa  %
+.aa% &
+Columnaa& ,
+<aa, -
+stringaa- 3
+>aa3 4
+(aa4 5
+typeaa5 9
+:aa9 :
+$straa; I
+,aaI J
+	maxLengthaaK T
+:aaT U
+$numaaV Y
+,aaY Z
+nullableaa[ c
+:aac d
+trueaae i
+,aai j
+	collationaak t
+:aat u
+$str	aav á
 )
-aaÜ á
+aaá à
 .bb 
 
 Annotationbb #
@@ -13836,205 +13853,274 @@ Annotationbb #
 ,bb3 4
 $strbb5 ;
 )bb; <
-}cc 
-,cc 
-constraintsdd 
-:dd 
-tabledd "
-=>dd# %
-{ee 
-tableff 
-.ff 
+,bb< =
+endTimecc 
+=cc 
+tablecc #
+.cc# $
+Columncc$ *
+<cc* +
+stringcc+ 1
+>cc1 2
+(cc2 3
+typecc3 7
+:cc7 8
+$strcc9 G
+,ccG H
+	maxLengthccI R
+:ccR S
+$numccT W
+,ccW X
+nullableccY a
+:cca b
+trueccc g
+,ccg h
+	collationcci r
+:ccr s
+$str	cct Ö
+)
+ccÖ Ü
+.dd 
 
-PrimaryKeyff $
-(ff$ %
-$strff% .
-,ff. /
-xff0 1
-=>ff2 4
-xff5 6
-.ff6 7
-IDAccessCodeff7 C
-)ffC D
-;ffD E
-tablegg 
-.gg 
+Annotationdd #
+(dd# $
+$strdd$ 3
+,dd3 4
+$strdd5 ;
+)dd; <
+,dd< =
+	visitorIDee 
+=ee 
+tableee  %
+.ee% &
+Columnee& ,
+<ee, -
+stringee- 3
+>ee3 4
+(ee4 5
+typeee5 9
+:ee9 :
+$stree; I
+,eeI J
+	maxLengtheeK T
+:eeT U
+$numeeV Y
+,eeY Z
+nullableee[ c
+:eec d
+falseeee j
+,eej k
+	collationeel u
+:eeu v
+$str	eew à
+)
+eeà â
+.ff 
 
-ForeignKeygg $
-(gg$ %
-namehh 
-:hh 
-$strhh -
-,hh- .
-columnii 
-:ii 
-xii  !
-=>ii" $
-xii% &
-.ii& '
-	visitorIDii' 0
-,ii0 1
-principalTablejj &
-:jj& '
-$strjj( 1
-,jj1 2
-principalColumnkk '
-:kk' (
-$strkk) 4
-)kk4 5
-;kk5 6
+Annotationff #
+(ff# $
+$strff$ 3
+,ff3 4
+$strff5 ;
+)ff; <
+,ff< =
+queueIDgg 
+=gg 
+tablegg #
+.gg# $
+Columngg$ *
+<gg* +
+stringgg+ 1
+>gg1 2
+(gg2 3
+typegg3 7
+:gg7 8
+$strgg9 G
+,ggG H
+	maxLengthggI R
+:ggR S
+$numggT W
+,ggW X
+nullableggY a
+:gga b
+falseggc h
+,ggh i
+	collationggj s
+:ggs t
+$str	ggu Ü
+)
+ggÜ á
+.hh 
+
+Annotationhh #
+(hh# $
+$strhh$ 3
+,hh3 4
+$strhh5 ;
+)hh; <
+}ii 
+,ii 
+constraintsjj 
+:jj 
+tablejj "
+=>jj# %
+{kk 
 tablell 
 .ll 
 
-ForeignKeyll $
+PrimaryKeyll $
 (ll$ %
-namemm 
-:mm 
-$strmm /
-,mm/ 0
-columnnn 
-:nn 
-xnn  !
-=>nn" $
-xnn% &
-.nn& '
-queueIDnn' .
-,nn. /
-principalTableoo &
-:oo& '
-$stroo( /
-,oo/ 0
-principalColumnpp '
-:pp' (
-$strpp) 2
-)pp2 3
-;pp3 4
-}qq 
-)qq 
-.rr 
+$strll% .
+,ll. /
+xll0 1
+=>ll2 4
+xll5 6
+.ll6 7
+IDAccessCodell7 C
+)llC D
+;llD E
+tablemm 
+.mm 
 
-Annotationrr 
-(rr 
-$strrr +
-,rr+ ,
-$strrr- 3
-)rr3 4
-.ss 
+ForeignKeymm $
+(mm$ %
+namenn 
+:nn 
+$strnn -
+,nn- .
+columnoo 
+:oo 
+xoo  !
+=>oo" $
+xoo% &
+.oo& '
+	visitorIDoo' 0
+,oo0 1
+principalTablepp &
+:pp& '
+$strpp( 1
+,pp1 2
+principalColumnqq '
+:qq' (
+$strqq) 4
+)qq4 5
+;qq5 6
+tablerr 
+.rr 
 
-Annotationss 
-(ss 
-$strss 2
-,ss2 3
-$strss4 E
-)ssE F
-;ssF G
-migrationBuilderuu 
-.uu 
-CreateIndexuu (
-(uu( )
-namevv 
-:vv 
-$strvv %
-,vv% &
-tableww 
-:ww 
-$strww #
-,ww# $
-columnxx 
-:xx 
-$strxx #
-)xx# $
-;xx$ %
-migrationBuilderzz 
-.zz 
-CreateIndexzz (
-(zz( )
-name{{ 
-:{{ 
-$str{{ '
-,{{' (
-table|| 
-:|| 
-$str|| #
-,||# $
-column}} 
-:}} 
-$str}} !
-)}}! "
-;}}" #
-}~~ 	
-	protected
-ÄÄ 
-override
-ÄÄ 
-void
-ÄÄ 
-Down
-ÄÄ  $
-(
-ÄÄ$ %
-MigrationBuilder
-ÄÄ% 5
+ForeignKeyrr $
+(rr$ %
+namess 
+:ss 
+$strss /
+,ss/ 0
+columntt 
+:tt 
+xtt  !
+=>tt" $
+xtt% &
+.tt& '
+queueIDtt' .
+,tt. /
+principalTableuu &
+:uu& '
+$struu( /
+,uu/ 0
+principalColumnvv '
+:vv' (
+$strvv) 2
+)vv2 3
+;vv3 4
+}ww 
+)ww 
+.xx 
+
+Annotationxx 
+(xx 
+$strxx +
+,xx+ ,
+$strxx- 3
+)xx3 4
+.yy 
+
+Annotationyy 
+(yy 
+$stryy 2
+,yy2 3
+$stryy4 E
+)yyE F
+;yyF G
+migrationBuilder{{ 
+.{{ 
+CreateIndex{{ (
+({{( )
+name|| 
+:|| 
+$str|| %
+,||% &
+table}} 
+:}} 
+$str}} #
+,}}# $
+column~~ 
+:~~ 
+$str~~ #
+)~~# $
+;~~$ %
 migrationBuilder
-ÄÄ6 F
-)
-ÄÄF G
-{
-ÅÅ 	
-migrationBuilder
-ÇÇ 
+ÄÄ 
 .
-ÇÇ 
-	DropTable
-ÇÇ &
+ÄÄ 
+CreateIndex
+ÄÄ (
 (
-ÇÇ& '
+ÄÄ( )
 name
-ÉÉ 
+ÅÅ 
 :
-ÉÉ 
+ÅÅ 
 $str
-ÉÉ "
+ÅÅ '
+,
+ÅÅ' (
+table
+ÇÇ 
+:
+ÇÇ 
+$str
+ÇÇ #
+,
+ÇÇ# $
+column
+ÉÉ 
+:
+ÉÉ 
+$str
+ÉÉ !
 )
+ÉÉ! "
+;
 ÉÉ" #
-;
-ÉÉ# $
-migrationBuilder
-ÖÖ 
-.
-ÖÖ 
-	DropTable
-ÖÖ &
+}
+ÑÑ 	
+	protected
+ââ 
+override
+ââ 
+void
+ââ 
+Down
+ââ  $
 (
-ÖÖ& '
-name
-ÜÜ 
-:
-ÜÜ 
-$str
-ÜÜ 
-)
-ÜÜ 
-;
-ÜÜ  
+ââ$ %
+MigrationBuilder
+ââ% 5
 migrationBuilder
-àà 
-.
-àà 
-	DropTable
-àà &
-(
-àà& '
-name
-ââ 
-:
-ââ 
-$str
-ââ 
+ââ6 F
 )
-ââ  
-;
-ââ  !
+ââF G
+{
+ää 	
 migrationBuilder
 ãã 
 .
@@ -14048,13 +14134,67 @@ Annotationss 
 :
 åå 
 $str
-åå 
+åå "
 )
-åå 
+åå" #
 ;
-åå 
+åå# $
+migrationBuilder
+éé 
+.
+éé 
+	DropTable
+éé &
+(
+éé& '
+name
+èè 
+:
+èè 
+$str
+èè 
+)
+èè 
+;
+èè  
+migrationBuilder
+ëë 
+.
+ëë 
+	DropTable
+ëë &
+(
+ëë& '
+name
+íí 
+:
+íí 
+$str
+íí 
+)
+íí  
+;
+íí  !
+migrationBuilder
+îî 
+.
+îî 
+	DropTable
+îî &
+(
+îî& '
+name
+ïï 
+:
+ïï 
+$str
+ïï 
+)
+ïï 
+;
+ïï 
 }
-çç 	
+ññ 	
 }
-éé 
-}èè 
+óó 
+}òò 

@@ -39,7 +39,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         public Task<Visitor> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms)
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(pass) || string.IsNullOrWhiteSpace(tlf))
-                throw new NullOrWhiteSpaceArgument("Null or white space argument");
+                throw new NullOrWhiteSpaceArgumentException("Null or white space argument");
 
             if (!acceptedTerms)
                 throw new MustAcceptTermsException("accepted terms must be true");
@@ -56,7 +56,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         public Task<bool> Login(string username, string pass)
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(pass))
-                throw new NullOrWhiteSpaceArgument("Null or white space argument");
+                throw new NullOrWhiteSpaceArgumentException("Null or white space argument");
 
             Devon4NetLogger.Debug("Login visitor");
             return _VisitorRepository.Login(username,pass);

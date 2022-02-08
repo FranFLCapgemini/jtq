@@ -10,9 +10,9 @@
 j
 r	
 ¨C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Exceptions\AlreadyHasCodeException.cs 8j &'()*/0123r	
-!"#$+,-456789Ç≠
-£C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\AccessCodeService.cs 8j !"#./012:DEFGVWXYrD	
-$%&'()*+,3456789;<=>?@ABHIJKLMNOPQSTZ[\]^_`abcdxÇ&(*+579;=>?AJLNOPQS\^`a»
+!"#$+,-456789ÇØ
+£C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\AccessCodeService.cs 8j !"#/0123;EFGHWXYZrE	
+$%&'()*+,-456789:<=>?@ABCIJKLMNOPQRTU[\]^_`abcdexÇ&(*+,68:<>?@BKMOPQRT]_ab»
 §C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AccessCodeManagement\Service\IAccessCodeService.csjr
  ã
 ∂C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\AntiForgeryTokenManagement\Controllers\AntiForgeryTokenController.cs 8j
@@ -70,8 +70,9 @@ r†
 ëC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Dto\QueueDto.cs 8j	 !"%&'*+,/01r
 #(-234π
 öC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Service\IQueueService.csjr	
-Ê
-ôC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Service\QueueService.cs 8j'()*r#	 !"#$%+,-./012345xÇ"#$-/12∑
+Á
+ôC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\QueueManagement\Service\QueueService.cs	 8j&'()r#
+ !"#$*+,-./012345xÇ	!"#,.012∑
 úC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\RabbitMqManagement\Commands\TodoCommand.cs 8j
 r	ˇ
 ¶C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\RabbitMqManagement\Controllers\RabbitMqController.cs
@@ -99,8 +100,8 @@ j  !)*+,-45678EFGHIWXYZ[r=	"#$%&'./0129:;=>?@BCJKLMOP
 ùC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Dto\LoginResponseToken.cs 8j	
 r–
 ïC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Dto\VisitorDto.cs 8j
- !#$%'()+,-r	"&*./0Â
-°C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTerms.cs 8j &'()*/0123r	
+ !#$%'()+,-r	"&*./0Ó
+™C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Exceptions\MustAcceptTermsException.cs 8j &'()*/0123r	
 !"#$+,-456789Ç¿
 ûC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Business\VisitorManagement\Service\IVisitorService.csj
 r		ˆ
@@ -108,41 +109,39 @@ r–
 j !"#$%&34567r#
 '()*,-/0189:;=>?@AxÇ)*,-/0:;=>ì
 åC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Configuration\DevonConfiguration.cs 8j"#$%&'()*TUVWXYZ[rJ	
- !+,-./1346789;<=>?ABCDEGHIJKLNOPQR\]^_`acdefghxÇ-./13468;=CDIJKPQ^_`eÑ
-íC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\AccessCodeRepository.cs 8j	
-*+,-.789:;BCDEFGr/ !"#$%&'(/01245<=>?@HIJKLMOPQRTUxÇ !#$%&'124>?JKLQÙ
+ !+,-./1346789;<=>?ABCDEGHIJKLNOPQR\]^_`acdefghxÇ-./13468;=CDIJKPQ^_`eâ
+íC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\AccessCodeRepository.cs 8j#	
+*+,-.789:;BCDEFGOPQRSr/ !"#$%&'(/01245<=>?@HIJKLMTUVWYZxÇ !#$%&'124>?JKLVÙ
 êC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\EmployeeRepository.cs 8j
 "#$%&-./0123:;<=>r(	 '()*+45678?@ABDEFGIJKLxÇ)*67ABDFIÀ
-ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\jtqRepository.cs 8j
+ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\JtqRepository.cs 8j
  !"#$r	%&'(*+-.Ç'(*
-çC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\QueueRepository.cs 8j	
+çC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\QueueRepository.cs 8j	
  /012:;<=r-!"#$%&'()*+,-.3456789>?@ABCDEFÇ%()*-5678@ABC¸
 åC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\TodoRepository.cs 8j '()*+23456FGHIJr1	
 !"#$%,-./0789;<>?@ACDKLMNPQRSUVWXxÇ#$./9<>@CMNPRU‰
 èC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\VisitorRepository.cs 8j	
 ,-./01r !"#$%&'(*+2346789xÇ!"#$%&'(*46À
 ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\EmployeeContext.cs 8jr	
- !"#$%&'()*+,-Ç!$'ñ
-ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs- 8rº	
- !#%&(*,-.01245689:;=>?ABCDFGHIKLMNOQRSTUVXYZ\]_`acdfghikmnpqrtuvxyz{}~ÅÇÉÖÜáâäãåçèêëíîñóôöõùü°¢£§¶ß®©´¨≠Ø±≤≥¥µ∑∏∫ªºÇC #%(*,048=AFKLMNQRSTXZ\_cfhkmptx}ÅÖâèëîñôùü°¶´Ø±∑ø
+ !"#$%&'()*+,-Ç!$'Ã
+ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs- 8j	
+ !"$%&()*-./—“”rÃ#'+01235678:<=?ACDEGHIKLMOPQRTUVXYZ[]^_`bcdefhijklmopqstvwxz{}~ÄÇÑÖáàâãåçèêëíîïñòôöúùû†°¢£§¶ß®©´≠Æ∞±≤¥∂∏π∫ªΩæø¿¬√ƒ∆»… ÀÃŒœ‘’÷ÇI257:<?ACGKOTX]bcdehijkoqsvz}ÇÑáãèîòú†¶®´≠∞¥∂∏Ω¬∆»Œø
 áC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\TodoContext.cs 8jr	
- !"#$%&'Ç!¢
-ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\AccessCode.cs 8r	
-™
+ !"#$%&'Ç!¿
+ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\AccessCode.cs 8j	
+!"#%&')*+r $(,-.™
 ÑC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Employee.cs 8j	
 r
-ó
-ÇC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Prueba.cs 8r
-	
-ß
-ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Queue.cs 8r	
-Ç
-£
+¢
+ÇC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Prueba.cs 8j	r
+	
+ 
+ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Queue.cs 8j! !#$%'()+,-/01345r	
+"&*.2678Ç£
 ÅC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Todos.cs 8j	
-r	©
-ÉC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Visitor.cs 8r	
-Ç
-ƒ
+r	Ã
+ÉC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\Visitor.cs 8j! !#$%'()+,-/01456r	
+"&*.2789Çƒ
 ùC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IAccessCodeRepository.csj !r	
 "#$ 
 õC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IEmployeeRepository.csj	 #$%&'r
@@ -155,8 +154,8 @@ j !"#$%&34567r#
 &'(∂
 öC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\RepositoryInterfaces\IVisitorRepository.csj	r
 	
-”
-èC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgument.cs 8j &'()*/0123r	
-!"#$+,-456789ÇÎ
-ìC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\20220114112513_InitialCreate.cs 8rè	
- !"#$%&'()*+,-./012345689:;<=>?@ABCDEFGHIJKLMNOQRSTUVWXYZ[\]^_`abcdefghijklmnopqrsuvwxz{|}~ÄÅÇÉÖÜàâãåçéèÇ8 "$&(*,./138:<>@BDFGHJLQSUWY[]_adfgilnuzÇÖàã
+‹
+òC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Exceptions\NullOrWhiteSpaceArgumentException.cs 8j &'()*/0123r	
+!"#$+,-456789Çˇ
+ìC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Migrations\20220114112513_InitialCreate.cs 8j	Üáàrî
+ !"$%&'()*+,-./0123456789:;<>?@ABCDEFGHIJKLMNOPQRSTUWXYZ[\]^_`abcdefghijklmnopqrstuvwxy{|}~ÄÅÇÉÑâäãåéèëíîïñóòÇ9$&(*,.024579>@BDFHJLMNPRWY[]_acegjlmort{Äãéëî

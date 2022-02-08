@@ -22,9 +22,9 @@ namespace jtq.UnitTests
             queuerepository.Setup(x => x.GetActiveQueues()).
                 ReturnsAsync(new List<Queue>()
                 {
-                    new Queue(){ Idqueue = "id1", Name ="test1", Active=true},
-                    new Queue(){ Idqueue = "id2", Name ="test2", Active=true},
-                    new Queue(){ Idqueue = "id3", Name ="test3", Active=true}
+                    new Queue(){ IdQueue = "id1", Name ="test1", Active=true},
+                    new Queue(){ IdQueue = "id2", Name ="test2", Active=true},
+                    new Queue(){ IdQueue = "id3", Name ="test3", Active=true}
                 });;
             Mock <IUnitOfWork<JtqContext>> uow= new();
             uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
@@ -61,7 +61,7 @@ namespace jtq.UnitTests
         public async Task CreateQueue_CorrectArguments_QueueCreated()
         {
             var queuerepository = new Mock<IQueueRepository>();
-            queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue() { Idqueue="id"});
+            queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue() { IdQueue="id"});
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
             var _queueservice = new QueueService(uow.Object);
@@ -84,8 +84,8 @@ namespace jtq.UnitTests
 
             var queue = await _queueservice.CreateQueue("testqueue");
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _queueservice.CreateQueue(" ").ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _queueservice.CreateQueue(null).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _queueservice.CreateQueue(" ").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _queueservice.CreateQueue(null).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
     }

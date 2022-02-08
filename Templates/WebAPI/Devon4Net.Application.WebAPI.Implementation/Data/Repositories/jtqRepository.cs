@@ -10,13 +10,13 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
     /// <summary>
     /// Repository implementation for jtq
     /// </summary>
-    public class jtqRepository : Repository<Prueba>, IjtqRepository
+    public class JtqRepository : Repository<Prueba>, IjtqRepository
     {
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="context"></param>
-        public jtqRepository(JtqContext context) : base(context)
+        public JtqRepository(JtqContext context) : base(context)
         {
         }
 

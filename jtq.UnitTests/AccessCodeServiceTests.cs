@@ -44,8 +44,8 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchAccessCodebyId(" ").ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchAccessCodebyId(null).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.SearchAccessCodebyId(" ").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.SearchAccessCodebyId(null).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]
@@ -95,8 +95,8 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.CreateAccessCode(" ", "queue").ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.CreateAccessCode(null, "queue").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.CreateAccessCode(" ", "queue").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.CreateAccessCode(null, "queue").ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]
@@ -130,8 +130,8 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.DeleteAccessCode(" ").ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.DeleteAccessCode(null).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.DeleteAccessCode(" ").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.DeleteAccessCode(null).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]
@@ -170,8 +170,8 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IAccessCodeRepository>()).Returns(accesscoderepository.Object);
             var _accesscodeservice = new AccessCodeService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchVisitorAccessCodes(" ").ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _accesscodeservice.SearchVisitorAccessCodes(null).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.SearchVisitorAccessCodes(" ").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _accesscodeservice.SearchVisitorAccessCodes(null).ConfigureAwait(false)).ConfigureAwait(false);
         }
     }
 }

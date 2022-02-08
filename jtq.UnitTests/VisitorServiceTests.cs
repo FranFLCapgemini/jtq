@@ -45,8 +45,8 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _visitorService.CreateVisitor(" ", null, "", "", true, true).ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _visitorService.CreateVisitor(null, null, "", "", true, true).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.CreateVisitor(" ", null, "", "", true, true).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.CreateVisitor(null, null, "", "", true, true).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]
@@ -84,8 +84,8 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
 
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _visitorService.Login(" ", null).ConfigureAwait(false)).ConfigureAwait(false);
-            await Assert.ThrowsAsync<NullOrWhiteSpaceArgument>(async () => await _visitorService.Login(null, " ").ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.Login(" ", null).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.Login(null, " ").ConfigureAwait(false)).ConfigureAwait(false);
         }
 
     }

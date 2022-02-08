@@ -6,22 +6,45 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
 {
+    /// <summary>
+    /// JtqContext class
+    /// </summary>
     public partial class JtqContext : DbContext
     {
+        /// <summary>
+        /// JtqContext() constructor
+        /// </summary>
         public JtqContext()
         {
         }
 
-        public JtqContext(DbContextOptions<JtqContext> options)
-            : base(options)
+        /// <summary>
+        /// JtqContext(DbContextOptions) constructor
+        /// </summary>
+        public JtqContext(DbContextOptions<JtqContext> options) : base(options)
         {
         }
 
+        /// <summary>
+        /// AccessCodes
+        /// </summary>
         public virtual DbSet<AccessCode> AccessCodes { get; set; }
+        /// <summary>
+        /// Pruebas
+        /// </summary>
         public virtual DbSet<Prueba> Pruebas { get; set; }
+        /// <summary>
+        /// Queues
+        /// </summary>
         public virtual DbSet<Queue> Queues { get; set; }
+        /// <summary>
+        /// visitors
+        /// </summary>
         public virtual DbSet<Visitor> Visitors { get; set; }
 
+        /// <summary>
+        /// OnModelCreating method
+        /// </summary>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseCollation("utf8mb4_0900_ai_ci")
@@ -101,7 +124,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
 
             modelBuilder.Entity<Queue>(entity =>
             {
-                entity.HasKey(e => e.Idqueue)
+                entity.HasKey(e => e.IdQueue)
                     .HasName("PRIMARY");
 
                 entity.ToTable("Queue");
@@ -109,7 +132,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
                 entity.HasCharSet("utf8")
                     .UseCollation("utf8_general_ci");
 
-                entity.Property(e => e.Idqueue)
+                entity.Property(e => e.IdQueue)
                     .HasMaxLength(100)
                     .HasColumnName("IDQueue");
 
@@ -142,7 +165,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
 
             modelBuilder.Entity<Visitor>(entity =>
             {
-                entity.HasKey(e => e.Idvisitor)
+                entity.HasKey(e => e.IdVisitor)
                     .HasName("PRIMARY");
 
                 entity.ToTable("Visitor");
@@ -150,7 +173,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
                 entity.HasCharSet("utf8")
                     .UseCollation("utf8_general_ci");
 
-                entity.Property(e => e.Idvisitor)
+                entity.Property(e => e.IdVisitor)
                     .HasMaxLength(100)
                     .HasColumnName("IDVisitor");
 
@@ -183,6 +206,9 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
             OnModelCreatingPartial(modelBuilder);
         }
 
+        /// <summary>
+        /// OnModelCreatingPartial method
+        /// </summary>
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

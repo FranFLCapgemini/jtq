@@ -16,12 +16,12 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         ///<Summary>
         ///Delete acces code
         ///</Summary>
-        Task<string> DeleteAccessCode(string accesscode);
+        Task<string> DeleteAccessCode(string idaccesscode);
         
         ///<Summary>
         ///Create access code
         ///</Summary>
-        Task<AccessCode> CreateAccessCode(string idvisitor, string queue);
+        Task<AccessCode> CreateAccessCode(string idvisitor, string idqueue);
 
         ///<Summary>
         ///Any access code

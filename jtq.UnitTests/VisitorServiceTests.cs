@@ -20,7 +20,8 @@ namespace jtq.UnitTests
             var ivisitorrepository = new Mock<IVisitorRepository>();
             //returns Async
             ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .Returns(Task.FromResult(new Visitor()));
+                .Returns(Task.FromResult(
+                    new Visitor() { Username="user", Name="name", Password="pass", PhoneNumber="665665665", AcceptedCommercial=true, AcceptedTerms=true}));
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
@@ -28,6 +29,10 @@ namespace jtq.UnitTests
             var visitor = await _visitorService.CreateVisitor("user","name","pass","665665665",true,true).ConfigureAwait(false);
 
             Assert.NotNull(visitor);
+            Assert.NotNull(visitor.Username);
+            Assert.NotNull(visitor.Name);
+            Assert.True(visitor.AcceptedTerms);
+            ivisitorrepository.Verify(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()), Times.Once);
         }
 
         [Fact]

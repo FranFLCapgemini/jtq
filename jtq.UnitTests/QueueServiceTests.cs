@@ -41,6 +41,23 @@ namespace jtq.UnitTests
         }
 
         [Fact]
+        public async Task GetActiveQueues_NoActiveQueues_ReturnsEmptyQueueList()
+        {
+            var queuerepository = new Mock<IQueueRepository>();
+            queuerepository.Setup(x => x.GetActiveQueues()).ReturnsAsync(new List<Queue>()); 
+            Mock<IUnitOfWork<JtqContext>> uow = new();
+            uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
+            var _queueservice = new QueueService(uow.Object);
+
+            IEnumerable<QueueDto> queuelist = await _queueservice.GetActiveQueues().ConfigureAwait(false);
+            queuelist = queuelist.ToList();
+
+            Assert.NotNull(queuelist);
+            Assert.Empty(queuelist);
+            queuerepository.Verify(x => x.GetActiveQueues(), Times.Once);
+        }
+
+        [Fact]
         public async Task CreateQueue_CorrectArguments_QueueCreated()
         {
             var queuerepository = new Mock<IQueueRepository>();

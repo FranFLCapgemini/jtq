@@ -69,19 +69,19 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// <summary>
         /// Delete Access Code method from access code service
         /// </summary>
-        /// <param name="idaccesscode"></param>
-        public async Task<string> DeleteAccessCode(string idaccesscode)
+        /// <param name="id"></param>
+        public async Task<string> DeleteAccessCode(string id)
         {
-            if (string.IsNullOrWhiteSpace(idaccesscode))
+            if (string.IsNullOrWhiteSpace(id))
             {
                 throw new NullOrWhiteSpaceArgument("Null or white space argument");
             }
-            Devon4NetLogger.Debug($"DeleteAccessCode method from service DeleteAccessCode with id: {idaccesscode}");
-            var ac = await _AccessCodeRepository.SearchAccessCodebyId(idaccesscode);
+            Devon4NetLogger.Debug($"DeleteAccessCode method from service DeleteAccessCode with id: {id}");
+            var ac = await _AccessCodeRepository.SearchAccessCodebyId(id);
             if(ac != null)
                 await _QueueRepository.DecrementCustomers(ac.QueueId).ConfigureAwait(false);
 
-            return await _AccessCodeRepository.DeleteAccessCode(idaccesscode).ConfigureAwait(false);
+            return await _AccessCodeRepository.DeleteAccessCode(id).ConfigureAwait(false);
         }
 
         /// <summary>

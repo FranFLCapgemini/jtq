@@ -47,7 +47,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         public async Task<string> DeleteAccessCode(string idaccesscode)
         {
             Devon4NetLogger.Debug("DeleteAccessCode method from repository AccessCodeRepository");
-            var deleted = await Delete( t => t.IdaccessCode==idaccesscode).ConfigureAwait(false);
+            await Delete( t => t.IdaccessCode==idaccesscode).ConfigureAwait(false);
 
             return idaccesscode;
         }
@@ -57,10 +57,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
         /// </summary>
         /// <param name="idaccesscode"></param>
         /// <returns></returns>
-        public async Task<AccessCode> SearchAccessCodebyId(string idaccesscode)
+        public async Task<AccessCode> SearchAccessCodebyId(string id)
         {
             Devon4NetLogger.Debug("SearchAccessCodebyIdAccessCode method from repository AccessCodeRepository");
-            return await GetFirstOrDefault(t=>t.IdaccessCode==idaccesscode).ConfigureAwait(false);
+            return await GetFirstOrDefault(t=>t.IdaccessCode==id).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -76,6 +76,11 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
             return check==null||check.Any();
         }
 
+        /// <summary>
+        /// Returns all visitor access codes
+        /// </summary>
+        /// <param name="idvisitor"></param>
+        /// <returns></returns>
         public async Task<IList<AccessCode>> SearchVisitorAccessCodes(string idvisitor)
         {
             return await Get(t => t.VisitorId==idvisitor);

@@ -19,8 +19,8 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="nombre"></param>
+        /// <param name="name"></param>
         /// <returns></returns>
-        Task<Prueba> CreatePrueba(string nombre);        
+        Task<Prueba> CreatePrueba(string name);        
     }
 }

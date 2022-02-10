@@ -13,18 +13,23 @@ namespace jtq.UnitTests
 {
     public class VisitorServiceTests
     {
-        //nameing convention method_scenario_expectedBehavior()
+        private readonly Mock<IVisitorRepository> ivisitorepository = new();
+        private readonly Mock<IUnitOfWork<JtqContext>> uow = new();
+        private readonly VisitorService _visitorService;
+
+        public VisitorServiceTests()
+        {
+            uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorepository.Object);
+            _visitorService = new VisitorService(uow.Object);
+        }
+
+        //naming convention method_scenario_expectedBehavior()
         [Fact]
         public async Task CreateVisitor_CorrectArguments_VisitorCreated()
         {
-            var ivisitorrepository = new Mock<IVisitorRepository>();
-            //returns Async TODOS
-            ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .Returns(Task.FromResult(
-                    new Visitor() { Username="user", Name="name", Password="pass", PhoneNumber="665665665", AcceptedCommercial=true, AcceptedTerms=true}));
-            Mock<IUnitOfWork<JtqContext>> uow = new();
-            uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
-            var _visitorService = new VisitorService(uow.Object);
+            ivisitorepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
+                .ReturnsAsync(
+                  new Visitor() { Username="user", Name="name", Password="pass", PhoneNumber="665665665", AcceptedCommercial=true, AcceptedTerms=true});
 
             var visitor = await _visitorService.CreateVisitor("user","name","pass","665665665",true,true).ConfigureAwait(false);
 
@@ -32,7 +37,7 @@ namespace jtq.UnitTests
             Assert.NotNull(visitor.Username);
             Assert.NotNull(visitor.Name);
             Assert.True(visitor.AcceptedTerms);
-            ivisitorrepository.Verify(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()), Times.Once);
+            ivisitorepository.Verify(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()), Times.Once);
         }
 
         [Fact]
@@ -40,7 +45,7 @@ namespace jtq.UnitTests
         {
             var ivisitorrepository = new Mock<IVisitorRepository>();
             ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .Returns(Task.FromResult(new Visitor()));
+                .ReturnsAsync(new Visitor());
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
@@ -54,7 +59,7 @@ namespace jtq.UnitTests
         {
             var ivisitorrepository = new Mock<IVisitorRepository>();
             ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .Returns(Task.FromResult(new Visitor()));
+                .ReturnsAsync(new Visitor());
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
@@ -70,6 +75,7 @@ namespace jtq.UnitTests
             Mock<IUnitOfWork<JtqContext>> uow = new();
             uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
             var _visitorService = new VisitorService(uow.Object);
+
             var check = await _visitorService.Login("user", "pass").ConfigureAwait(false);
 
             Assert.True(check);

@@ -39,11 +39,11 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Entities
         /// <summary>
         /// AcceptedCommercial
         /// </summary>
-        public bool? AcceptedCommercial { get; set; }
+        public bool AcceptedCommercial { get; set; }
         /// <summary>
         /// AcceptedTerms
         /// </summary>
-        public bool? AcceptedTerms { get; set; }
+        public bool AcceptedTerms { get; set; }
         /// <summary>
         /// UserType
         /// </summary>

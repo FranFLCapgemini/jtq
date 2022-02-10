@@ -15,7 +15,7 @@ namespace jtq.UnitTests
     {
         private readonly Mock<IVisitorRepository> ivisitorepository = new();
         private readonly Mock<IUnitOfWork<JtqContext>> uow = new();
-        private readonly VisitorService _visitorService;
+        private VisitorService _visitorService;
 
         public VisitorServiceTests()
         {
@@ -27,12 +27,23 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateVisitor_CorrectArguments_VisitorCreated()
         {
+            //Arrange
+            var visitorConst = new Visitor()
+            {
+                Username = "user",
+                Name = "name",
+                Password = "pass",
+                PhoneNumber = "665665665",
+                AcceptedCommercial = true,
+                AcceptedTerms = true
+            };
             ivisitorepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .ReturnsAsync(
-                  new Visitor() { Username="user", Name="name", Password="pass", PhoneNumber="665665665", AcceptedCommercial=true, AcceptedTerms=true});
+                .ReturnsAsync(visitorConst);
 
-            var visitor = await _visitorService.CreateVisitor("user","name","pass","665665665",true,true).ConfigureAwait(false);
+            //Act
+            var visitor = await _visitorService.CreateVisitor(visitorConst.Username, visitorConst.Name, visitorConst.Password, visitorConst.PhoneNumber, visitorConst.AcceptedCommercial, visitorConst.AcceptedCommercial).ConfigureAwait(false);
 
+            //Assert
             Assert.NotNull(visitor);
             Assert.NotNull(visitor.Username);
             Assert.NotNull(visitor.Name);
@@ -43,13 +54,6 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateVisitor_NullArguments_NullOrWhiteSpaceArgumentException()
         {
-            var ivisitorrepository = new Mock<IVisitorRepository>();
-            ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .ReturnsAsync(new Visitor());
-            Mock<IUnitOfWork<JtqContext>> uow = new();
-            uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
-            var _visitorService = new VisitorService(uow.Object);
-
             await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.CreateVisitor(" ", null, "", "", true, true).ConfigureAwait(false)).ConfigureAwait(false);
             await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.CreateVisitor(null, null, "", "", true, true).ConfigureAwait(false)).ConfigureAwait(false);
         }
@@ -57,24 +61,13 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateVisitor_AcceptedTermsFalse_MustAcceptTermsException()
         {
-            var ivisitorrepository = new Mock<IVisitorRepository>();
-            ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .ReturnsAsync(new Visitor());
-            Mock<IUnitOfWork<JtqContext>> uow = new();
-            uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
-            var _visitorService = new VisitorService(uow.Object);
-
             await Assert.ThrowsAsync<MustAcceptTermsException>(async () => await _visitorService.CreateVisitor("user", "name", "pass", "665665665", true, false).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]
         public async Task Login_CorrectArguments_ReturnsTrue()
         {
-            var ivisitorrepository = new Mock<IVisitorRepository>();
-            ivisitorrepository.Setup(x => x.Login(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(true));
-            Mock<IUnitOfWork<JtqContext>> uow = new();
-            uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
-            var _visitorService = new VisitorService(uow.Object);
+            ivisitorepository.Setup(x => x.Login(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(true));
 
             var check = await _visitorService.Login("user", "pass").ConfigureAwait(false);
 
@@ -84,11 +77,7 @@ namespace jtq.UnitTests
         [Fact]
         public async Task Login_NullArguments_NullOrWhitespaceArgumentException()
         {
-            var ivisitorrepository = new Mock<IVisitorRepository>();
-            ivisitorrepository.Setup(x => x.Login(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(true));
-            Mock<IUnitOfWork<JtqContext>> uow = new();
-            uow.Setup(x => x.Repository<IVisitorRepository>()).Returns(ivisitorrepository.Object);
-            var _visitorService = new VisitorService(uow.Object);
+            ivisitorepository.Setup(x => x.Login(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(true));
 
             await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.Login(" ", null).ConfigureAwait(false)).ConfigureAwait(false);
             await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _visitorService.Login(null, " ").ConfigureAwait(false)).ConfigureAwait(false);

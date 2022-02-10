@@ -38,6 +38,7 @@ namespace jtq.UnitTests
             Assert.True(queuelist.ElementAt(1).Active);
             Assert.True(queuelist.ElementAt(2).Active);
             queuerepository.Verify(x => x.GetActiveQueues(),Times.Once);
+            //TODO revisar
         }
 
         [Fact]
@@ -49,11 +50,10 @@ namespace jtq.UnitTests
             uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
             var _queueservice = new QueueService(uow.Object);
 
-            IEnumerable<QueueDto> queuelist = await _queueservice.GetActiveQueues().ConfigureAwait(false);
-            queuelist = queuelist.ToList();
+            IEnumerable<QueueDto> queues = await _queueservice.GetActiveQueues().ConfigureAwait(false);
 
-            Assert.NotNull(queuelist);
-            Assert.Empty(queuelist);
+            Assert.NotNull(queues);
+            Assert.Empty(queues);
             queuerepository.Verify(x => x.GetActiveQueues(), Times.Once);
         }
 

@@ -2,5 +2,5 @@ projectKey=devon4net
 serverUrl=http://localhost:9000
 serverVersion=9.2.1.49989
 dashboardUrl=http://localhost:9000/dashboard?id=devon4net
-ceTaskId=AX7ZGmCF9bgkhqoqw5r5
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX7ZGmCF9bgkhqoqw5r5
+ceTaskId=AX7ZMGyS9bgkhqoqw5r6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX7ZMGyS9bgkhqoqw5r6

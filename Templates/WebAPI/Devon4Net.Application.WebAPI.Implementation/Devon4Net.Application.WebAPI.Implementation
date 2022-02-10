@@ -15,7 +15,7 @@
             </summary>
             <param name="AccessCodeService"></param>
         </member>
-        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCodebyIdAccesscode(System.String)">
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Controllers.AccessCodeController.SearchAccessCodebyId(System.String)">
             <summary>
             Search Access Code Service
             </summary>

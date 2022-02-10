@@ -78,8 +78,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
             }
             Devon4NetLogger.Debug($"DeleteAccessCode method from service DeleteAccessCode with id: {id}");
             var ac = await _AccessCodeRepository.SearchAccessCodebyId(id);
-            if(ac != null)
+            if (ac != null)
                 await _QueueRepository.DecrementCustomers(ac.QueueId).ConfigureAwait(false);
+            else
+                return null;
 
             return await _AccessCodeRepository.DeleteAccessCode(id).ConfigureAwait(false);
         }

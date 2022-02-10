@@ -123,9 +123,9 @@ j !"#$%&34567r#
 èC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Data\Repositories\VisitorRepository.cs 8j	
 ,-./01r !"#$%&'(*+2346789xÇ!"#$%&'(*46À
 ãC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\EmployeeContext.cs 8jr	
- !"#$%&'()*+,-Ç!$'Ã
-ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs- 8j	
- !"$%&()*-./—“”rÃ#'+01235678:<=?ACDEGHIKLMOPQRTUVXYZ[]^_`bcdefhijklmopqstvwxz{}~ÄÇÑÖáàâãåçèêëíîïñòôöúùû†°¢£§¶ß®©´≠Æ∞±≤¥∂∏π∫ªΩæø¿¬√ƒ∆»… ÀÃŒœ‘’÷ÇI257:<?ACGKOTX]bcdehijkoqsvz}ÇÑáãèîòú†¶®´≠∞¥∂∏Ω¬∆»Œø
+ !"#$%&'()*+,-Ç!$'¿
+ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs, 8j	
+ !"$%&()*-./r»#'+01235678:<=?ACDEGHIKLMOPQRTUVXYZ[]^_`bcdefhijklmopqstvwxz{}~ÄÇÑÖáàâãåçèêëíîïñòôöúùû†°¢£§¶ß®©´≠Æ∞±≤¥∂∏π∫ªΩæø¿¬√ƒ∆»… ÀÃŒ–—ÇG257:<?ACGKOTX]bcdehijkoqsvz}ÇÑáãèîòú†¶®´≠∞¥∂∏Ω¬∆»ø
 áC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\TodoContext.cs 8jr	
  !"#$%&'Ç!¿
 ÜC:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Entities\AccessCode.cs 8j	

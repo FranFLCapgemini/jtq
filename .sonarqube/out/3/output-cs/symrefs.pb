@@ -1001,7 +1001,7 @@
 * 0!! $$ '' 
 !!  !!!% &
 $$  !$$% &
-''  !''% &¢
+''  !''% &î
 †C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs
  #+ 5
 
@@ -1018,10 +1018,9 @@
 
 ++& .
 
-00  /J
+00  />
 00= I22 55 oo }} 
-¦¦ 
-ÎÎ# /–
+¦¦ –
 55, 277 :: << ?? AA CC GG KK OO TT XX ]] bb hh 
 77 77# $
 ??  !??% &
@@ -1113,12 +1112,7 @@
 ÆÆ% &
 
 ÈÈ  !
-ÈÈ% &
-
-ÔÔ +
-ÎÎ "
-
-ÔÔ9 Eœ
+ÈÈ% &œ
 ‡C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\TodoContext.cs
 		 , 7
 

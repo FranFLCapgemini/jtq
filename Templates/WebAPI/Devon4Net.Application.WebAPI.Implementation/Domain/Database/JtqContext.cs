@@ -203,12 +203,7 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.Database
                     .HasColumnName("username");
             });
 
-            OnModelCreatingPartial(modelBuilder);
         }
 
-        /// <summary>
-        /// OnModelCreatingPartial method
-        /// </summary>
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

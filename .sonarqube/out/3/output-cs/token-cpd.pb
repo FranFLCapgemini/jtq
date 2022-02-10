@@ -10291,7 +10291,7 @@ IsRequired(( 
 ;** 
 }++ 	
 },, 
-}-- ñ†
+}-- À„
 †C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\JtqContext.cs
 	namespace 	
 	Devon4Net
@@ -11625,38 +11625,12 @@ IsRequired
 )
 ÌÌ 
 ;
-ÌÌ $
-OnModelCreatingPartial
-ÎÎ "
-(
-ÎÎ" #
-modelBuilder
-ÎÎ# /
-)
-ÎÎ/ 0
-;
-ÎÎ0 1
+ÌÌ 
 }
-ÏÏ 	
-partial
-ÔÔ 
-void
-ÔÔ $
-OnModelCreatingPartial
-ÔÔ +
-(
-ÔÔ+ ,
-ModelBuilder
-ÔÔ, 8
-modelBuilder
-ÔÔ9 E
-)
-ÔÔE F
-;
-ÔÔF G
+ÎÎ 	
 }
-ÕÕ 
-}ÖÖ š
+ÐÐ 
+}ÑÑ š
 ‡C:\Users\fferna14\Documents\PruebaDevon\jtq\Templates\WebAPI\Devon4Net.Application.WebAPI.Implementation\Domain\Database\TodoContext.cs
 	namespace 	
 	Devon4Net

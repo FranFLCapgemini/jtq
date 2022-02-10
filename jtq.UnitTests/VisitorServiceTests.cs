@@ -18,7 +18,7 @@ namespace jtq.UnitTests
         public async Task CreateVisitor_CorrectArguments_VisitorCreated()
         {
             var ivisitorrepository = new Mock<IVisitorRepository>();
-            //returns Async
+            //returns Async TODOS
             ivisitorrepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
                 .Returns(Task.FromResult(
                     new Visitor() { Username="user", Name="name", Password="pass", PhoneNumber="665665665", AcceptedCommercial=true, AcceptedTerms=true}));

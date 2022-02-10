@@ -30,15 +30,17 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         /// Search Access Code Service
         /// </summary>
         /// <param name="idaccesscode"></param>
-        [HttpGet("searchAccessCodeByIdAccesscode")]
+        [HttpGet("searchAccessCodeById")]
         [ProducesResponseType(typeof(AccessCodeDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> SearchAccessCodebyIdAccesscode(String idaccesscode)
+        public async Task<ActionResult> SearchAccessCodebyId(string idaccesscode)
         {
             Devon4NetLogger.Debug("SearchAccessCode method from AccessCodeController");
-            return Ok(await _AccessCodeService.SearchAccessCodebyId(idaccesscode).ConfigureAwait(false));
+            var accesscode = await _AccessCodeService.SearchAccessCodebyId(idaccesscode).ConfigureAwait(false);
+            if (accesscode.IdaccessCode == null) return NotFound();
+            return Ok(accesscode);
         }
 
         /// <summary>
@@ -86,8 +88,9 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagem
         public async Task<ActionResult> DeleteAccessCode(string idaccesscode)
         {
             Devon4NetLogger.Debug($"DeleteAccessCode method from DeleteAccessCodeController with id: {idaccesscode}");
-
-            return Ok(await _AccessCodeService.DeleteAccessCode(idaccesscode).ConfigureAwait(false));
+            var id = await _AccessCodeService.DeleteAccessCode(idaccesscode).ConfigureAwait(false);
+            if (id == null) return NotFound();
+            return Ok(id);
         }
     }
 }

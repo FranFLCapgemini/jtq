@@ -15,7 +15,7 @@ namespace jtq.UnitTests
     {
         private readonly Mock<IVisitorRepository> ivisitorepository = new();
         private readonly Mock<IUnitOfWork<JtqContext>> uow = new();
-        private VisitorService _visitorService;
+        private readonly VisitorService _visitorService;
 
         public VisitorServiceTests()
         {
@@ -27,7 +27,6 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateVisitor_CorrectArguments_VisitorCreated()
         {
-            //Arrange
             var visitorConst = new Visitor()
             {
                 Username = "user",
@@ -40,10 +39,8 @@ namespace jtq.UnitTests
             ivisitorepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
                 .ReturnsAsync(visitorConst);
 
-            //Act
             var visitor = await _visitorService.CreateVisitor(visitorConst.Username, visitorConst.Name, visitorConst.Password, visitorConst.PhoneNumber, visitorConst.AcceptedCommercial, visitorConst.AcceptedCommercial).ConfigureAwait(false);
 
-            //Assert
             Assert.NotNull(visitor);
             Assert.NotNull(visitor.Username);
             Assert.NotNull(visitor.Name);

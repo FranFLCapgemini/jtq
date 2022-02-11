@@ -15,19 +15,26 @@ namespace jtq.UnitTests
 {
     public class QueueServiceTests
     {
+        private readonly Mock<IQueueRepository> queuerepository = new();
+        private readonly Mock<IUnitOfWork<JtqContext>> uow = new();
+
+        public QueueServiceTests()
+        {
+            uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
+        }
+
         [Fact]
         public async Task GetActiveQueues_ExistingActiveQueues_ReturnsQueueList()
         {
-            var queuerepository = new Mock<IQueueRepository>();
+            //TODO
+            List<string> ids = new List<string>() { "id1", "id2", "id3"};
             queuerepository.Setup(x => x.GetActiveQueues()).
                 ReturnsAsync(new List<Queue>()
                 {
-                    new Queue(){ IdQueue = "id1", Name ="test1", Active=true},
-                    new Queue(){ IdQueue = "id2", Name ="test2", Active=true},
-                    new Queue(){ IdQueue = "id3", Name ="test3", Active=true}
-                });;
-            Mock <IUnitOfWork<JtqContext>> uow= new();
-            uow.Setup(x => x.Repository<IQueueRepository>()).Returns(queuerepository.Object);
+                    new Queue(){ IdQueue = ids[0], Name ="test1", Active=true},
+                    new Queue(){ IdQueue = ids[1], Name ="test2", Active=true},
+                    new Queue(){ IdQueue = ids[2], Name ="test3", Active=true}
+                });
             var _queueservice = new QueueService(uow.Object);
 
             IEnumerable<QueueDto> queuelist = await _queueservice.GetActiveQueues().ConfigureAwait(false);

@@ -31,11 +31,11 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
             _visitorService = visitorService;
             _jwtHandler = JwtHandler;
         }
+
         /// <summary>
         /// Creates Visitor
         /// </summary>
         /// <returns></returns>
-
         [HttpPost("CreateVisitor")]
         [ProducesResponseType(typeof(VisitorDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -47,6 +47,8 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
             //pass sin encriptar en la base de datos
             Devon4NetLogger.Debug($"Executing CreateVisitor from controller VisitorController with name: {username} and pass: {pass}");
             var result = await _visitorService.CreateVisitor(username, name, pass, tlf, acceptedCommercial, acceptedTerms).ConfigureAwait(false);
+            if (result == null)
+                return StatusCode(StatusCodes.Status409Conflict,"User name already exists");
             return StatusCode(StatusCodes.Status201Created, result);
         }
 

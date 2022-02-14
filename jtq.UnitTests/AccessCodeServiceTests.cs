@@ -6,7 +6,6 @@ using Xunit;
 using System.Threading.Tasks;
 using Devon4Net.Application.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Service;
-using Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.Service;
 using Devon4Net.Application.WebAPI.Implementation.Business.AccessCodeManagement.Exceptions;
 using Devon4Net.Application.WebAPI.Implementation.Exceptions;
 using System.Collections.Generic;
@@ -43,7 +42,7 @@ namespace jtq.UnitTests
             accesscoderepository.Setup(x => x.SearchAccessCodebyId(It.IsAny<string>())).
                 ReturnsAsync(new AccessCode() { IdaccessCode = constData.IdaccessCode, TicketNumber = constData.TicketNumber});
 
-            AccessCodeDto accesscode = await _accesscodeservice.SearchAccessCodebyId("id").ConfigureAwait(false);
+            AccessCodeDto accesscode = await _accesscodeservice.SearchAccessCodebyId(constData.IdaccessCode).ConfigureAwait(false);
 
             Assert.NotNull(accesscode);
             Assert.NotNull(accesscode.IdaccessCode);
@@ -112,7 +111,7 @@ namespace jtq.UnitTests
             Assert.Equal(accesscode.IdaccessCode, deleted);
             accesscoderepository.Verify( x => x.DeleteAccessCode(It.IsAny<string>()), Times.Once);            
         }
-
+        
         [Fact]
         public async Task DeleteAccessCode_NullOrWhitespaceArgument_NullOrWhitespaceArgumentException()
         {

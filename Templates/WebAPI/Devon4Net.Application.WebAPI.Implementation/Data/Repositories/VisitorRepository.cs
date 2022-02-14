@@ -53,5 +53,19 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
 
             return list!=null&&list.Any();
         }
+
+        /// <summary>
+        /// VisitorExists
+        /// Check if a visitor with given user name exists
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public async Task<bool> VisitorExists(string username)
+        {
+            var list = await GetFirstOrDefault(x => x.Username==username).ConfigureAwait(false);
+            if (list != null)
+                return true;
+            return false;
+        }
     }
 }

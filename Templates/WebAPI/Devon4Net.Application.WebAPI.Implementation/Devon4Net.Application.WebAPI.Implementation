@@ -1596,6 +1596,14 @@
             <param name="pass"></param>
             <returns></returns>
         </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.VisitorRepository.VisitorExists(System.String)">
+            <summary>
+            VisitorExists
+            Check if a visitor with given user name exists
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.Database.EmployeeContext">
             <summary>
             Employee database context definition
@@ -2057,6 +2065,11 @@
             </Summary>
         </member>
         <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IVisitorRepository.Login(System.String,System.String)">
+            <Summary>
+            Login visitor
+            </Summary>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IVisitorRepository.VisitorExists(System.String)">
             <Summary>
             Login visitor
             </Summary>

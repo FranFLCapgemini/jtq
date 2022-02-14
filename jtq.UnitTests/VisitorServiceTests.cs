@@ -16,6 +16,15 @@ namespace jtq.UnitTests
         private readonly Mock<IVisitorRepository> ivisitorepository = new();
         private readonly Mock<IUnitOfWork<JtqContext>> uow = new();
         private readonly VisitorService _visitorService;
+        private readonly Visitor visitorConst = new()
+        {
+            Username = "user",
+            Name = "name",
+            Password = "pass",
+            PhoneNumber = "665665665",
+            AcceptedCommercial = true,
+            AcceptedTerms = true
+        };
 
         public VisitorServiceTests()
         {
@@ -27,17 +36,9 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateVisitor_CorrectArguments_VisitorCreated()
         {
-            var visitorConst = new Visitor()
-            {
-                Username = "user",
-                Name = "name",
-                Password = "pass",
-                PhoneNumber = "665665665",
-                AcceptedCommercial = true,
-                AcceptedTerms = true
-            };
             ivisitorepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
                 .ReturnsAsync(visitorConst);
+            ivisitorepository.Setup(x => x.VisitorExists(It.IsAny<string>())).ReturnsAsync(false);
 
             var visitor = await _visitorService.CreateVisitor(visitorConst.Username, visitorConst.Name, visitorConst.Password, visitorConst.PhoneNumber, visitorConst.AcceptedCommercial, visitorConst.AcceptedCommercial).ConfigureAwait(false);
 
@@ -46,6 +47,18 @@ namespace jtq.UnitTests
             Assert.NotNull(visitor.Name);
             Assert.True(visitor.AcceptedTerms);
             ivisitorepository.Verify(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()), Times.Once);
+        }
+
+        [Fact]
+        public async Task CreateVisitor_UserAlreadyExists_ReturnNull()
+        {
+            ivisitorepository.Setup(x => x.CreateVisitor(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
+                .ReturnsAsync((Visitor?)null);
+            ivisitorepository.Setup(x => x.VisitorExists(It.IsAny<string>())).ReturnsAsync(true);
+
+            var visitor = await _visitorService.CreateVisitor(visitorConst.Username, visitorConst.Name, visitorConst.Password, visitorConst.PhoneNumber, visitorConst.AcceptedCommercial, visitorConst.AcceptedCommercial).ConfigureAwait(false);
+
+            Assert.Null(visitor);
         }
 
         [Fact]

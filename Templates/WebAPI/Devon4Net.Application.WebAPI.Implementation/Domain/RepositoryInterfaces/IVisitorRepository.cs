@@ -17,5 +17,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         ///Login visitor
         ///</Summary>
         Task<bool> Login(String username, String pass);
+
+        ///<Summary>
+        ///Login visitor
+        ///</Summary>
+        Task<bool> VisitorExists(string username);
     }
 }

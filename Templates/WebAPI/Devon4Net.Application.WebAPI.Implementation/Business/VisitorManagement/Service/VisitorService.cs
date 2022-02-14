@@ -36,16 +36,19 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.VisitorManagement
         /// <param name="acceptedCommercial"></param>
         /// <param name="acceptedTerms"></param>
         /// <returns></returns>
-        public Task<Visitor> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms)
+        public async Task<Visitor> CreateVisitor(string username, string name, string pass, string tlf, bool acceptedCommercial, bool acceptedTerms)
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(pass) || string.IsNullOrWhiteSpace(tlf))
                 throw new NullOrWhiteSpaceArgumentException("Null or white space argument");
-
+       
             if (!acceptedTerms)
                 throw new MustAcceptTermsException("accepted terms must be true");
 
+            if (await _VisitorRepository.VisitorExists(username))
+                return null;
+
             Devon4NetLogger.Debug($"CreateVisitor method from service VisitorService with values : {username},{pass}");
-            return _VisitorRepository.CreateVisitor(username,name,pass,tlf,acceptedCommercial,acceptedTerms);
+            return await _VisitorRepository.CreateVisitor(username,name,pass,tlf,acceptedCommercial,acceptedTerms).ConfigureAwait(false);
         }
 
         ///<Summary>

@@ -66,5 +66,17 @@ namespace Devon4Net.Application.WebAPI.Implementation.Data.Repositories
             await Update(q).ConfigureAwait(false);
             return q.Customers;
         }
+
+        /// <summary>
+        /// QueueExists
+        /// </summary>
+        /// <param name="name"></param>
+        public async Task<bool> QueueExists(string name)
+        {
+            var check =await GetFirstOrDefault(x => x.Name == name).ConfigureAwait(false);
+            if(check==null)
+                return false;
+            return true;
+        }
     }
 }

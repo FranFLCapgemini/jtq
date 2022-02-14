@@ -1525,6 +1525,12 @@
             </summary>
             <param name="idqueue"></param>
         </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.QueueRepository.QueueExists(System.String)">
+            <summary>
+            QueueExists
+            </summary>
+            <param name="name"></param>
+        </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Data.Repositories.TodoRepository">
             <summary>
             Repository implementation for the TODOS
@@ -2020,6 +2026,12 @@
             Customers --
             </summary>
             <param name="idqueue"></param>
+        </member>
+        <member name="M:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.IQueueRepository.QueueExists(System.String)">
+            <summary>
+            Queue exists
+            </summary>
+            <param name="name"></param>
         </member>
         <member name="T:Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterfaces.ITodoRepository">
             <summary>

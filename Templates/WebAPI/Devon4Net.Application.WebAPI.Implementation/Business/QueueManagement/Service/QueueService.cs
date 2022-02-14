@@ -41,11 +41,13 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.S
         /// <param name="name"></param>
         public async Task<QueueDto> CreateQueue(string name)
         {
+            Devon4NetLogger.Debug("CreateQueue method from QueueService");
             if (string.IsNullOrWhiteSpace(name))
             {
                 throw new NullOrWhiteSpaceArgumentException("Null or white space arguments");
             }
-            Devon4NetLogger.Debug("CreateQueue method from QueueService");
+            if(await _QueueRepository.QueueExists(name))
+                return null;
             var queue = await _QueueRepository.CreateQueue(name).ConfigureAwait(false);
             return QueueConverter.ModelToDto(queue);
         }        

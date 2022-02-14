@@ -32,5 +32,11 @@ namespace Devon4Net.Application.WebAPI.Implementation.Domain.RepositoryInterface
         /// </summary>
         /// <param name="idqueue"></param>
         Task<int?> DecrementCustomers(string idqueue);
+
+        /// <summary>
+        /// Queue exists
+        /// </summary>
+        /// <param name="name"></param>
+        Task<bool> QueueExists(string name);
     }
 }

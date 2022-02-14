@@ -53,7 +53,10 @@ namespace Devon4Net.Application.WebAPI.Implementation.Business.QueueManagement.C
         public async Task<ActionResult> CreateQueue(string name)
         {
             Devon4NetLogger.Debug("CreateQueue method from QueueController");
-            return Ok(await _QueueService.CreateQueue(name).ConfigureAwait(false));
+            var createdqueue = await _QueueService.CreateQueue(name).ConfigureAwait(false);
+            if (createdqueue == null)
+                return Conflict($"Already exists queue with name {name}");
+            return Ok(createdqueue);
         }
     }
 }

@@ -71,7 +71,7 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateVisitor_AcceptedTermsFalse_MustAcceptTermsException()
         {
-            await Assert.ThrowsAsync<MustAcceptTermsException>(async () => await _visitorService.CreateVisitor("user", "name", "pass", "665665665", true, false).ConfigureAwait(false)).ConfigureAwait(false);
+            await Assert.ThrowsAsync<MustAcceptTermsException>(async () => await _visitorService.CreateVisitor(visitorConst.Username, visitorConst.Name, visitorConst.Password, visitorConst.PhoneNumber, visitorConst.AcceptedCommercial, false).ConfigureAwait(false)).ConfigureAwait(false);
         }
 
         [Fact]
@@ -79,7 +79,7 @@ namespace jtq.UnitTests
         {
             ivisitorepository.Setup(x => x.Login(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(true));
 
-            var check = await _visitorService.Login("user", "pass").ConfigureAwait(false);
+            var check = await _visitorService.Login(visitorConst.Username, visitorConst.Password).ConfigureAwait(false);
 
             Assert.True(check);
         }

@@ -18,6 +18,12 @@ namespace jtq.UnitTests
         private readonly Mock<IQueueRepository> queuerepository = new();
         private readonly Mock<IUnitOfWork<JtqContext>> uow = new();
         private readonly QueueService _queueservice;
+        private readonly Queue queueconst = new()
+        {
+            IdQueue = "id",
+            Name = "name",
+            Active = true,
+        };
 
         public QueueServiceTests()
         {
@@ -69,9 +75,10 @@ namespace jtq.UnitTests
         [Fact]
         public async Task CreateQueue_CorrectArguments_QueueCreated()
         {
-            queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue() { IdQueue="id"});
+            queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue() { IdQueue=queueconst.IdQueue});
+            queuerepository.Setup(x => x.QueueExists(It.IsAny<string>())).ReturnsAsync(false);
 
-            QueueDto queue = await _queueservice.CreateQueue("testqueue").ConfigureAwait(false);
+            QueueDto queue = await _queueservice.CreateQueue(queueconst.Name).ConfigureAwait(false);
 
             Assert.NotNull(queue);
             Assert.NotNull(queue.Idqueue);
@@ -82,8 +89,6 @@ namespace jtq.UnitTests
         public async Task CreateQueue_NullOrWhiteSpaceArguments_NullOrWhiteSpaceArgumentsException()
         {
             queuerepository.Setup(x => x.CreateQueue(It.IsAny<string>())).ReturnsAsync(new Queue());
-
-            var queue = await _queueservice.CreateQueue("testqueue");
 
             await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _queueservice.CreateQueue(" ").ConfigureAwait(false)).ConfigureAwait(false);
             await Assert.ThrowsAsync<NullOrWhiteSpaceArgumentException>(async () => await _queueservice.CreateQueue(null).ConfigureAwait(false)).ConfigureAwait(false);

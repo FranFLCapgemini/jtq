@@ -1,8 +1,0 @@
-﻿C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Logger\Attribute\AopController.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Logger\Attribute\AopControllerAttribute.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Logger\Attribute\AopExceptionFilterAttribute.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Logger\LogConfiguration.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Logger\Logging\Devon4NetLogger.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\Modules\Devon4Net.Infrastructure.Logger\Middleware\LogHandlingMiddleware.cs
-C:\Users\fferna14\Documents\PruebaDevon\jtq\assets\devonfw.png
-C:\Users\fferna14\Documents\PruebaDevon\jtq\assets\LICENSE
